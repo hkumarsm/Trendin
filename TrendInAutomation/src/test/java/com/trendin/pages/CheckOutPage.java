@@ -1168,6 +1168,7 @@ public class CheckOutPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able verify Apply button is disabled", e);
 		}
 	}
+
 	//To clickk on Discount in Discount Coupons / vouchers screen
 	/**
 	 * <p>
@@ -1308,6 +1309,7 @@ public class CheckOutPage extends TrendInTestSuite {
 		addComment("Successfully clicked on the cancel button");
 
 	}
+
 	/**
 	 * <p>
 	 * <b>Method Name:</b> clickOnTheEditButton
@@ -1364,6 +1366,473 @@ public class CheckOutPage extends TrendInTestSuite {
 		addComment("Successfully clicked on the add more products");
 
 	}
+	/////////////////////////////////////////30/09/2015///////////////////////////////////////
+	//To Verify Shipping Address page header
+	/**
+	 * <p>
+	 * <b>Method Name:</b> verifyShippingAddressPageHeader
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To Verify Shipping Address page header
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void verifyShippingAddressPageHeader(WebDriver driver) throws Exception {
+
+		// To verify 'Shipping Address' header is displayed
+		String pageHeader = eo.getText(driver, "Xpath", "shippingAddressHeaderXpath");
+		assertTrue(pageHeader.equalsIgnoreCase("SHIPPING ADDRESS")==true, "Successfully verified the Shipping Address Page Header : " + pageHeader, 
+				"Not able to verify the shipping address Page header");
+	}
+
+	// To check Ship to a new address CheckBox
+	/**
+	 * <p>
+	 * <b>Method Name:</b> checkOnShipNewAddressCheckBox
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To check Ship to a new address CheckBox
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void checkOnShipNewAddressCheckBox(WebDriver driver) throws Exception {
+		// To check Ship to a new address CheckBox
+		eo.clickElement(driver, "Xpath", "shipNewAddressCheckBoxXpath");
+		addComment("Successfully checked Ship to a new address CheckBox");
+
+	}
+
+	// To verify Your Shipping address Header
+	/**
+	 * <p>
+	 * <b>Method Name:</b> verifyYourShippingAddressHeader
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To verify Your Shipping address Header
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void verifyYourShippingAddressHeader(WebDriver driver) throws Exception {
+
+		// To verify 'Your Shipping Address' header is displayed
+		String pageHeader = eo.getText(driver, "Xpath", "yourShippingAddressHeaderXpath");
+		assertTrue(pageHeader.equalsIgnoreCase("YOUR SHIPPING ADDRESS")==true, "Successfully verified the Your Shipping Address Header : " + pageHeader, 
+				"Not able to verify the Your shipping address header");
+
+	}
+
+	// To verify 'Select from previously shipped address' text is displayed
+	/**
+	 * <p>
+	 * <b>Method Name:</b> verifyPreviouslyShippedAddressText
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To verify 'Select from previously shipped address' text is displayed
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void verifyPreviouslyShippedAddressText(WebDriver driver)throws Exception {
+
+		// To verify 'Select from previously shipped address' text is displayed
+		String previouslyShippedAddressText = eo.getText(driver, "Xpath", "previouslyShippedAddressTextXpath");
+		assertTrue(previouslyShippedAddressText.equalsIgnoreCase("Select from previously shipped address")==true, "Successfully verified the Mmessage : " + previouslyShippedAddressText, 
+				"Not able to verify the Message");
+
+	}
+
+	// To click on edit link in Shipping address page for registered user
+	/**
+	 * <p>
+	 * <b>Method Name:</b> clickOnEditLinkInShippinghAddrsPage
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To click on edit link in Shipping address page for registered user
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+
+	public void clickOnEditLinkInShippinghAddrsPage(WebDriver driver) throws Exception {
+
+		eo.wait(1000);
+		eo.clickElement(driver, "Xpath", "shipingAddressEditLinkXpath");
+		addComment("Successfully clicked on edit link");
+	}
+
+	// To verify Modify address page is displayed
+	/**
+	 * <p>
+	 * <b>Method Name:</b> verifyEditAddressPage
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To verify Modify address page is displayed
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void verifyEditAddressPage(WebDriver driver) throws Exception {
+
+		eo.wait(3000);
+		String actualEditAddressHeader = eo.getText(driver, "XPath", "editAdressHeaderXpath");
+		addComment("The message "  + actualEditAddressHeader + " is displayed ");
+
+		String ExpectedEditAddressHeader[] =  actualEditAddressHeader.split(":");
+		addComment("Expected Edit Address Header is : " +ExpectedEditAddressHeader[0]);
+
+		assertTrue(ExpectedEditAddressHeader[0].equalsIgnoreCase("Edit Address")==true, "Successfully verified the Header : " +ExpectedEditAddressHeader[0] , 
+				"Not able to verify the Header");
+	}
+
+	// To click on Back Button in address page for registered user
+	/**
+	 * <p>
+	 * <b>Method Name:</b> clickOnBackBtn
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To click on Back Button in address page for registered user
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+
+	public void clickOnBackBtn(WebDriver driver) throws Exception {
+
+		eo.wait(1000);
+		eo.clickElement(driver, "Xpath", "backBtnXpath");
+		addComment("Successfully clicked on Back Button");
+	}
+
+	// To click on No. Of Items Link in address page for registered user
+	/**
+	 * <p>
+	 * <b>Method Name:</b> clickOnNoOfItemsLink
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To click on No. Of Items Link in address page for registered user
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
+	public void clickOnNoOfItemsLink(WebDriver driver) throws Exception {
+		
+		eo.clickElement(driver, "Xpath", "noOfItemsLinkXpath");
+		addComment("Successfully clicked on No. Of Items link");
+		
+		eo.wait(2000);
+		// To verify 'CART SUMMARY' header is displayed
+		String cartSummaryHeader = eo.getText(driver, "Xpath", "cartSummaryHeaderXpath");
+		assertTrue(cartSummaryHeader.equalsIgnoreCase("CART SUMMARY")==true, "Successfully verified the header : " + cartSummaryHeader, 
+				"Not able to verify the Header");
+	}
+
+	// To click on continue Button in Cart summary page
+		/**
+		 * <p>
+		 * <b>Method Name:</b> clickOnContinueBtnInCartSummaryPage
+		 * </p>
+		 * 
+		 * <p>
+		 * <b>Description:</b>To click on continue Button in Cart summary page
+		 * </p>
+		 * <p>
+		 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+		 * </p>
+		 * 
+		 * @author Sowmya H M
+		 * 
+		 */
+	public void clickOnContinueBtnInCartSummaryPage(WebDriver driver) throws Exception {
+		
+		eo.clickElement(driver, "Xpath", "continueBtnInCartSummaryPageXpath");
+		addComment("Successfully clicked on Continue button");
+		
+	}
+
+	// To click on cancel Icon in Cart summary page
+			/**
+			 * <p>
+			 * <b>Method Name:</b> clickOnCancelIconInCartSummaryPage
+			 * </p>
+			 * 
+			 * <p>
+			 * <b>Description:</b>To click on cancel Icon in Cart summary page
+			 * </p>
+			 * <p>
+			 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+			 * </p>
+			 * 
+			 * @author Sowmya H M
+			 * 
+			 */
+		public void clickOnCancelIconInCartSummaryPage(WebDriver driver) throws Exception {
+			
+			Actions action = new Actions(driver);
+			WebElement ele = driver.findElement(By.xpath(GetElementIdentifier.getProperty("cancelIconInCartSummaryPageXpath", curApp)));
+			action.moveToElement(ele).build().perform();
+			ele.click();
+			//eo.clickElement(driver, "Xpath", "cancelIconInCartSummaryPageXpath");
+			addComment("Successfully clicked on Cancel Icon");	
+		}
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> clickOnContactUsInCheckOutSummaryPage
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To click and verify the checkout summary page
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void clickOnContactUsInCheckOutSummaryPage(WebDriver driver) throws Exception {
+
+		  // To click on contact us
+		  eo.clickElement(driver, "Xpath", "contactUsXpath");
+		  addComment("Successfully clicked on the contact us ");
+		  // To verify the title of contact us page
+		  String title = driver.getTitle();
+		  System.out.println("title is   " + title);
+		  if (title.equalsIgnoreCase("Checkout Summary")) {
+		   addComment("Successfully navigated to checkout page :" + title);
+		  } else {
+		   throw new POMMethodExecException("Could not navigate to checkout page");
+		  }
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> clickOnPlaceOrderIncheckOutSummaryPage
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To click on the place order in check out summary page
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void clickOnPlaceOrderIncheckOutSummaryPage(WebDriver driver) throws Exception {
+		  Thread.sleep(2000);
+		  eo.clickElement(driver, "xpath", "placeOrderButtonXpath");
+		  addComment("Clicked on placed order button.");
+		  // To verify the title of contact us page
+		  String title = driver.getTitle();
+		  System.out.println("title is   " + title);
+		  if (title.equalsIgnoreCase("TRENDIN - Checkout Authentication")) {
+		   addComment("Successfully navigated to Place order page :" + title);
+		  } else {
+		   throw new POMMethodExecException("Could not navigate to place page");
+		  }
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To enter the mail id and click on the submit button
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage(WebDriver driver, String emailId) throws Exception {
+		  // To enter the email
+		  eo.enterText(driver, "Xpath", "emailIdTextFieldXpath", emailId);
+		  addComment("Successfully enterd the mail");
+		  // To click on the submit button
+		  eo.clickElement(driver, "Xpath", "continueButtonXpath");
+		  addComment("Successfully clicked on the submit button");
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> verifyErrorMessageForInvalidMailIdInCheckoutPage
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To verify the error message for invalid mail id in
+		  * checkout page
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void verifyErrorMessageForInvalidMailIdInCheckoutPage(WebDriver driver) throws Exception {
+		  String expectedTitle = "Please enter valid E-mail.";
+		  String actualTitle = eo.getText(driver, "Xpath", "errorEmailIdMessageXpath");
+		  if (expectedTitle.equalsIgnoreCase(actualTitle)) {
+		   addComment("Successfully verified the error messsage for invalid mail id" + expectedTitle);
+		  } else {
+		   throw new POMMethodExecException("Unable to verify the error message");
+
+		  }
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> verifyAlreadyRegisteredMailIdMessage
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To verify message that displays when we enter the
+		  * already registered mail id
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void verifyAlreadyRegisteredMailIdMessage(WebDriver driver) throws Exception {
+		  String expectedMessage = "An account already exists with this e-mail. Please login.";
+		  String actualMessage = eo.getText(driver, "Xpath", "");
+		  if (expectedMessage.equalsIgnoreCase(actualMessage)) {
+		   addComment("Successfully verified the error messsage for invalid mail id" + actualMessage);
+		  } else {
+		   throw new POMMethodExecException("Unable to verify the error message");
+
+		  }
+
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> toEnterPinCodeInTheZipCodeTextfield
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To enter the pin code in the zip code textfield
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void toEnterPinCodeInTheZipCodeTextfield(WebDriver driver, String pinCode) throws Exception {
+
+		  // To enter the code in the zip code textfield
+		  eo.enterText(driver, "Xpath", "guestShippingPinCodeXpath", pinCode);
+		  addComment("Successfully entered the pin code");
+		 }
+
+		 /**
+		  * <p>
+		  * <b>Method Name:</b> verifyErrorMessageForInvalidPinCodeTextfield
+		  * </p>
+		  * 
+		  * <p>
+		  * <b>Description:</b>To verify the error message for invalid pin code
+		  * </p>
+		  * <p>
+		  * <b>Dependencies:</b> Browser.Launch
+		  * </p>
+		  * 
+		  * @author Manasa M G
+		  * @Date [9-30-2015]
+		  */
+		 public void verifyErrorMessageForInvalidPinCodeTextfield(WebDriver driver, String pinCode) throws Exception {
+		  String pinCodeNumbers = pinCode;
+		  if (pinCodeNumbers.length() <= 6) {
+		   pinCodeNumbers = "1234567";
+		  }
+		  addComment("Length of the pin code number before Entering into text box : " + "<br>" + pinCodeNumbers.length() + "</b>");
+		  try {
+		   eo.cleardata(driver, "Xpath", "guestShippingPinCodeXpath");
+		   eo.enterText(driver, "Xpath", "guestShippingPinCodeXpath", pinCodeNumbers);
+		   String pinCodeField = driver.findElement(By.xpath(GetElementIdentifier.getProperty("guestShippingPinCodeXpath", curApp))).getAttribute("maxlength");
+		   // pinCodeField.length();
+		   addComment("Batch Name after entering into the Zip code text box: " + pinCodeField);
+		   if (pinCodeField.equalsIgnoreCase("6")) {
+		    addComment("Entered the Max char limit into the Zip code  : 6 Characters");
+		   }
+		  } catch (Exception e) {
+		   throw new POMMethodExecException("Failed to enter the data for 'Zip code'", e);
+		  }
+		 }
+		
+		// To verify Payment page is displayed
+		/**
+		 * <p>
+		 * <b>Method Name:</b> verifyPaymentPageDisplay
+		 * </p>
+		 * 
+		 * <p>
+		 * <b>Description:</b> To verify Payment page is displayed
+		 * </p>
+		 * <p>
+		 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+		 * </p>
+		 * 
+		 * @author Sowmya H M
+		 * 
+		 */
+			public void verifyPaymentPageDisplay(WebDriver driver) throws Exception {
+				
+				
+			}
 
 }
 

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.trendin.core.ExcelReader;
 import com.trendin.core.TrendInTestSuite;
 import com.trendin.pages.CheckOutPage;
+import com.trendin.pages.ContactUsPage;
 import com.trendin.pages.EndToEnd;
 import com.trendin.pages.LoginPage;
 import com.trendin.pages.QuickViewPage;
@@ -226,30 +227,30 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		checkOutPage.clickOnApplyBtn(driver);
 		//checkOutPage.verifyErrMsgForInvaldVoucherCode(driver);
 	}
-	
+
 	// TC_TrendIN_CheckOut_017
-		@Test(groups = "CheckOut")
-		public void testVerifyForAnyDiscountCoupon() throws Exception {
-			QuickViewPage quickViewPage = new QuickViewPage();
-			quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-			quickViewPage.clickProductImage(driver);
-			quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
-			quickViewPage.clickAddToMyBag(driver);
-			quickViewPage.checkCartValue(driver);
-			CheckOutPage checkOutPage = new CheckOutPage();
-			checkOutPage.clickOnCartIcon(driver);
-			quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
-			checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
-			LoginPage loginPage = new LoginPage();
-			loginPage.clickAlreadyRegisteredLink(driver);
-			String userName = ExcelReader.getValue("UserName");
-			String passWord = ExcelReader.getValue("Password");
-			loginPage.verifyExistingUserLogin(driver, userName, passWord);
-			checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
-			checkOutPage.verifyDiscountCouponsPageHeader(driver);
-			checkOutPage.clickOnAvailableOfferLink(driver);
-			checkOutPage.clickOnDiscountCode(driver);
-		}
+	@Test(groups = "CheckOut")
+	public void testVerifyForAnyDiscountCoupon() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
+		LoginPage loginPage = new LoginPage();
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
+		checkOutPage.verifyDiscountCouponsPageHeader(driver);
+		checkOutPage.clickOnAvailableOfferLink(driver);
+		checkOutPage.clickOnDiscountCode(driver);
+	}
 
 	// TC_TrendIN_CheckOut_042
 	@Test(groups = "CheckOut")
@@ -451,10 +452,130 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		checkOutPage.enterZipCodeAndClickOnCheckBtn(driver);
 		checkOutPage.clickOnClearFormBtn(driver);
 	}
-	
+
 	// TC_TrendIn_CheckOut_021
-	 @Test(groups = "CheckOut")
-	 public void testVerifyMessageClickOnGiftWrapMessageCheckbox() throws Exception {
+	@Test(groups = "CheckOut")
+	public void testVerifyMessageClickOnGiftWrapMessageCheckbox() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+
+	}
+
+	// TC_TrendIn_CheckOut_022
+	@Test(groups = "CheckOut")
+	public void testVerifyErrorMessageClickOnEmptySumbitButtonInGiftWrapPage() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+		checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
+		checkOutPage.verifyErrorMessgaForEmptyFieldINGiftWrapPage(driver);
+
+	}
+
+	// //TC_TrendIn_CheckOut_023
+	@Test(groups = "CheckOut")
+	public void testVerifyCheckBoxIsSelectedInGiftWrapCheckBoXInCheckOutPage() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+		checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
+		checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
+		checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
+	}
+
+	// TC_TrendIn_CheckOut_024
+	@Test(groups = "CheckOut")
+	public void testVerifyUnCheckedCheckBoxWhenUserCleclOnCancelButtoninGiftWrap() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+		checkOutPage.clickOnCancelButton(driver);
+		checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
+
+	}
+
+	@Test(groups = "CheckOut")
+	public void testVerifyEditFunctionalityAfterClickedOnSubmitButton() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+		checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
+		checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
+		checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
+		checkOutPage.clickOnTheEditButton(driver);
+	}
+
+	@Test(groups = "CheckOut")
+	public void testVerifyAddMoreProductsButtonInTheCheckOutPage() throws Exception {
+		EndToEnd endToEnd = new EndToEnd();
+		LoginPage loginPage = new LoginPage();
+		String megaMenuName = ExcelReader.getValue("MegaMenuName");
+		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
+		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
+		endToEnd.clickOnProductCategory(driver);
+		loginPage.clickOnProductSize(driver);
+		endToEnd.clickOnAddToBagLink(driver);
+		loginPage.verifyForTopButton(driver);
+		endToEnd.clickOnCartLink(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+		checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
+		checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
+		checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
+		checkOutPage.clickOnTheAddMoreProductsButton(driver);
+		loginPage.verifyTinyLoginIcon(driver);
+
+	}
+
+	// TC_TrendIn_CheckOut_028
+	 @Test(groups = "CheckOut1")
+	 public void testVerifyNavigateToContactUsPageInCheckOutPage() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -466,13 +587,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
+	  checkOutPage.clickOnContactUsInCheckOutSummaryPage(driver);
 
 	 }
 
-	 // TC_TrendIn_CheckOut_022
-	 @Test(groups = "CheckOut")
-	 public void testVerifyErrorMessageClickOnEmptySumbitButtonInGiftWrapPage() throws Exception {
+	 // TC_TrendIn_CheckOut_029
+	 @Test(groups = "CheckOut1")
+	 public void testClickOnPlaceOrderInCheckOutPage() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -484,15 +605,12 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
-	  checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
-	  checkOutPage.verifyErrorMessgaForEmptyFieldINGiftWrapPage(driver);
-
+	  checkOutPage.clickOnPlaceOrderIncheckOutSummaryPage(driver);
 	 }
 
-	 // //TC_TrendIn_CheckOut_023
-	 @Test(groups = "CheckOut")
-	 public void testVerifyCheckBoxIsSelectedInGiftWrapCheckBoXInCheckOutPage() throws Exception {
+	 // TC_TrendIn_CheckOut_030
+	 @Test(groups = "CheckOut1")
+	 public void testVeirfyEmailTextfieldInPlaceOrderPage() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -504,15 +622,15 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
-	  checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
-	  checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
-	  checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
+	  checkOutPage.clickOnPlaceOrderIncheckOutSummaryPage(driver);
+	  String emailId = ExcelReader.getValue("EmailId");
+	  checkOutPage.verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage(driver, emailId);
+	  checkOutPage.verifyErrorMessageForInvalidMailIdInCheckoutPage(driver);
 	 }
 
-	 // TC_TrendIn_CheckOut_024
-	 @Test(groups = "CheckOut")
-	 public void testVerifyUnCheckedCheckBoxWhenUserCleclOnCancelButtoninGiftWrap() throws Exception {
+	 // TC_TrendIn_CheckOut_031
+	 @Test(groups = "CheckOut1")
+	 public void testVerifyValidEmailTextFieldInPlaceOrderPage() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -524,14 +642,14 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
-	  checkOutPage.clickOnCancelButton(driver);
-	  checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
-
+	  checkOutPage.clickOnPlaceOrderIncheckOutSummaryPage(driver);
+	  String emailId = ExcelReader.getValue("EmailId");
+	  checkOutPage.verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage(driver, emailId);
 	 }
 
-	 @Test(groups = "CheckOut")
-	 public void testVerifyEditFunctionalityAfterClickedOnSubmitButton() throws Exception {
+	 // TC_TrendIn_CheckOut_032
+	 @Test(groups = "CheckOut1")
+	 public void testVerifyAlreadyRegistereDMailMessage() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -543,15 +661,15 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
-	  checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
-	  checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
-	  checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
-	  checkOutPage.clickOnTheEditButton(driver);
+	  checkOutPage.clickOnPlaceOrderIncheckOutSummaryPage(driver);
+	  String emailId = ExcelReader.getValue("EmailId");
+	  checkOutPage.verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage(driver, emailId);
+
 	 }
 
-	 @Test(groups = "CheckOut")
-	 public void testVerifyAddMoreProductsButtonInTheCheckOutPage() throws Exception {
+	 // TC_TrendIn_CheckOut_039
+	 @Test(groups = "CheckOut1")
+	 public void testVerifyPinCodeTextfield() throws Exception {
 	  EndToEnd endToEnd = new EndToEnd();
 	  LoginPage loginPage = new LoginPage();
 	  String megaMenuName = ExcelReader.getValue("MegaMenuName");
@@ -563,12 +681,160 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	  loginPage.verifyForTopButton(driver);
 	  endToEnd.clickOnCartLink(driver);
 	  CheckOutPage checkOutPage = new CheckOutPage();
-	  checkOutPage.clickAndVerifyTheGiftWrapThisOrderCheckBox(driver);
-	  checkOutPage.enterTextInTheTextAreaOfWrapText(driver);
-	  checkOutPage.clickOnSubmitButtonInGiftWrapPage(driver);
-	  checkOutPage.verifyCheckBoxIsSelectedOrNot(driver);
-	  checkOutPage.clickOnTheAddMoreProductsButton(driver);
-	  loginPage.verifyTinyLoginIcon(driver);
-
+	  checkOutPage.clickOnPlaceOrderIncheckOutSummaryPage(driver);
+	  String emailId = ExcelReader.getValue("EmailId");
+	  checkOutPage.verifyToEnterMaiLIdInTheMailIdTextFieldInCheckOutPage(driver, emailId);
+	  String pinCode = ExcelReader.getValue("PinCodeValue");
+	  checkOutPage.toEnterPinCodeInTheZipCodeTextfield(driver, pinCode);
+	  checkOutPage.verifyErrorMessageForInvalidPinCodeTextfield(driver, pinCode);
 	 }
-}
+	
+	// TC_TrendIN_CheckOut_064
+	@Test(groups = "CheckOut")
+	public void testVerifyPlaceOrderForRegisteredUser() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.verifyShippingAddressPageHeader(driver);
+	}
+
+	// TC_TrendIN_CheckOut_065
+	@Test(groups = "CheckOut")
+	public void testClickOnShipNewAddressCheckBox() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.verifyShippingAddressPageHeader(driver);
+		checkOutPage.checkOnShipNewAddressCheckBox(driver);
+		checkOutPage.verifyYourShippingAddressHeader(driver);
+	}
+
+	// TC_TrendIN_CheckOut_066
+	@Test(groups = "CheckOut")
+	public void testClickOnExixtingAddressRadioBtn() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.verifyShippingAddressPageHeader(driver);
+		String addressName = ExcelReader.getValue("AddressName");
+		endToEnd.selectRadioButtonForAddress(driver, addressName);
+		checkOutPage.verifyPreviouslyShippedAddressText(driver);
+	}
+
+	// TC_TrendIN_CheckOut_067
+	@Test(groups = "CheckOut")
+	public void testClickOnEditLinkAndVerifyModifyAddPage() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.verifyShippingAddressPageHeader(driver);
+		checkOutPage.clickOnEditLinkInShippinghAddrsPage(driver);
+		checkOutPage.verifyEditAddressPage(driver);
+	}
+
+	// TC_TrendIN_CheckOut_068
+	@Test(groups = "CheckOut")
+	public void testClickOnContactUsLinkInAddressPage() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.verifyShippingAddressPageHeader(driver);
+		ContactUsPage contactUsPage = new ContactUsPage();
+		contactUsPage.clickContactUsFooter(driver);
+	}
+
+	// TC_TrendIN_CheckOut_069
+	@Test(groups = "CheckOut")
+	public void testClickOnBackButtonInAddressPage() throws Exception {
+		QuickViewPage quickViewPage = new QuickViewPage();
+		LoginPage loginPage = new LoginPage();
+		EndToEnd endToEnd = new EndToEnd();
+		loginPage.loginOrRegister(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
+		quickViewPage.clickProductImage(driver);
+		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
+		quickViewPage.clickAddToMyBag(driver);
+		quickViewPage.checkCartValue(driver);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.clickOnCartIcon(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+		endToEnd.clickOnPlaceOrder();
+		checkOutPage.clickOnBackBtn(driver);
+		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
+	}
+	
+	}
