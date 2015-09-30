@@ -1,0 +1,6 @@
+2015-09-22 13:24:35,008  INFO - Starting suite Default suite
+2015-09-22 13:24:35,023  INFO - Starting test Default test
+2015-09-22 13:24:35,039  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 13:26:08,284  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 13:26:09,606  INFO - Ending test Default test
+2015-09-22 13:26:09,649  INFO - Ending suite Default suite

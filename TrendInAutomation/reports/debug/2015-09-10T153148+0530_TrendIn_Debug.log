@@ -1,0 +1,6 @@
+2015-09-10 15:31:48,352  INFO - Starting suite Default suite
+2015-09-10 15:31:48,370  INFO - Starting test Default test
+2015-09-10 15:31:48,384  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-10 15:32:42,414  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-10 15:32:42,698  INFO - Ending test Default test
+2015-09-10 15:32:42,715  INFO - Ending suite Default suite

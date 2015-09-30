@@ -1,0 +1,6 @@
+2015-08-26 12:12:43,661  INFO - Starting suite Default suite
+2015-08-26 12:12:43,672  INFO - Starting test Default test
+2015-08-26 12:12:58,540  INFO - Starting test method: testValidationMobileNumber
+2015-08-26 12:13:13,929  INFO - Ending test method testValidationMobileNumber
+2015-08-26 12:13:13,938  INFO - Ending test Default test
+2015-08-26 12:13:14,135  INFO - Ending suite Default suite

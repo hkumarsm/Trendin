@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TrendInTestSuite]" allow-return-values="true">
+  <test name="EndToEnd(failed)">
+    <groups>
+      <run>
+        <include name="Scenario"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.trendin.tests.TestEndToEnd">
+        <methods>
+          <include name="testVerifyUserNameInHomePageFromFacebook"/>
+          <include name="finishReport"/>
+          <include name="ending"/>
+          <include name="starting"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="testVerifyLoginOrRegisterFacebookNavigation"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.trendin.tests.TestEndToEnd -->
+    </classes>
+  </test> <!-- EndToEnd(failed) -->
+</suite> <!-- Failed suite [TrendInTestSuite] -->

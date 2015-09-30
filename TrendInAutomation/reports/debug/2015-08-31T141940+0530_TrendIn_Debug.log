@@ -1,0 +1,12 @@
+2015-08-31 14:19:40,726  INFO - Starting suite TrendInTestSuite
+2015-08-31 14:19:40,736  INFO - Starting test ChangePasswordPage
+2015-08-31 14:19:40,747  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 14:20:10,797  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 14:20:10,984  INFO - Starting test method: testModifyOldPassword
+2015-08-31 14:20:43,425  INFO - Ending test method testModifyOldPassword
+2015-08-31 14:20:43,557  INFO - Starting test method: testvalidateErrorMessageForPasswordField
+2015-08-31 14:21:21,543  INFO - Ending test method testvalidateErrorMessageForPasswordField
+2015-08-31 14:21:21,672  INFO - Starting test method: testvalidateErrorMessageForPasswordTextfields
+2015-08-31 14:22:04,235  INFO - Ending test method testvalidateErrorMessageForPasswordTextfields
+2015-08-31 14:22:04,413  INFO - Ending test ChangePasswordPage
+2015-08-31 14:22:04,428  INFO - Ending suite TrendInTestSuite

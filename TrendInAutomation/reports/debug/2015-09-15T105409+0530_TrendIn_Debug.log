@@ -1,0 +1,6 @@
+2015-09-15 10:54:09,762  INFO - Starting suite Default suite
+2015-09-15 10:54:09,822  INFO - Starting test Default test
+2015-09-15 10:54:09,839  INFO - Starting test method: testVerifyPageIsNavigatedToGmail
+2015-09-15 10:55:12,848  INFO - Ending test method testVerifyPageIsNavigatedToGmail
+2015-09-15 10:55:14,216  INFO - Ending test Default test
+2015-09-15 10:55:14,319  INFO - Ending suite Default suite

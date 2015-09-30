@@ -1,0 +1,6 @@
+2015-09-21 12:18:54,876  INFO - Starting suite Default suite
+2015-09-21 12:18:54,886  INFO - Starting test Default test
+2015-09-21 12:18:54,899  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-21 12:20:28,422  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-21 12:20:29,803  INFO - Ending test Default test
+2015-09-21 12:20:29,849  INFO - Ending suite Default suite

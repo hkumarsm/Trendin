@@ -1,0 +1,6 @@
+2015-09-01 13:12:57,615  INFO - Starting suite Default suite
+2015-09-01 13:12:57,626  INFO - Starting test Default test
+2015-09-01 13:12:57,637  INFO - Starting test method: TestVerifyMyCartPage
+2015-09-01 13:13:14,320  INFO - Ending test method TestVerifyMyCartPage
+2015-09-01 13:13:14,325  INFO - Ending test Default test
+2015-09-01 13:13:14,349  INFO - Ending suite Default suite

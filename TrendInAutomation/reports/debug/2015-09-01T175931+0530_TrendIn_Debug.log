@@ -1,0 +1,6 @@
+2015-09-01 17:59:31,206  INFO - Starting suite Default suite
+2015-09-01 17:59:31,226  INFO - Starting test Default test
+2015-09-01 17:59:31,236  INFO - Starting test method: testSaveSelectedDropDownSize
+2015-09-01 18:01:03,406  INFO - Ending test method testSaveSelectedDropDownSize
+2015-09-01 18:01:03,586  INFO - Ending test Default test
+2015-09-01 18:01:03,596  INFO - Ending suite Default suite

@@ -1,0 +1,10 @@
+2015-08-26 19:30:58,533  INFO - Starting suite TrendInTestSuite
+2015-08-26 19:31:22,644  INFO - Starting test NormalUser
+2015-08-26 19:31:37,674  INFO - Starting test method: testDropDownUserName
+2015-08-26 19:34:07,462  INFO - Ending test method testDropDownUserName
+2015-08-26 19:34:37,655  INFO - Starting test method: testExistingUserTextFields
+2015-08-26 19:35:03,055  INFO - Ending test method testExistingUserTextFields
+2015-08-26 19:35:47,947 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message for EMPTY FIELD in the password textfield 
+2015-08-26 19:35:51,990  INFO - Starting test method: testForgotPasswordClick
+2015-08-26 19:37:07,636  INFO - Ending test method testForgotPasswordClick
+2015-08-26 19:37:15,345  INFO - Starting test method: testMyAccountClick

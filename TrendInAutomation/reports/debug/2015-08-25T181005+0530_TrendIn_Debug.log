@@ -1,0 +1,7 @@
+2015-08-25 18:10:06,172  INFO - Starting suite Default suite
+2015-08-25 18:10:06,183  INFO - Starting test Default test
+2015-08-25 18:10:34,375  INFO - Starting test method: testMyOrder
+2015-08-25 18:11:11,514  INFO - Ending test method testMyOrder
+2015-08-25 18:11:11,514 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the order history . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-08-25 18:11:11,796  INFO - Ending test Default test
+2015-08-25 18:11:20,770  INFO - Ending suite Default suite

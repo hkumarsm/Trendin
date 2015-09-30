@@ -1,0 +1,7 @@
+2015-09-14 14:46:06,241  INFO - Starting suite Default suite
+2015-09-14 14:46:06,262  INFO - Starting test Default test
+2015-09-14 14:46:06,283  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 14:47:09,686  INFO - Ending test method testExistingUserTextFields
+2015-09-14 14:47:09,687 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message
+2015-09-14 14:47:11,304  INFO - Ending test Default test
+2015-09-14 14:47:11,356  INFO - Ending suite Default suite

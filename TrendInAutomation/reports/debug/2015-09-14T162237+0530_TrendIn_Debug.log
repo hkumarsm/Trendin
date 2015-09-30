@@ -1,0 +1,44 @@
+2015-09-14 16:22:37,983  INFO - Starting suite TrendInTestSuite
+2015-09-14 16:22:38,000  INFO - Starting test LoginPage
+2015-09-14 16:22:38,015  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 16:24:41,524  INFO - Ending test method testExistingUserTextFields
+2015-09-14 16:24:42,922  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 16:28:17,625  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 16:28:18,942  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-14 16:28:39,131  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-14 16:28:40,370  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-14 16:29:00,465  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-14 16:29:01,703  INFO - Starting test method: testVerifyRegisterPage
+2015-09-14 16:29:23,901  INFO - Ending test method testVerifyRegisterPage
+2015-09-14 16:29:25,142  INFO - Starting test method: testVerifyExistingPage
+2015-09-14 16:29:49,442  INFO - Ending test method testVerifyExistingPage
+2015-09-14 16:29:50,684  INFO - Starting test method: testForgotPasswordClick
+2015-09-14 16:30:18,153  INFO - Ending test method testForgotPasswordClick
+2015-09-14 16:30:19,422  INFO - Starting test method: testRefreshButton
+2015-09-14 16:30:44,573  INFO - Ending test method testRefreshButton
+2015-09-14 16:30:45,811  INFO - Starting test method: testCloseButton
+2015-09-14 16:31:07,180  INFO - Ending test method testCloseButton
+2015-09-14 16:31:08,438  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-14 16:31:31,194  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-14 16:31:32,446  INFO - Starting test method: testVerifySignUpGoogle
+2015-09-14 16:31:55,746  INFO - Ending test method testVerifySignUpGoogle
+2015-09-14 16:31:55,747 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-14 16:31:57,302  INFO - Starting test method: testverifySignUpFacebook
+2015-09-14 16:32:31,680  INFO - Ending test method testverifySignUpFacebook
+2015-09-14 16:32:32,948  INFO - Starting test method: testClickNewTrendIn
+2015-09-14 16:32:57,563  INFO - Ending test method testClickNewTrendIn
+2015-09-14 16:32:58,831  INFO - Starting test method: testMyAccountClick
+2015-09-14 16:33:35,027  INFO - Ending test method testMyAccountClick
+2015-09-14 16:33:35,028 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-14 16:33:36,403  INFO - Starting test method: testMyOrder
+2015-09-14 16:34:19,624  INFO - Ending test method testMyOrder
+2015-09-14 16:34:20,903  INFO - Starting test method: testReturn
+2015-09-14 16:35:02,693  INFO - Ending test method testReturn
+2015-09-14 16:35:04,002  INFO - Starting test method: testUserName
+2015-09-14 16:35:44,069  INFO - Ending test method testUserName
+2015-09-14 16:35:45,324  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-09-14 16:36:15,798  INFO - Ending test method testVerifyLogoutFunctionality
+2015-09-14 16:36:17,060  INFO - Starting test method: testDropDownUserName
+2015-09-14 16:36:47,355  INFO - Ending test method testDropDownUserName
+2015-09-14 16:36:48,609  INFO - Ending test LoginPage
+2015-09-14 16:36:48,690  INFO - Ending suite TrendInTestSuite

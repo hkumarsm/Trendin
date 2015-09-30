@@ -1,0 +1,6 @@
+2015-09-23 10:30:17,568  INFO - Starting suite Default suite
+2015-09-23 10:30:17,585  INFO - Starting test Default test
+2015-09-23 10:30:17,600  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookLogin
+2015-09-23 10:31:31,101  INFO - Ending test method testVerifyMyAddressNewUserFaceBookLogin
+2015-09-23 10:31:31,396  INFO - Ending test Default test
+2015-09-23 10:31:31,416  INFO - Ending suite Default suite

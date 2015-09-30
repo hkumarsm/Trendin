@@ -1,0 +1,16 @@
+2015-09-16 19:46:46,395  INFO - Starting suite Default suite
+2015-09-16 19:46:46,405  INFO - Starting test Default test
+2015-09-16 19:46:46,418  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-16 19:47:22,410  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-16 19:47:22,410 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='Subbrand_filter']//ul[@class='slide_content']//label[contains(.,'Louis Philippe (392)')]"}
+  (Session info: chrome=45.0.2454.85)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir3900_16442}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.85, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 854feb074c2b96a30435d91a17b9301d
+2015-09-16 19:47:24,660  INFO - Ending test Default test
+2015-09-16 19:47:24,706  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-09-02 18:19:46,930  INFO - Starting suite Default suite
+2015-09-02 18:19:46,940  INFO - Starting test Default test
+2015-09-02 18:19:46,950  INFO - Starting test method: testVerifyUserDropDownNavigationPage
+2015-09-02 18:20:28,862  INFO - Ending test method testVerifyUserDropDownNavigationPage
+2015-09-02 18:20:28,862 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-02 18:20:29,385  INFO - Ending test Default test
+2015-09-02 18:20:29,415  INFO - Ending suite Default suite

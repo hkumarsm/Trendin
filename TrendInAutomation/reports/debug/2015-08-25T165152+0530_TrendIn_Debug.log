@@ -1,0 +1,7 @@
+2015-08-25 16:51:52,778  INFO - Starting suite Default suite
+2015-08-25 16:51:52,788  INFO - Starting test Default test
+2015-08-25 16:52:10,052  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-25 16:54:47,019  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-25 16:54:47,019 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-25 16:54:47,300  INFO - Ending test Default test
+2015-08-25 16:54:47,492  INFO - Ending suite Default suite

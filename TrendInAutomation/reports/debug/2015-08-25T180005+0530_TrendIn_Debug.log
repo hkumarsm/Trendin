@@ -1,0 +1,6 @@
+2015-08-25 18:00:06,033  INFO - Starting suite Default suite
+2015-08-25 18:00:06,044  INFO - Starting test Default test
+2015-08-25 18:00:31,145  INFO - Starting test method: testRefreshButton
+2015-08-25 18:00:34,002  INFO - Ending test method testRefreshButton
+2015-08-25 18:00:34,004  INFO - Ending test Default test
+2015-08-25 18:00:34,138  INFO - Ending suite Default suite

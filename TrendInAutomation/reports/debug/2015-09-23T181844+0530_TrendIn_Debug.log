@@ -1,0 +1,7 @@
+2015-09-23 18:18:44,454  INFO - Starting suite Default suite
+2015-09-23 18:18:44,464  INFO - Starting test Default test
+2015-09-23 18:18:44,477  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:19:24,831  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:19:24,831 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement to get the Text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 18:19:25,301  INFO - Ending test Default test
+2015-09-23 18:19:25,326  INFO - Ending suite Default suite

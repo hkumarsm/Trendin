@@ -1,0 +1,6 @@
+2015-09-15 12:44:27,919  INFO - Starting suite Default suite
+2015-09-15 12:44:27,937  INFO - Starting test Default test
+2015-09-15 12:44:27,955  INFO - Starting test method: testVerifyForSignInWithFacebookInLoginPage
+2015-09-15 12:45:26,040  INFO - Ending test method testVerifyForSignInWithFacebookInLoginPage
+2015-09-15 12:45:26,043  INFO - Ending test Default test
+2015-09-15 12:45:26,072  INFO - Ending suite Default suite

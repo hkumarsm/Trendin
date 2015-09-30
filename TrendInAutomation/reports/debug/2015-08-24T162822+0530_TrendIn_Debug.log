@@ -1,0 +1,6 @@
+2015-08-24 16:28:22,522  INFO - Starting suite Default suite
+2015-08-24 16:28:22,535  INFO - Starting test Default test
+2015-08-24 16:28:52,544  INFO - Starting test method: testDropDownUserName
+2015-08-24 16:29:30,910  INFO - Ending test method testDropDownUserName
+2015-08-24 16:29:30,916  INFO - Ending test Default test
+2015-08-24 16:29:31,218  INFO - Ending suite Default suite

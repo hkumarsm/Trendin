@@ -1,0 +1,7 @@
+2015-09-22 16:20:21,985  INFO - Starting suite Default suite
+2015-09-22 16:20:21,996  INFO - Starting test Default test
+2015-09-22 16:20:22,006  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 16:20:55,856  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 16:20:55,857 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:20:56,307  INFO - Ending test Default test
+2015-09-22 16:20:56,331  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-09-10 12:09:15,863  INFO - Starting suite Default suite
+2015-09-10 12:09:15,883  INFO - Starting test Default test
+2015-09-10 12:09:15,902  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 12:09:56,990  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 12:09:56,991 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-10 12:09:57,477  INFO - Ending test Default test
+2015-09-10 12:09:57,500  INFO - Ending suite Default suite

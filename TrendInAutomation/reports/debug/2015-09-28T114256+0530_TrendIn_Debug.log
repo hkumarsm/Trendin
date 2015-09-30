@@ -1,0 +1,7 @@
+2015-09-28 11:42:57,288  INFO - Starting suite Default suite
+2015-09-28 11:42:57,379  INFO - Starting test Default test
+2015-09-28 11:42:57,397  INFO - Starting test method: testVerifyForBuyNowFuctionality
+2015-09-28 11:43:27,380  INFO - Ending test method testVerifyForBuyNowFuctionality
+2015-09-28 11:43:27,381 ERROR - <b> Exception: </b>java.lang.NullPointerException. <b> Cause: </b>
+2015-09-28 11:43:29,486  INFO - Ending test Default test
+2015-09-28 11:43:29,644  INFO - Ending suite Default suite

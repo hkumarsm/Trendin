@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.trendin.tests.TestPages]">
+  <test name="Command line test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.trendin.tests.TestPages">
+        <methods>
+          <include name="start"/>
+          <include name="ending"/>
+          <include name="beforeSuite"/>
+          <include name="end"/>
+          <include name="finishReport"/>
+          <include name="starting"/>
+          <include name="testFirstTestCase"/>
+        </methods>
+      </class> <!-- com.trendin.tests.TestPages -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.trendin.tests.TestPages] -->

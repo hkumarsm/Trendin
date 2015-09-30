@@ -1,0 +1,50 @@
+2015-08-27 13:07:25,733  INFO - Starting suite TrendInTestSuite
+2015-08-27 13:07:25,743  INFO - Starting test NormalUser
+2015-08-27 13:07:25,753  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 13:08:34,061  INFO - Ending test method testClickNewTrendIn
+2015-08-27 13:08:41,712  INFO - Starting test method: testCloseButton
+2015-08-27 13:09:00,058  INFO - Ending test method testCloseButton
+2015-08-27 13:09:00,360  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 13:09:17,516  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 13:09:17,856  INFO - Starting test method: testDropDownUserName
+2015-08-27 13:09:42,254  INFO - Ending test method testDropDownUserName
+2015-08-27 13:09:42,428  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 13:11:50,765  INFO - Ending test method testExistingUserTextFields
+2015-08-27 13:11:50,998  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 13:16:11,250  INFO - Ending test method testForgotPasswordClick
+2015-08-27 13:16:11,370  INFO - Starting test method: testMyAccountClick
+2015-08-27 13:16:51,076  INFO - Ending test method testMyAccountClick
+2015-08-27 13:16:51,198  INFO - Starting test method: testMyOrder
+2015-08-27 13:17:24,341  INFO - Ending test method testMyOrder
+2015-08-27 13:17:24,508  INFO - Starting test method: testRefreshButton
+2015-08-27 13:17:42,783  INFO - Ending test method testRefreshButton
+2015-08-27 13:17:42,944  INFO - Starting test method: testReturn
+2015-08-27 13:18:16,460  INFO - Ending test method testReturn
+2015-08-27 13:18:16,635  INFO - Starting test method: testUserName
+2015-08-27 13:18:50,779  INFO - Ending test method testUserName
+2015-08-27 13:18:50,998  INFO - Starting test method: testVerifyExistingPage
+2015-08-27 13:22:07,464  INFO - Ending test method testVerifyExistingPage
+2015-08-27 13:22:07,640  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-27 13:27:00,789  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-27 13:27:00,789 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-27 13:27:01,166  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-27 13:30:15,389  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-27 13:30:15,502  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-08-27 13:31:29,619  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-08-27 13:31:29,733  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-08-27 13:33:23,610  INFO - Ending test method testVerifyLogoutFunctionality
+2015-08-27 13:33:23,781  INFO - Starting test method: testVerifyRegisterPage
+2015-08-27 13:35:08,954  INFO - Ending test method testVerifyRegisterPage
+2015-08-27 13:35:09,071  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-27 13:35:25,379  INFO - Ending test method testVerifySignUpGoogle
+2015-08-27 13:35:25,380 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the google password. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (128, 22): [object XrayWrapper [object HTMLInputElement]]
+Command duration or timeout: 131 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 5979c0ca-bbc3-48be-b360-817cedc7df27
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-08-27 13:35:25,619  INFO - Starting test method: testverifySignUpFacebook
+2015-08-27 13:35:52,952  INFO - Ending test method testverifySignUpFacebook
+2015-08-27 13:35:53,121  INFO - Ending test NormalUser
+2015-08-27 13:35:53,148  INFO - Ending suite TrendInTestSuite

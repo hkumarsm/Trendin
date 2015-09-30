@@ -1,0 +1,12 @@
+2015-08-26 16:39:56,798  INFO - Starting suite DuplicateAddress
+2015-08-26 16:39:56,809  INFO - Starting test TestLoginPage
+2015-08-26 16:40:13,670  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:40:13,781  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:40:13,791  INFO - Starting test method: testVerifyRegisterPage
+2015-08-26 16:40:16,540  INFO - Ending test method testVerifyRegisterPage
+2015-08-26 16:40:16,540  INFO - Starting test method: testVerifyExistingPage
+2015-08-26 16:40:19,021  INFO - Ending test method testVerifyExistingPage
+2015-08-26 16:40:19,031  INFO - Starting test method: testExistingUserTextFields
+2015-08-26 16:42:08,102  INFO - Ending test method testExistingUserTextFields
+2015-08-26 16:42:08,112  INFO - Ending test TestLoginPage
+2015-08-26 16:42:08,314  INFO - Ending suite DuplicateAddress

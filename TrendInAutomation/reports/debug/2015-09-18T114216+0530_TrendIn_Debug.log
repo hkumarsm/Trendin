@@ -1,0 +1,7 @@
+2015-09-18 11:42:17,054  INFO - Starting suite Default suite
+2015-09-18 11:42:17,105  INFO - Starting test Default test
+2015-09-18 11:42:17,115  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 11:42:38,474  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 11:42:38,475 ERROR - <b> Exception: </b>java.lang.ArrayIndexOutOfBoundsException: 1. <b> Cause: </b>
+2015-09-18 11:42:40,705  INFO - Ending test Default test
+2015-09-18 11:42:40,751  INFO - Ending suite Default suite

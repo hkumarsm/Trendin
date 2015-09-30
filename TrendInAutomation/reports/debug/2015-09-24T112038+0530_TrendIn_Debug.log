@@ -1,0 +1,54 @@
+2015-09-24 11:20:38,645  INFO - Starting suite TrendInTestSuite
+2015-09-24 11:20:38,656  INFO - Starting test EndToEnd
+2015-09-24 11:20:38,673  INFO - Starting test method: testScenario3
+2015-09-24 11:21:50,082  INFO - Ending test method testScenario3
+2015-09-24 11:21:50,083 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Cannot display Checkout summary page. <b> Cause: </b>
+2015-09-24 11:21:50,929  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-24 11:22:41,237  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-24 11:22:41,238 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='accordion']/ul/li/a[contains(.,'PRICE')]"}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c091387e-7898-4214-95b2-d4456228d2c9
+2015-09-24 11:22:41,628  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 11:25:43,284  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 11:25:43,287 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigated to facebook account. <b> Cause: </b>
+2015-09-24 11:25:43,717  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 11:27:35,787  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 11:27:36,112  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 11:28:39,184  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 11:28:39,185 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigated to facebook account. <b> Cause: </b>
+2015-09-24 11:28:39,546  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 11:29:23,560  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 11:29:23,560 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement to get the Text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-24 11:29:23,929  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-24 11:31:18,026  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-24 11:31:18,026 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to Enter zip code for shipping address page.. <b> Cause: </b>
+2015-09-24 11:31:18,446  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 11:32:55,215  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 11:32:55,218 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on quick view of a product category.. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 25 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d6cc4959-aede-416c-b4ea-c2d7519a7345
+2015-09-24 11:32:55,679  INFO - Starting test method: testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 11:34:04,972  INFO - Ending test method testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 11:34:04,973 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='accordion']/ul/li/a[contains(.,'PRICE')]"}
+Command duration or timeout: 3.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 661d498a-3756-4722-b1f3-2c66d34942f0
+2015-09-24 11:34:05,408  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-24 11:36:59,308  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-24 11:36:59,309 ERROR - <b> Exception: </b>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: RemoteWebDriver. <b> Cause: </b>java.net.ConnectException: Connection refused: connect

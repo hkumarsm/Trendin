@@ -1,0 +1,14 @@
+2015-09-24 11:57:57,571  INFO - Starting suite Default suite
+2015-09-24 11:57:57,587  INFO - Starting test Default test
+2015-09-24 11:57:57,604  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-24 11:58:39,895  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-24 11:58:39,897 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='accordion']/ul/li/a[contains(.,'PRICE')]"}
+Command duration or timeout: 3.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 87ff91ca-4695-489d-8742-08fbadd00c0e
+2015-09-24 11:58:40,480  INFO - Ending test Default test
+2015-09-24 11:58:40,508  INFO - Ending suite Default suite

@@ -1,0 +1,37 @@
+2015-08-31 18:43:28,416  INFO - Starting suite TrendInTestSuite
+2015-08-31 18:43:28,427  INFO - Starting test ChangePasswordPage
+2015-08-31 18:43:28,439  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 18:47:10,622  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 18:47:10,872  INFO - Starting test method: testModifyOldPassword
+2015-08-31 18:47:52,504  INFO - Ending test method testModifyOldPassword
+2015-08-31 18:47:52,694  INFO - Starting test method: testValidateInvalidCofirmPassword
+2015-08-31 18:52:34,883  INFO - Ending test method testValidateInvalidCofirmPassword
+2015-08-31 18:52:35,016  INFO - Starting test method: testValidateInvalidNewPasswordTextField
+2015-08-31 18:54:19,745  INFO - Ending test method testValidateInvalidNewPasswordTextField
+2015-08-31 18:54:19,872  INFO - Starting test method: testValidateInvalidOldPassword
+2015-08-31 19:01:27,931  INFO - Ending test method testValidateInvalidOldPassword
+2015-08-31 19:01:35,677  INFO - Starting test method: testValidateNewPasswordField
+2015-08-31 19:02:18,030  INFO - Ending test method testValidateNewPasswordField
+2015-08-31 19:02:18,206  INFO - Starting test method: testValidateNewPasswordTextField
+2015-08-31 19:03:03,330  INFO - Ending test method testValidateNewPasswordTextField
+2015-08-31 19:03:03,455  INFO - Starting test method: testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 19:05:15,312  INFO - Ending test method testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 19:05:15,441  INFO - Starting test method: testvalidateErrorMessageForPasswordField
+2015-08-31 19:05:40,735  INFO - Ending test method testvalidateErrorMessageForPasswordField
+2015-08-31 19:05:40,736 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 88e51c46-43e6-43c8-b22a-f8a8a4067386
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-08-31 19:05:41,084  INFO - Starting test method: testvalidateErrorMessageForPasswordTextfields
+2015-08-31 19:06:26,119  INFO - Ending test method testvalidateErrorMessageForPasswordTextfields
+2015-08-31 19:06:26,244  INFO - Starting test method: testvalidateInvalidMismatchNewAndCofirmPassword
+2015-08-31 19:07:03,951  INFO - Ending test method testvalidateInvalidMismatchNewAndCofirmPassword
+2015-08-31 19:07:04,122  INFO - Ending test ChangePasswordPage
+2015-08-31 19:07:04,148  INFO - Ending suite TrendInTestSuite

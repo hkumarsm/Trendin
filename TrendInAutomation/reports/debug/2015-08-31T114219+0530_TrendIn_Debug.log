@@ -1,0 +1,10 @@
+2015-08-31 11:42:19,376  INFO - Starting suite Default suite
+2015-08-31 11:42:19,387  INFO - Starting test Default test
+2015-08-31 11:42:19,397  INFO - Starting test method: testModifyOldPassword
+2015-08-31 11:42:48,137  INFO - Ending test method testModifyOldPassword
+2015-08-31 11:42:48,137 ERROR - <b> Exception: </b>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: RemoteWebDriver. <b> Cause: </b>java.net.ConnectException: Connection refused: connect
+2015-08-31 11:42:49,478  INFO - Ending test Default test
+2015-08-31 11:42:49,509  INFO - Ending suite Default suite

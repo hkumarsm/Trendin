@@ -1,0 +1,13 @@
+2015-09-24 15:15:55,902  INFO - Starting suite Default suite
+2015-09-24 15:15:55,916  INFO - Starting test Default test
+2015-09-24 15:15:55,931  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 15:16:50,037  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 15:16:50,038 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: clickOnCartIconXpath, for the locator: xpath. <b> Cause: </b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 3.04 seconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a6f720f4-3f7f-460c-936c-663ce4058e6a
+2015-09-24 15:16:50,518  INFO - Ending test Default test
+2015-09-24 15:16:50,543  INFO - Ending suite Default suite

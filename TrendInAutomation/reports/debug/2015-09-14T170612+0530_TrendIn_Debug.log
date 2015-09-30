@@ -1,0 +1,34 @@
+2015-09-14 17:06:12,346  INFO - Starting suite TrendInTestSuite
+2015-09-14 17:06:12,364  INFO - Starting test LoginPage
+2015-09-14 17:06:12,381  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 17:06:50,368  INFO - Ending test method testValidationMobileNumber
+2015-09-14 17:06:51,875  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 17:07:15,771  INFO - Ending test method testSignUpPasswordField
+2015-09-14 17:07:15,772 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message
+2015-09-14 17:07:17,341  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 17:07:40,062  INFO - Ending test method testLoginPageIconClick
+2015-09-14 17:07:41,447  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 17:08:05,474  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 17:08:06,836  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 17:08:32,968  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 17:08:34,373  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 17:09:00,929  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 17:09:00,930 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield
+2015-09-14 17:09:02,372  INFO - Starting test method: testValidateMailIdField
+2015-09-14 17:09:36,058  INFO - Ending test method testValidateMailIdField
+2015-09-14 17:09:37,445  INFO - Starting test method: testValidatePasswordField
+2015-09-14 17:10:03,081  INFO - Ending test method testValidatePasswordField
+2015-09-14 17:10:04,501  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 17:10:29,021  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 17:10:30,439  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 17:10:50,863  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,867  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,873  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,876  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,884  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,889  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,901  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,907  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,915  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:10:50,918  INFO - Ending test LoginPage
+2015-09-14 17:10:51,009  INFO - Ending suite TrendInTestSuite

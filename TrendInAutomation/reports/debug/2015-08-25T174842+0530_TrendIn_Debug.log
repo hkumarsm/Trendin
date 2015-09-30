@@ -1,0 +1,6 @@
+2015-08-25 17:48:42,273  INFO - Starting suite Default suite
+2015-08-25 17:48:42,284  INFO - Starting test Default test
+2015-08-25 17:48:56,261  INFO - Starting test method: testVerifyExistingPage
+2015-08-25 17:48:59,365  INFO - Ending test method testVerifyExistingPage
+2015-08-25 17:48:59,368  INFO - Ending test Default test
+2015-08-25 17:48:59,543  INFO - Ending suite Default suite

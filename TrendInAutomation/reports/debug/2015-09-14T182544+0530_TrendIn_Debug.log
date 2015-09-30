@@ -1,0 +1,39 @@
+2015-09-14 18:25:44,902  INFO - Starting suite TrendInTestSuite
+2015-09-14 18:25:44,915  INFO - Starting test LoginPage
+2015-09-14 18:25:44,931  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 18:26:23,015  INFO - Ending test method testValidationMobileNumber
+2015-09-14 18:26:24,469  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 18:26:51,472  INFO - Ending test method testSignUpPasswordField
+2015-09-14 18:26:52,758  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 18:27:14,463  INFO - Ending test method testLoginPageIconClick
+2015-09-14 18:27:15,725  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 18:27:38,654  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 18:27:39,931  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 18:28:05,638  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 18:28:06,906  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 18:28:34,710  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 18:28:34,711 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to enter the password. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: emailXpath, for the Locator: Id
+2015-09-14 18:28:36,245  INFO - Starting test method: testValidateMailIdField
+2015-09-14 18:29:09,830  INFO - Ending test method testValidateMailIdField
+2015-09-14 18:29:11,082  INFO - Starting test method: testValidatePasswordField
+2015-09-14 18:29:36,622  INFO - Ending test method testValidatePasswordField
+2015-09-14 18:29:37,958  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 18:30:00,448  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 18:30:01,714  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 18:30:25,955  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 18:30:27,221  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-14 18:30:50,258  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-14 18:30:51,518  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 18:31:17,694  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 18:31:18,949  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-14 18:31:42,708  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-14 18:31:43,967  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-14 18:32:11,547  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-14 18:32:12,843  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-14 18:32:41,684  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-14 18:32:43,016  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:33:08,175  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:33:08,179  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:33:08,182  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:33:08,184  INFO - Ending test LoginPage
+2015-09-14 18:33:08,243  INFO - Ending suite TrendInTestSuite

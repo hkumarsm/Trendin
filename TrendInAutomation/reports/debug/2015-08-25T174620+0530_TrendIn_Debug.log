@@ -1,0 +1,6 @@
+2015-08-25 17:46:21,148  INFO - Starting suite Default suite
+2015-08-25 17:46:21,161  INFO - Starting test Default test
+2015-08-25 17:46:35,016  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-25 17:46:35,128  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-25 17:46:35,128  INFO - Ending test Default test
+2015-08-25 17:46:35,308  INFO - Ending suite Default suite

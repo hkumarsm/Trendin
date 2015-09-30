@@ -1,0 +1,15 @@
+2015-08-31 19:09:25,799  INFO - Starting suite TrendInTestSuite
+2015-08-31 19:09:25,811  INFO - Starting test ChangePasswordPage
+2015-08-31 19:09:25,822  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 19:09:56,689  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:09:56,863  INFO - Starting test method: testModifyOldPassword
+2015-08-31 19:10:29,545  INFO - Ending test method testModifyOldPassword
+2015-08-31 19:10:29,742  INFO - Starting test method: testValidateInvalidCofirmPassword
+2015-08-31 19:11:03,473  INFO - Ending test method testValidateInvalidCofirmPassword
+2015-08-31 19:11:03,680  INFO - Starting test method: testValidateInvalidNewPasswordTextField
+2015-08-31 19:13:35,847  INFO - Ending test method testValidateInvalidNewPasswordTextField
+2015-08-31 19:13:35,847 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-31 19:13:43,666  INFO - Starting test method: testValidateInvalidOldPassword
+2015-08-31 19:16:20,370  INFO - Ending test method testValidateInvalidOldPassword
+2015-08-31 19:16:20,371 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-31 19:16:27,495  INFO - Starting test method: testValidateNewPasswordField

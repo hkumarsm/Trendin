@@ -1,0 +1,6 @@
+2015-09-22 12:43:42,269  INFO - Starting suite Default suite
+2015-09-22 12:43:42,286  INFO - Starting test Default test
+2015-09-22 12:43:42,303  INFO - Starting test method: testVerifyMyAddressPage
+2015-09-22 12:44:17,787  INFO - Ending test method testVerifyMyAddressPage
+2015-09-22 12:44:19,132  INFO - Ending test Default test
+2015-09-22 12:44:19,161  INFO - Ending suite Default suite

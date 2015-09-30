@@ -1,0 +1,6 @@
+2015-09-23 18:14:30,544  INFO - Starting suite Default suite
+2015-09-23 18:14:30,559  INFO - Starting test Default test
+2015-09-23 18:14:30,576  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-23 18:16:44,121  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-23 18:16:44,528  INFO - Ending test Default test
+2015-09-23 18:16:44,546  INFO - Ending suite Default suite

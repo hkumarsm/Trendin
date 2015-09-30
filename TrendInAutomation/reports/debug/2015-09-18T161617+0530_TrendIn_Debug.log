@@ -1,0 +1,7 @@
+2015-09-18 16:16:17,189  INFO - Starting suite Default suite
+2015-09-18 16:16:17,200  INFO - Starting test Default test
+2015-09-18 16:16:17,214  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 16:16:43,735  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 16:16:43,736 ERROR - <b> Exception: </b>java.lang.NullPointerException. <b> Cause: </b>
+2015-09-18 16:16:45,793  INFO - Ending test Default test
+2015-09-18 16:16:45,896  INFO - Ending suite Default suite

@@ -1,0 +1,6 @@
+2015-09-23 18:17:39,159  INFO - Starting suite Default suite
+2015-09-23 18:17:39,174  INFO - Starting test Default test
+2015-09-23 18:17:39,188  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:18:24,679  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:18:25,021  INFO - Ending test Default test
+2015-09-23 18:18:25,042  INFO - Ending suite Default suite

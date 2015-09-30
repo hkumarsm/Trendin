@@ -1,0 +1,38 @@
+2015-09-14 19:40:07,197  INFO - Starting suite TrendInTestSuite
+2015-09-14 19:40:07,215  INFO - Starting test LoginPage
+2015-09-14 19:40:07,229  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 19:40:46,913  INFO - Ending test method testValidationMobileNumber
+2015-09-14 19:40:48,201  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 19:41:14,621  INFO - Ending test method testSignUpPasswordField
+2015-09-14 19:41:15,932  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 19:41:37,037  INFO - Ending test method testLoginPageIconClick
+2015-09-14 19:41:38,269  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 19:42:00,675  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 19:42:01,925  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 19:42:27,082  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 19:42:28,370  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 19:42:55,381  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 19:42:56,704  INFO - Starting test method: testValidateMailIdField
+2015-09-14 19:43:29,160  INFO - Ending test method testValidateMailIdField
+2015-09-14 19:43:30,467  INFO - Starting test method: testValidatePasswordField
+2015-09-14 19:43:55,612  INFO - Ending test method testValidatePasswordField
+2015-09-14 19:43:56,863  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 19:44:20,162  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 19:44:21,410  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 19:44:44,580  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 19:44:45,836  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-14 19:45:07,877  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-14 19:45:09,117  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 19:45:36,369  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 19:45:37,611  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-14 19:45:59,913  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-14 19:46:01,157  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-14 19:46:27,153  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-14 19:46:28,400  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-14 19:46:56,390  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-14 19:46:57,628  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 19:47:23,234  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 19:47:23,242  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 19:47:23,245  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 19:47:23,248  INFO - Ending test LoginPage
+2015-09-14 19:47:23,370  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,6 @@
+2015-09-22 13:37:27,900  INFO - Starting suite Default suite
+2015-09-22 13:37:27,911  INFO - Starting test Default test
+2015-09-22 13:37:27,922  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyOrderHistoryPage
+2015-09-22 13:38:42,154  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyOrderHistoryPage
+2015-09-22 13:38:43,467  INFO - Ending test Default test
+2015-09-22 13:38:43,503  INFO - Ending suite Default suite

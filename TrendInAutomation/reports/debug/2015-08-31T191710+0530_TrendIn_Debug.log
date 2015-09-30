@@ -1,0 +1,26 @@
+2015-08-31 19:17:10,406  INFO - Starting suite TrendInTestSuite
+2015-08-31 19:17:10,418  INFO - Starting test ChangePasswordPage
+2015-08-31 19:17:10,430  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 19:17:34,611  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:34,613 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 152 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 51b94915-09de-420f-99a7-905280d19b6a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-08-31 19:17:35,966  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:35,970  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:35,973  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:35,976  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,004  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,007  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,011  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,013  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,016  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,020  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 19:17:36,022  INFO - Ending test ChangePasswordPage
+2015-08-31 19:17:36,076  INFO - Ending suite TrendInTestSuite

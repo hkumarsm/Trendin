@@ -1,0 +1,7 @@
+2015-08-25 18:04:00,895  INFO - Starting suite Default suite
+2015-08-25 18:04:00,907  INFO - Starting test Default test
+2015-08-25 18:04:33,787  INFO - Starting test method: testverifySignUpFacebook
+2015-08-25 18:04:39,386  INFO - Ending test method testverifySignUpFacebook
+2015-08-25 18:04:39,387 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign up with Google button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-08-25 18:04:39,680  INFO - Ending test Default test
+2015-08-25 18:04:39,992  INFO - Ending suite Default suite

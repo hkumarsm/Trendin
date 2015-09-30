@@ -1,0 +1,11 @@
+2015-08-26 16:23:59,086  INFO - Starting suite DuplicateAddress
+2015-08-26 16:23:59,098  INFO - Starting test TestLoginPage
+2015-08-26 16:24:16,084  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:24:16,196  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:24:16,198  INFO - Starting test method: testVerifyRegisterPage
+2015-08-26 16:24:18,912  INFO - Ending test method testVerifyRegisterPage
+2015-08-26 16:24:18,915  INFO - Starting test method: testVerifyExistingPage
+2015-08-26 16:24:21,305  INFO - Ending test method testVerifyExistingPage
+2015-08-26 16:24:21,305 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign in with Google button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign in with Google button
+2015-08-26 16:24:21,538  INFO - Ending test TestLoginPage
+2015-08-26 16:24:21,666  INFO - Ending suite DuplicateAddress

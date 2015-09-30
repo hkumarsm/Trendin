@@ -1,0 +1,18 @@
+2015-09-15 18:47:49,756  INFO - Starting suite TrendInTestSuite
+2015-09-15 18:47:49,767  INFO - Starting test TrackOrderPage
+2015-09-15 18:47:49,780  INFO - Starting test method: testTrack
+2015-09-15 18:48:44,893  INFO - Ending test method testTrack
+2015-09-15 18:48:46,696  INFO - Starting test method: testTrackOrderPopUp
+2015-09-15 18:49:36,224  INFO - Ending test method testTrackOrderPopUp
+2015-09-15 18:49:37,732  INFO - Starting test method: verifyEmailIdTextBox
+2015-09-15 18:50:42,632  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,645  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,654  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,659  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,663  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,667  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,670  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,673  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,682  INFO - Ending test method verifyEmailIdTextBox
+2015-09-15 18:50:42,690  INFO - Ending test TrackOrderPage
+2015-09-15 18:50:42,766  INFO - Ending suite TrendInTestSuite

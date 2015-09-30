@@ -1,0 +1,6 @@
+2015-09-22 16:24:11,999  INFO - Starting suite Default suite
+2015-09-22 16:24:12,012  INFO - Starting test Default test
+2015-09-22 16:24:12,027  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 16:28:35,227  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 16:28:35,501  INFO - Ending test Default test
+2015-09-22 16:28:35,518  INFO - Ending suite Default suite

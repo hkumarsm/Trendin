@@ -1,0 +1,44 @@
+2015-09-14 15:07:42,870  INFO - Starting suite TrendInTestSuite
+2015-09-14 15:07:42,889  INFO - Starting test LoginPage
+2015-09-14 15:07:42,907  INFO - Starting test method: testClickNewTrendIn
+2015-09-14 15:08:14,278  INFO - Ending test method testClickNewTrendIn
+2015-09-14 15:08:15,522  INFO - Starting test method: testCloseButton
+2015-09-14 15:08:38,025  INFO - Ending test method testCloseButton
+2015-09-14 15:08:39,294  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-14 15:09:01,076  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-14 15:09:02,335  INFO - Starting test method: testDropDownUserName
+2015-09-14 15:09:34,416  INFO - Ending test method testDropDownUserName
+2015-09-14 15:09:35,671  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 15:10:04,252  INFO - Ending test method testExistingUserTextFields
+2015-09-14 15:10:04,252 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message
+2015-09-14 15:10:05,831  INFO - Starting test method: testForgotPasswordClick
+2015-09-14 15:10:33,453  INFO - Ending test method testForgotPasswordClick
+2015-09-14 15:10:34,704  INFO - Starting test method: testMyAccountClick
+2015-09-14 15:11:25,506  INFO - Ending test method testMyAccountClick
+2015-09-14 15:11:26,819  INFO - Starting test method: testMyOrder
+2015-09-14 15:12:07,585  INFO - Ending test method testMyOrder
+2015-09-14 15:12:08,822  INFO - Starting test method: testRefreshButton
+2015-09-14 15:12:32,522  INFO - Ending test method testRefreshButton
+2015-09-14 15:12:33,767  INFO - Starting test method: testReturn
+2015-09-14 15:13:15,535  INFO - Ending test method testReturn
+2015-09-14 15:13:16,769  INFO - Starting test method: testUserName
+2015-09-14 15:13:56,137  INFO - Ending test method testUserName
+2015-09-14 15:13:57,393  INFO - Starting test method: testVerifyExistingPage
+2015-09-14 15:14:22,075  INFO - Ending test method testVerifyExistingPage
+2015-09-14 15:14:23,320  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-14 15:14:43,523  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-14 15:14:44,844  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-14 15:15:04,454  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-14 15:15:05,705  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-09-14 15:15:42,661  INFO - Ending test method testVerifyLogoutFunctionality
+2015-09-14 15:15:43,960  INFO - Starting test method: testVerifyRegisterPage
+2015-09-14 15:16:07,022  INFO - Ending test method testVerifyRegisterPage
+2015-09-14 15:16:08,273  INFO - Starting test method: testVerifySignUpGoogle
+2015-09-14 15:16:31,766  INFO - Ending test method testVerifySignUpGoogle
+2015-09-14 15:16:31,767 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-14 15:16:33,172  INFO - Starting test method: testverifySignUpFacebook
+2015-09-14 15:17:09,470  INFO - Ending test method testverifySignUpFacebook
+2015-09-14 15:17:10,761  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 15:18:03,468  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:18:03,475  INFO - Ending test LoginPage
+2015-09-14 15:18:03,515  INFO - Ending suite TrendInTestSuite

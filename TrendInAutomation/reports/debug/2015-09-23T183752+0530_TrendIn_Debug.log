@@ -1,0 +1,20 @@
+2015-09-23 18:37:52,315  INFO - Starting suite TrendInTestSuite
+2015-09-23 18:37:52,329  INFO - Starting test EndToEnd
+2015-09-23 18:37:52,343  INFO - Starting test method: testVerifyCoupnsAndVouchersGoogleNavigation
+2015-09-23 18:38:34,066  INFO - Ending test method testVerifyCoupnsAndVouchersGoogleNavigation
+2015-09-23 18:38:34,067 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 18:38:34,603  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 18:39:12,942  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 18:39:12,943 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 18:39:13,372  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:39:50,580  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:39:50,581 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement to get the Text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 18:39:50,940  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:40:33,257  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:40:33,522  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-23 18:42:44,474  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-23 18:42:44,474 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable tp verify the usernames. <b> Cause: </b>
+2015-09-23 18:42:44,979  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-23 18:44:56,199  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-23 18:44:56,550  INFO - Ending test EndToEnd
+2015-09-23 18:44:56,595  INFO - Ending suite TrendInTestSuite

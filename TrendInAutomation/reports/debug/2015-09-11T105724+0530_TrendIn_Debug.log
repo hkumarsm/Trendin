@@ -1,0 +1,6 @@
+2015-09-11 10:57:24,405  INFO - Starting suite Default suite
+2015-09-11 10:57:24,423  INFO - Starting test Default test
+2015-09-11 10:57:24,439  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 10:58:21,582  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 10:58:21,869  INFO - Ending test Default test
+2015-09-11 10:58:21,888  INFO - Ending suite Default suite

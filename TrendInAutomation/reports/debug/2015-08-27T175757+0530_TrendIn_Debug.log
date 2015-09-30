@@ -1,0 +1,51 @@
+2015-08-27 17:57:57,602  INFO - Starting suite TrendInTestSuite
+2015-08-27 17:57:57,613  INFO - Starting test NormalUserRegisterPage
+2015-08-27 17:57:57,624  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 17:58:17,103  INFO - Ending test method testClickNewTrendIn
+2015-08-27 17:58:17,219  INFO - Starting test method: testCloseButton
+2015-08-27 17:58:34,464  INFO - Ending test method testCloseButton
+2015-08-27 17:58:34,709  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 18:01:55,404  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 18:02:03,462  INFO - Starting test method: testDropDownUserName
+2015-08-27 18:03:33,838  INFO - Ending test method testDropDownUserName
+2015-08-27 18:03:40,840  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 18:04:06,063  INFO - Ending test method testExistingUserTextFields
+2015-08-27 18:04:06,063 ERROR - <b> Exception: </b>java.lang.Exception: Unable to verify te error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify te error message
+2015-08-27 18:04:06,485  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 18:04:25,855  INFO - Ending test method testForgotPasswordClick
+2015-08-27 18:04:25,968  INFO - Starting test method: testMyAccountClick
+2015-08-27 18:05:01,154  INFO - Ending test method testMyAccountClick
+2015-08-27 18:05:01,275  INFO - Starting test method: testMyOrder
+2015-08-27 18:07:35,472  INFO - Ending test method testMyOrder
+2015-08-27 18:07:35,473 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the order history . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-08-27 18:07:43,181  INFO - Starting test method: testRefreshButton
+2015-08-27 18:08:01,667  INFO - Ending test method testRefreshButton
+2015-08-27 18:08:01,776  INFO - Starting test method: testReturn
+2015-08-27 18:08:28,203  INFO - Ending test method testReturn
+2015-08-27 18:08:28,394  INFO - Starting test method: testUserName
+2015-08-27 18:08:55,793  INFO - Ending test method testUserName
+2015-08-27 18:08:55,993  INFO - Starting test method: testVerifyExistingPage
+2015-08-27 18:09:12,103  INFO - Ending test method testVerifyExistingPage
+2015-08-27 18:09:12,217  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-27 18:12:34,238  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-27 18:12:34,409  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-27 18:14:30,679  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-27 18:14:39,433  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-08-27 18:14:54,680  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-08-27 18:14:54,791  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-08-27 18:15:18,942  INFO - Ending test method testVerifyLogoutFunctionality
+2015-08-27 18:15:19,102  INFO - Starting test method: testVerifyRegisterPage
+2015-08-27 18:15:36,433  INFO - Ending test method testVerifyRegisterPage
+2015-08-27 18:15:36,546  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-27 18:15:56,172  INFO - Ending test method testVerifySignUpGoogle
+2015-08-27 18:15:56,172 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the google password. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (128, 22): [object XrayWrapper [object HTMLInputElement]]
+Command duration or timeout: 132 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 801df0d2-c16a-47de-81fd-2b802cd42bdf
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-08-27 18:15:56,396  INFO - Starting test method: testverifySignUpFacebook
+2015-08-27 18:16:17,927  INFO - Ending test method testverifySignUpFacebook
+2015-08-27 18:16:18,123  INFO - Ending test NormalUserRegisterPage
+2015-08-27 18:16:18,154  INFO - Ending suite TrendInTestSuite

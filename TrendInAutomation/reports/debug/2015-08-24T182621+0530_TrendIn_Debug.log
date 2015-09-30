@@ -1,0 +1,6 @@
+2015-08-24 18:26:22,050  INFO - Starting suite Default suite
+2015-08-24 18:26:22,063  INFO - Starting test Default test
+2015-08-24 18:26:58,356  INFO - Starting test method: testReturn
+2015-08-24 18:27:24,527  INFO - Ending test method testReturn
+2015-08-24 18:27:24,530  INFO - Ending test Default test
+2015-08-24 18:27:24,840  INFO - Ending suite Default suite

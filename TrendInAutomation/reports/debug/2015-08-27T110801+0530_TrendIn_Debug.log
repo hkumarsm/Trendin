@@ -1,0 +1,34 @@
+2015-08-27 11:08:01,579  INFO - Starting suite TrendInTestSuite
+2015-08-27 11:08:01,590  INFO - Starting test NormalUser
+2015-08-27 11:08:01,601  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 11:08:21,021  INFO - Ending test method testClickNewTrendIn
+2015-08-27 11:08:21,140  INFO - Starting test method: testCloseButton
+2015-08-27 11:08:47,041  INFO - Ending test method testCloseButton
+2015-08-27 11:08:47,268  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 11:10:10,778  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 11:10:11,007  INFO - Starting test method: testDropDownUserName
+2015-08-27 11:12:11,213  INFO - Ending test method testDropDownUserName
+2015-08-27 11:12:11,414  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 11:14:32,661  INFO - Ending test method testExistingUserTextFields
+2015-08-27 11:14:32,848  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 11:14:52,787  INFO - Ending test method testForgotPasswordClick
+2015-08-27 11:14:52,958  INFO - Starting test method: testMyAccountClick
+2015-08-27 11:15:24,553  INFO - Ending test method testMyAccountClick
+2015-08-27 11:15:24,681  INFO - Starting test method: testMyOrder
+2015-08-27 11:15:51,046  INFO - Ending test method testMyOrder
+2015-08-27 11:15:51,251  INFO - Starting test method: testRefreshButton
+2015-08-27 11:16:07,176  INFO - Ending test method testRefreshButton
+2015-08-27 11:16:07,339  INFO - Starting test method: testReturn
+2015-08-27 11:16:42,493  INFO - Ending test method testReturn
+2015-08-27 11:16:42,677  INFO - Starting test method: testUserName
+2015-08-27 11:16:57,966  INFO - Ending test method testUserName
+2015-08-27 11:16:57,968  INFO - Ending test method testUserName
+2015-08-27 11:16:57,970  INFO - Ending test method testUserName
+2015-08-27 11:16:57,972  INFO - Ending test method testUserName
+2015-08-27 11:16:57,981  INFO - Ending test method testUserName
+2015-08-27 11:16:57,983  INFO - Ending test method testUserName
+2015-08-27 11:16:57,985  INFO - Ending test method testUserName
+2015-08-27 11:16:57,987  INFO - Ending test method testUserName
+2015-08-27 11:16:57,990  INFO - Ending test method testUserName
+2015-08-27 11:16:57,995  INFO - Ending test NormalUser
+2015-08-27 11:16:58,026  INFO - Ending suite TrendInTestSuite

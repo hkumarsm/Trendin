@@ -1,0 +1,7 @@
+2015-08-27 18:52:26,948  INFO - Starting suite Default suite
+2015-08-27 18:52:26,959  INFO - Starting test Default test
+2015-08-27 18:52:26,969  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 18:53:16,843  INFO - Ending test method testExistingUserTextFields
+2015-08-27 18:53:16,844 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on the login button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: existingLoginButtonXpath, for the locator: Xpath
+2015-08-27 18:53:18,205  INFO - Ending test Default test
+2015-08-27 18:53:18,236  INFO - Ending suite Default suite

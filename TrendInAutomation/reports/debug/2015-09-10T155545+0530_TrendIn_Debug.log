@@ -1,0 +1,6 @@
+2015-09-10 15:55:45,275  INFO - Starting suite Default suite
+2015-09-10 15:55:45,290  INFO - Starting test Default test
+2015-09-10 15:55:45,303  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-10 15:56:22,876  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-10 15:56:23,135  INFO - Ending test Default test
+2015-09-10 15:56:23,152  INFO - Ending suite Default suite

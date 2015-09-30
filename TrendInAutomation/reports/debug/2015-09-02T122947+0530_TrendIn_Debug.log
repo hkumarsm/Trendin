@@ -1,0 +1,6 @@
+2015-09-02 12:29:47,578  INFO - Starting suite Default suite
+2015-09-02 12:29:47,589  INFO - Starting test Default test
+2015-09-02 12:29:47,600  INFO - Starting test method: testVerifyUserDropDownNavigationPage
+2015-09-02 12:30:49,410  INFO - Ending test method testVerifyUserDropDownNavigationPage
+2015-09-02 12:30:49,601  INFO - Ending test Default test
+2015-09-02 12:30:49,615  INFO - Ending suite Default suite

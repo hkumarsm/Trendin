@@ -1,0 +1,27 @@
+2015-09-11 13:02:30,101  INFO - Starting suite TrendInTestSuite
+2015-09-11 13:02:30,115  INFO - Starting test LoginPage
+2015-09-11 13:02:30,129  INFO - Starting test method: testLoginPageIconClick
+2015-09-11 13:02:55,285  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:02:55,630  INFO - Starting test method: testSignUpPasswordField
+2015-09-11 13:03:17,795  INFO - Ending test method testSignUpPasswordField
+2015-09-11 13:03:18,064  INFO - Starting test method: testValidateMailIdField
+2015-09-11 13:03:51,066  INFO - Ending test method testValidateMailIdField
+2015-09-11 13:03:51,370  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-11 13:04:14,294  INFO - Ending test method testValidateMailIdTextfield
+2015-09-11 13:04:14,573  INFO - Starting test method: testValidatePasswordField
+2015-09-11 13:04:43,167  INFO - Ending test method testValidatePasswordField
+2015-09-11 13:04:43,440  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,586  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,592  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,596  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,601  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,604  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,608  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,620  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,623  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,626  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,629  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,634  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,642  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:05:04,646  INFO - Ending test LoginPage
+2015-09-11 13:05:04,718  INFO - Ending suite TrendInTestSuite

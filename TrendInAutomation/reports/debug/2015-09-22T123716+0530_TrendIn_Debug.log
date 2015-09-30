@@ -1,0 +1,6 @@
+2015-09-22 12:37:17,116  INFO - Starting suite Default suite
+2015-09-22 12:37:17,138  INFO - Starting test Default test
+2015-09-22 12:37:17,149  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:38:37,271  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:38:38,662  INFO - Ending test Default test
+2015-09-22 12:38:38,709  INFO - Ending suite Default suite

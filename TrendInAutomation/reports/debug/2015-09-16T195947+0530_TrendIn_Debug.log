@@ -1,0 +1,7 @@
+2015-09-16 19:59:47,830  INFO - Starting suite Default suite
+2015-09-16 19:59:47,840  INFO - Starting test Default test
+2015-09-16 19:59:47,860  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-16 20:01:57,694  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-16 20:01:57,694 ERROR - <b> Exception: </b>java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.. <b> Cause: </b>
+2015-09-16 20:01:59,982  INFO - Ending test Default test
+2015-09-16 20:02:00,033  INFO - Ending suite Default suite

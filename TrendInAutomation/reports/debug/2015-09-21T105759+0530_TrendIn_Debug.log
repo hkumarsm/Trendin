@@ -1,0 +1,24 @@
+2015-09-21 10:57:59,951  INFO - Starting suite TrendInTestSuite
+2015-09-21 10:57:59,961  INFO - Starting test ENDToEnd
+2015-09-21 10:57:59,972  INFO - Starting test method: testScenario3
+2015-09-21 10:58:38,453  INFO - Ending test method testScenario3
+2015-09-21 10:58:38,454 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='product_rows']/div[1]//div//a/span[.='QUICK VIEW']"}
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir2288_5781}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6cf8a8d9e44687d435292c2c101032a. <b> Cause: </b>
+2015-09-21 10:58:39,994  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-21 11:00:16,058  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-21 11:00:17,402  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-21 11:01:42,269  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-21 11:01:43,581  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-21 11:03:16,896  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-21 11:03:18,227  INFO - Starting test method: testVerifyOrderPlacingByLogginginInHomePage
+2015-09-21 11:04:49,267  INFO - Ending test method testVerifyOrderPlacingByLogginginInHomePage
+2015-09-21 11:04:50,859  INFO - Ending test ENDToEnd
+2015-09-21 11:04:50,913  INFO - Ending suite TrendInTestSuite

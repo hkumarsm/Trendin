@@ -1,0 +1,43 @@
+2015-09-10 17:38:07,963  INFO - Starting suite TrendInTestSuite
+2015-09-10 17:38:07,981  INFO - Starting test LoginPage
+2015-09-10 17:38:07,998  INFO - Starting test method: testClickNewTrendIn
+2015-09-10 17:38:33,145  INFO - Ending test method testClickNewTrendIn
+2015-09-10 17:38:33,418  INFO - Starting test method: testCloseButton
+2015-09-10 17:38:56,347  INFO - Ending test method testCloseButton
+2015-09-10 17:38:56,618  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-10 17:39:19,199  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-10 17:39:19,475  INFO - Starting test method: testDropDownUserName
+2015-09-10 17:39:51,420  INFO - Ending test method testDropDownUserName
+2015-09-10 17:39:51,669  INFO - Starting test method: testExistingUserTextFields
+2015-09-10 17:40:23,960  INFO - Ending test method testExistingUserTextFields
+2015-09-10 17:40:23,960 ERROR - <b> Exception: </b>java.lang.Exception: Unable to verify te error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify te error message
+2015-09-10 17:40:24,392  INFO - Starting test method: testForgotPasswordClick
+2015-09-10 17:40:49,592  INFO - Ending test method testForgotPasswordClick
+2015-09-10 17:40:49,848  INFO - Starting test method: testMyAccountClick
+2015-09-10 17:41:41,538  INFO - Ending test method testMyAccountClick
+2015-09-10 17:41:41,815  INFO - Starting test method: testMyOrder
+2015-09-10 17:42:24,291  INFO - Ending test method testMyOrder
+2015-09-10 17:42:24,572  INFO - Starting test method: testRefreshButton
+2015-09-10 17:42:46,719  INFO - Ending test method testRefreshButton
+2015-09-10 17:42:46,979  INFO - Starting test method: testReturn
+2015-09-10 17:43:29,394  INFO - Ending test method testReturn
+2015-09-10 17:43:29,697  INFO - Starting test method: testUserName
+2015-09-10 17:44:14,561  INFO - Ending test method testUserName
+2015-09-10 17:44:14,827  INFO - Starting test method: testVerifyExistingPage
+2015-09-10 17:44:39,927  INFO - Ending test method testVerifyExistingPage
+2015-09-10 17:44:40,696  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-10 17:48:08,899  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-10 17:48:09,187  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-10 17:48:30,321  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-10 17:48:30,563  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-10 17:48:52,123  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-10 17:48:52,395  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-09-10 17:49:24,457  INFO - Ending test method testVerifyLogoutFunctionality
+2015-09-10 17:49:24,716  INFO - Starting test method: testVerifyRegisterPage
+2015-09-10 17:49:49,268  INFO - Ending test method testVerifyRegisterPage
+2015-09-10 17:49:49,528  INFO - Starting test method: testVerifySignUpGoogle
+2015-09-10 17:50:20,098  INFO - Ending test method testVerifySignUpGoogle
+2015-09-10 17:50:20,368  INFO - Starting test method: testverifySignUpFacebook
+2015-09-10 17:50:52,663  INFO - Ending test method testverifySignUpFacebook
+2015-09-10 17:50:52,926  INFO - Ending test LoginPage
+2015-09-10 17:50:52,949  INFO - Ending suite TrendInTestSuite

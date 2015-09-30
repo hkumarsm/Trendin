@@ -1,0 +1,42 @@
+2015-09-14 17:48:54,380  INFO - Starting suite TrendInTestSuite
+2015-09-14 17:48:54,398  INFO - Starting test LoginPage
+2015-09-14 17:48:54,417  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 17:49:32,057  INFO - Ending test method testValidationMobileNumber
+2015-09-14 17:49:33,319  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 17:49:58,492  INFO - Ending test method testSignUpPasswordField
+2015-09-14 17:49:58,492 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message
+2015-09-14 17:49:59,893  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 17:50:21,956  INFO - Ending test method testLoginPageIconClick
+2015-09-14 17:50:23,205  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 17:50:46,923  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 17:50:48,175  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 17:51:13,502  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 17:51:14,752  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 17:51:42,161  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 17:51:43,426  INFO - Starting test method: testValidateMailIdField
+2015-09-14 17:52:15,931  INFO - Ending test method testValidateMailIdField
+2015-09-14 17:52:17,417  INFO - Starting test method: testValidatePasswordField
+2015-09-14 17:52:41,685  INFO - Ending test method testValidatePasswordField
+2015-09-14 17:52:42,954  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 17:53:05,897  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 17:53:07,150  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 17:53:30,702  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:53:31,950  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-14 17:53:51,953  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-14 17:53:51,953 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Error message is not displayed when first name is blank. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Error message is not displayed when first name is blank
+2015-09-14 17:53:53,303  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 17:54:12,441  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 17:54:12,442 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the name. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: yourNameXpath, for the Locator: Id
+2015-09-14 17:54:13,821  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-14 17:54:35,831  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-14 17:54:37,103  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-14 17:55:05,493  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-14 17:55:06,734  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-14 17:55:35,785  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-14 17:55:37,027  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 17:56:05,982  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 17:56:07,253  INFO - Starting test method: testVerifyForSignInWithFacebookInLoginPage
+2015-09-14 17:56:32,088  INFO - Ending test method testVerifyForSignInWithFacebookInLoginPage
+2015-09-14 17:56:32,091  INFO - Ending test method testVerifyForSignInWithFacebookInLoginPage
+2015-09-14 17:56:32,094  INFO - Ending test LoginPage
+2015-09-14 17:56:32,196  INFO - Ending suite TrendInTestSuite

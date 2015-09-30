@@ -1,0 +1,6 @@
+2015-08-26 13:21:32,000  INFO - Starting suite Default suite
+2015-08-26 13:21:32,011  INFO - Starting test Default test
+2015-08-26 13:21:47,942  INFO - Starting test method: testSignUpPasswordField
+2015-08-26 13:21:51,292  INFO - Ending test method testSignUpPasswordField
+2015-08-26 13:21:51,295  INFO - Ending test Default test
+2015-08-26 13:21:51,421  INFO - Ending suite Default suite

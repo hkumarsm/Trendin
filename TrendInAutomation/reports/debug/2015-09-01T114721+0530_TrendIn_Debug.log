@@ -1,0 +1,6 @@
+2015-09-01 11:47:22,099  INFO - Starting suite Default suite
+2015-09-01 11:47:22,111  INFO - Starting test Default test
+2015-09-01 11:47:22,167  INFO - Starting test method: testValidateNewPasswordField
+2015-09-01 11:47:57,223  INFO - Ending test method testValidateNewPasswordField
+2015-09-01 11:47:57,430  INFO - Ending test Default test
+2015-09-01 11:47:57,444  INFO - Ending suite Default suite

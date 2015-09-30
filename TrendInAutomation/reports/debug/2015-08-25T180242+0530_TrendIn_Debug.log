@@ -1,0 +1,13 @@
+2015-08-25 18:02:42,355  INFO - Starting suite Default suite
+2015-08-25 18:02:42,366  INFO - Starting test Default test
+2015-08-25 18:03:05,436  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-25 18:03:08,672  INFO - Ending test method testVerifySignUpGoogle
+2015-08-25 18:03:08,672 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to click on sign up with google. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 7d87481b-a34f-4379-b327-e6b58984d5de
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-08-25 18:03:08,982  INFO - Ending test Default test
+2015-08-25 18:03:17,064  INFO - Ending suite Default suite

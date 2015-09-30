@@ -1,0 +1,6 @@
+2015-09-03 17:42:44,230  INFO - Starting suite Default suite
+2015-09-03 17:42:44,241  INFO - Starting test Default test
+2015-09-03 17:42:44,251  INFO - Starting test method: testClickOnCartButton
+2015-09-03 17:43:45,190  INFO - Ending test method testClickOnCartButton
+2015-09-03 17:43:45,419  INFO - Ending test Default test
+2015-09-03 17:43:45,432  INFO - Ending suite Default suite

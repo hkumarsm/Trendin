@@ -1,0 +1,6 @@
+2015-09-14 15:40:46,379  INFO - Starting suite Default suite
+2015-09-14 15:40:46,398  INFO - Starting test Default test
+2015-09-14 15:40:46,416  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 15:57:39,797  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:57:39,801  INFO - Ending test Default test
+2015-09-14 15:57:39,833  INFO - Ending suite Default suite

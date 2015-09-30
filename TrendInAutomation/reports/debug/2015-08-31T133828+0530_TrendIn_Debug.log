@@ -1,0 +1,30 @@
+2015-08-31 13:38:28,712  INFO - Starting suite TrendInTestSuite
+2015-08-31 13:38:28,723  INFO - Starting test ChangePasswordPage
+2015-08-31 13:38:28,734  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 13:38:55,364  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 13:38:55,366 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: f352a2f2-8e56-495f-adda-0b4a2dff8c7e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-08-31 13:38:55,698  INFO - Starting test method: testModifyOldPassword
+2015-08-31 13:39:36,620  INFO - Ending test method testModifyOldPassword
+2015-08-31 13:39:36,833  INFO - Starting test method: testvalidateErrorMessageForPasswordField
+2015-08-31 13:45:08,455  INFO - Ending test method testvalidateErrorMessageForPasswordField
+2015-08-31 13:45:08,456 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 033fba3f-444c-4e37-b0f3-e22c6b27f349
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown

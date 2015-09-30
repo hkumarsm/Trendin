@@ -1,0 +1,6 @@
+2015-09-22 13:20:40,374  INFO - Starting suite Default suite
+2015-09-22 13:20:40,386  INFO - Starting test Default test
+2015-09-22 13:20:40,395  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:21:50,371  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:21:51,693  INFO - Ending test Default test
+2015-09-22 13:21:51,737  INFO - Ending suite Default suite

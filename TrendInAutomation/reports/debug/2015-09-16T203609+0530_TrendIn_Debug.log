@@ -1,0 +1,24 @@
+2015-09-16 20:36:09,890  INFO - Starting suite TrendInTestSuite
+2015-09-16 20:36:09,900  INFO - Starting test TrackOrderPage
+2015-09-16 20:36:09,920  INFO - Starting test method: testTrack
+2015-09-16 20:36:32,717  INFO - Ending test method testTrack
+2015-09-16 20:36:33,971  INFO - Starting test method: testTrackOrderPopUp
+2015-09-16 20:36:49,793  INFO - Ending test method testTrackOrderPopUp
+2015-09-16 20:36:51,022  INFO - Starting test method: verifyEmailIdTextBox
+2015-09-16 20:37:17,551  INFO - Ending test method verifyEmailIdTextBox
+2015-09-16 20:37:17,551 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on track order Icon link. . <b> Cause: </b>
+2015-09-16 20:37:18,990  INFO - Starting test method: verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-16 20:37:42,873  INFO - Ending test method verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-16 20:37:44,127  INFO - Starting test method: verifyErrorMsgForMailOrderNo
+2015-09-16 20:38:10,339  INFO - Ending test method verifyErrorMsgForMailOrderNo
+2015-09-16 20:38:11,581  INFO - Starting test method: verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-16 20:38:37,432  INFO - Ending test method verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-16 20:38:38,695  INFO - Starting test method: verifySignUpPageWhenClickOnLoginForMore
+2015-09-16 20:39:08,926  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-16 20:39:10,172  INFO - Starting test method: verifyTrackOrderForRegisterUser
+2015-09-16 20:39:37,323  INFO - Ending test method verifyTrackOrderForRegisterUser
+2015-09-16 20:39:37,326 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on track order Icon link. . <b> Cause: </b>
+2015-09-16 20:39:38,659  INFO - Starting test method: verifyTrackOrderForRegisterUserInvalidOrderNumber
+2015-09-16 20:40:05,464  INFO - Ending test method verifyTrackOrderForRegisterUserInvalidOrderNumber
+2015-09-16 20:40:05,464 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on track order Icon link. . <b> Cause: </b>
+2015-09-16 20:40:06,860  INFO - Starting test method: verifyTrackOrderMsgForRegisterUserEmptyOrderNumber

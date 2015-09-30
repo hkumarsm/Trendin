@@ -1,0 +1,6 @@
+2015-08-26 13:28:12,097  INFO - Starting suite Default suite
+2015-08-26 13:28:12,110  INFO - Starting test Default test
+2015-08-26 13:28:39,420  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-08-26 13:28:40,310  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-08-26 13:28:40,313  INFO - Ending test Default test
+2015-08-26 13:28:40,439  INFO - Ending suite Default suite

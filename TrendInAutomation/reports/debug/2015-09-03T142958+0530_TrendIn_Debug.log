@@ -1,0 +1,6 @@
+2015-09-03 14:29:58,181  INFO - Starting suite Default suite
+2015-09-03 14:29:58,191  INFO - Starting test Default test
+2015-09-03 14:29:58,201  INFO - Starting test method: textVerifyErrorMessageForInvalidKeyword
+2015-09-03 14:31:53,022  INFO - Ending test method textVerifyErrorMessageForInvalidKeyword
+2015-09-03 14:31:53,212  INFO - Ending test Default test
+2015-09-03 14:31:53,222  INFO - Ending suite Default suite

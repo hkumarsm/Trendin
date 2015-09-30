@@ -1,0 +1,6 @@
+2015-09-18 12:17:35,230  INFO - Starting suite Default suite
+2015-09-18 12:17:35,241  INFO - Starting test Default test
+2015-09-18 12:17:35,257  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 12:18:49,774  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 12:18:51,284  INFO - Ending test Default test
+2015-09-18 12:18:51,332  INFO - Ending suite Default suite

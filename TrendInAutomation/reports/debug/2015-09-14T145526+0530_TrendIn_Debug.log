@@ -1,0 +1,7 @@
+2015-09-14 14:55:27,105  INFO - Starting suite Default suite
+2015-09-14 14:55:27,119  INFO - Starting test Default test
+2015-09-14 14:55:27,134  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 14:56:23,331  INFO - Ending test method testExistingUserTextFields
+2015-09-14 14:56:23,331 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to enter the password. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: existingPasswordXpath, for the Locator: Xpath
+2015-09-14 14:56:24,972  INFO - Ending test Default test
+2015-09-14 14:56:25,026  INFO - Ending suite Default suite

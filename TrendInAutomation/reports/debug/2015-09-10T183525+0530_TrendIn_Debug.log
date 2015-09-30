@@ -1,0 +1,14 @@
+2015-09-10 18:35:25,965  INFO - Starting suite TrendInTestSuite
+2015-09-10 18:35:25,982  INFO - Starting test LoginPage
+2015-09-10 18:35:25,998  INFO - Starting test method: testClickNewTrendIn
+2015-09-10 18:35:50,678  INFO - Ending test method testClickNewTrendIn
+2015-09-10 18:35:50,941  INFO - Starting test method: testCloseButton
+2015-09-10 18:36:13,473  INFO - Ending test method testCloseButton
+2015-09-10 18:36:13,730  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-10 18:36:35,273  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-10 18:36:35,537  INFO - Starting test method: testDropDownUserName
+2015-09-10 18:37:05,765  INFO - Ending test method testDropDownUserName
+2015-09-10 18:37:06,266  INFO - Starting test method: testExistingUserTextFields
+2015-09-10 18:37:40,277  INFO - Ending test method testExistingUserTextFields
+2015-09-10 18:37:40,278 ERROR - <b> Exception: </b>java.lang.Exception: Unable to verify te error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify te error message
+2015-09-10 18:37:40,722  INFO - Starting test method: testForgotPasswordClick

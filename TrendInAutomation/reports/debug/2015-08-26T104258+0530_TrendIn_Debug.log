@@ -1,0 +1,6 @@
+2015-08-26 10:42:58,662  INFO - Starting suite Default suite
+2015-08-26 10:42:58,682  INFO - Starting test Default test
+2015-08-26 10:43:25,903  INFO - Starting test method: testValidateSignUpPageFunctiona
+2015-08-26 10:43:29,821  INFO - Ending test method testValidateSignUpPageFunctiona
+2015-08-26 10:43:29,831  INFO - Ending test Default test
+2015-08-26 10:43:37,757  INFO - Ending suite Default suite

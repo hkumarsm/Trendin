@@ -1,0 +1,7 @@
+2015-08-26 13:14:52,280  INFO - Starting suite Default suite
+2015-08-26 13:14:52,292  INFO - Starting test Default test
+2015-08-26 13:15:08,523  INFO - Starting test method: testValidateMailIdField
+2015-08-26 13:16:22,074  INFO - Ending test method testValidateMailIdField
+2015-08-26 13:16:22,074 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield
+2015-08-26 13:16:22,454  INFO - Ending test Default test
+2015-08-26 13:16:22,587  INFO - Ending suite Default suite

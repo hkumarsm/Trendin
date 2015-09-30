@@ -1,0 +1,7 @@
+2015-09-22 12:33:11,663  INFO - Starting suite Default suite
+2015-09-22 12:33:11,680  INFO - Starting test Default test
+2015-09-22 12:33:11,691  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:34:05,151  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:34:05,152 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 12:34:06,680  INFO - Ending test Default test
+2015-09-22 12:34:06,726  INFO - Ending suite Default suite

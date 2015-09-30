@@ -1,0 +1,6 @@
+2015-09-10 15:23:13,953  INFO - Starting suite Default suite
+2015-09-10 15:23:13,967  INFO - Starting test Default test
+2015-09-10 15:23:13,979  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-10 15:24:14,917  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-10 15:24:15,207  INFO - Ending test Default test
+2015-09-10 15:24:15,225  INFO - Ending suite Default suite

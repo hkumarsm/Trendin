@@ -1,0 +1,40 @@
+2015-09-14 18:18:05,057  INFO - Starting suite TrendInTestSuite
+2015-09-14 18:18:05,070  INFO - Starting test LoginPage
+2015-09-14 18:18:05,086  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 18:18:32,308  INFO - Ending test method testValidationMobileNumber
+2015-09-14 18:18:32,309 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number 
+2015-09-14 18:18:33,723  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 18:19:00,417  INFO - Ending test method testSignUpPasswordField
+2015-09-14 18:19:00,418 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message
+2015-09-14 18:19:01,748  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 18:19:23,387  INFO - Ending test method testLoginPageIconClick
+2015-09-14 18:19:24,630  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 18:19:48,504  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 18:19:49,761  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 18:20:16,036  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 18:20:17,357  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 18:20:46,747  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 18:20:48,065  INFO - Starting test method: testValidateMailIdField
+2015-09-14 18:21:21,024  INFO - Ending test method testValidateMailIdField
+2015-09-14 18:21:22,268  INFO - Starting test method: testValidatePasswordField
+2015-09-14 18:21:47,399  INFO - Ending test method testValidatePasswordField
+2015-09-14 18:21:48,653  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 18:22:11,862  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 18:22:13,180  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 18:22:37,993  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 18:22:39,256  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-14 18:23:02,252  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-14 18:23:03,518  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 18:23:30,154  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 18:23:31,399  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-14 18:23:53,529  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-14 18:23:54,982  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-14 18:24:22,328  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-14 18:24:23,566  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-14 18:24:51,759  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-14 18:24:53,068  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:25:18,634  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:25:18,641  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:25:18,652  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 18:25:18,655  INFO - Ending test LoginPage
+2015-09-14 18:25:18,707  INFO - Ending suite TrendInTestSuite

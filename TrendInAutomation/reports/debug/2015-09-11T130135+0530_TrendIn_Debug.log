@@ -1,0 +1,6 @@
+2015-09-11 13:01:35,789  INFO - Starting suite Default suite
+2015-09-11 13:01:35,807  INFO - Starting test Default test
+2015-09-11 13:01:35,823  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-11 13:01:59,138  INFO - Ending test method testValidateMailIdTextfield
+2015-09-11 13:01:59,568  INFO - Ending test Default test
+2015-09-11 13:01:59,600  INFO - Ending suite Default suite

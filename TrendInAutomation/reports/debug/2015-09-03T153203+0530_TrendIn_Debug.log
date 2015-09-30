@@ -1,0 +1,7 @@
+2015-09-03 15:32:04,257  INFO - Starting suite Default suite
+2015-09-03 15:32:04,269  INFO - Starting test Default test
+2015-09-03 15:32:04,280  INFO - Starting test method: testClickOnCartButton
+2015-09-03 15:33:10,348  INFO - Ending test method testClickOnCartButton
+2015-09-03 15:33:10,348 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-03 15:33:12,381  INFO - Ending test Default test
+2015-09-03 15:33:12,401  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-09-14 16:03:09,117  INFO - Starting suite Default suite
+2015-09-14 16:03:09,136  INFO - Starting test Default test
+2015-09-14 16:03:09,161  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 16:06:14,892  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 16:06:14,893 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not enter the email id . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: forgotPasswordEmailText, for the Locator: Id
+2015-09-14 16:06:16,399  INFO - Ending test Default test
+2015-09-14 16:06:16,455  INFO - Ending suite Default suite

@@ -1,0 +1,6 @@
+2015-09-03 11:19:51,973  INFO - Starting suite Default suite
+2015-09-03 11:19:51,984  INFO - Starting test Default test
+2015-09-03 11:19:51,995  INFO - Starting test method: testVerifyErrorMessageForEmptySearchButton
+2015-09-03 11:20:23,394  INFO - Ending test method testVerifyErrorMessageForEmptySearchButton
+2015-09-03 11:20:23,597  INFO - Ending test Default test
+2015-09-03 11:20:23,610  INFO - Ending suite Default suite

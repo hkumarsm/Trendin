@@ -1,0 +1,6 @@
+2015-09-22 14:47:38,092  INFO - Starting suite Default suite
+2015-09-22 14:47:38,106  INFO - Starting test Default test
+2015-09-22 14:47:38,123  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-22 14:48:21,926  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-22 14:48:23,302  INFO - Ending test Default test
+2015-09-22 14:48:23,339  INFO - Ending suite Default suite

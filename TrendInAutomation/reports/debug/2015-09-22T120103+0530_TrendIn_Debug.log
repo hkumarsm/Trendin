@@ -1,0 +1,7 @@
+2015-09-22 12:01:03,372  INFO - Starting suite Default suite
+2015-09-22 12:01:03,388  INFO - Starting test Default test
+2015-09-22 12:01:03,405  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:02:17,124  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:02:17,124 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not verify email Error message. <b> Cause: </b>
+2015-09-22 12:02:18,554  INFO - Ending test Default test
+2015-09-22 12:02:18,606  INFO - Ending suite Default suite

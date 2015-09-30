@@ -1,0 +1,6 @@
+2015-09-11 10:54:49,592  INFO - Starting suite Default suite
+2015-09-11 10:54:49,611  INFO - Starting test Default test
+2015-09-11 10:54:49,633  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-11 10:56:16,777  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-11 10:56:17,073  INFO - Ending test Default test
+2015-09-11 10:56:17,094  INFO - Ending suite Default suite

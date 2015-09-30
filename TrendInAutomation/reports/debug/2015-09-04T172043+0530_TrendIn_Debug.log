@@ -1,0 +1,13 @@
+2015-09-04 17:20:44,156  INFO - Starting suite Default suite
+2015-09-04 17:20:44,167  INFO - Starting test Default test
+2015-09-04 17:20:44,178  INFO - Starting test method: testVerifySubCategoryNavigationPage
+2015-09-04 17:21:19,535  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:21:19,536 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: shirtLabelXpath, for the locator: Xpath. <b> Cause: </b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 3.08 seconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.152', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 4c543808-1548-4d75-a379-7fd8ede00902
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-09-04 17:21:19,985  INFO - Ending test Default test
+2015-09-04 17:21:20,009  INFO - Ending suite Default suite

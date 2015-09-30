@@ -1,0 +1,5 @@
+2015-08-26 16:37:02,062  INFO - Starting suite DuplicateAddress
+2015-08-26 16:37:02,072  INFO - Starting test TestLoginPage
+2015-08-26 16:37:30,882  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:37:31,026  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-26 16:37:31,036  INFO - Starting test method: testVerifyRegisterPage

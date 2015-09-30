@@ -1,0 +1,27 @@
+2015-08-26 19:38:31,480  INFO - Starting suite TrendInTestSuite
+2015-08-26 19:38:31,491  INFO - Starting test NormalUser
+2015-08-26 19:38:31,896  INFO - Starting test method: testClickNewTrendIn
+2015-08-26 19:38:50,894  INFO - Ending test method testClickNewTrendIn
+2015-08-26 19:38:51,109  INFO - Starting test method: testCloseButton
+2015-08-26 19:40:00,277  INFO - Ending test method testCloseButton
+2015-08-26 19:40:00,530  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-26 19:40:56,240  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-26 19:40:56,491  INFO - Starting test method: testDropDownUserName
+2015-08-26 19:41:20,345  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,350  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,353  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,356  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,358  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,360  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,362  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,364  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,366  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,368  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,370  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,372  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,375  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,379  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,383  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,386  INFO - Ending test method testDropDownUserName
+2015-08-26 19:41:20,388  INFO - Ending test NormalUser
+2015-08-26 19:41:20,437  INFO - Ending suite TrendInTestSuite

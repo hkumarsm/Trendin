@@ -1,0 +1,6 @@
+2015-09-02 15:29:19,065  INFO - Starting suite Default suite
+2015-09-02 15:29:19,077  INFO - Starting test Default test
+2015-09-02 15:29:19,088  INFO - Starting test method: textVerifyDefaultSearchLabel
+2015-09-02 15:30:16,705  INFO - Ending test method textVerifyDefaultSearchLabel
+2015-09-02 15:30:16,709  INFO - Ending test Default test
+2015-09-02 15:30:16,730  INFO - Ending suite Default suite

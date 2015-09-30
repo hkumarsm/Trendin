@@ -1,0 +1,6 @@
+2015-09-07 09:31:50,438  INFO - Starting suite Default suite
+2015-09-07 09:31:50,458  INFO - Starting test Default test
+2015-09-07 09:31:50,468  INFO - Starting test method: testSelectBrandAndVerify
+2015-09-07 09:32:23,103  INFO - Ending test method testSelectBrandAndVerify
+2015-09-07 09:32:23,113  INFO - Ending test Default test
+2015-09-07 09:32:23,144  INFO - Ending suite Default suite

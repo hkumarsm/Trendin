@@ -1,0 +1,7 @@
+2015-08-31 11:17:30,189  INFO - Starting suite Default suite
+2015-08-31 11:17:30,200  INFO - Starting test Default test
+2015-08-31 11:17:30,210  INFO - Starting test method: testExistingUserTextFields
+2015-08-31 11:19:38,525  INFO - Ending test method testExistingUserTextFields
+2015-08-31 11:19:38,525 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-31 11:19:38,925  INFO - Ending test Default test
+2015-08-31 11:19:38,955  INFO - Ending suite Default suite

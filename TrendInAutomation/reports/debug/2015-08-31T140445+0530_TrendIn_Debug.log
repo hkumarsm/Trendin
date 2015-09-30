@@ -1,0 +1,7 @@
+2015-08-31 14:04:45,701  INFO - Starting suite Default suite
+2015-08-31 14:04:45,713  INFO - Starting test Default test
+2015-08-31 14:04:45,726  INFO - Starting test method: testvalidateErrorMessageForPasswordTextfields
+2015-08-31 14:05:26,076  INFO - Ending test method testvalidateErrorMessageForPasswordTextfields
+2015-08-31 14:05:26,076 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for empty value in the old password textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for empty value in the old password textfield
+2015-08-31 14:05:26,490  INFO - Ending test Default test
+2015-08-31 14:05:26,509  INFO - Ending suite Default suite

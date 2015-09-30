@@ -1,0 +1,6 @@
+2015-08-24 14:46:31,790  INFO - Starting suite Default suite
+2015-08-24 14:46:31,803  INFO - Starting test Default test
+2015-08-24 14:47:02,705  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-08-24 14:47:02,996  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-08-24 14:47:03,004  INFO - Ending test Default test
+2015-08-24 14:47:03,262  INFO - Ending suite Default suite

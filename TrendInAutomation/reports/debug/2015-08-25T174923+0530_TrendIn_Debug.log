@@ -1,0 +1,6 @@
+2015-08-25 17:49:23,915  INFO - Starting suite Default suite
+2015-08-25 17:49:23,927  INFO - Starting test Default test
+2015-08-25 17:49:37,541  INFO - Starting test method: testExistingUserTextFields
+2015-08-25 17:51:24,884  INFO - Ending test method testExistingUserTextFields
+2015-08-25 17:51:24,914  INFO - Ending test Default test
+2015-08-25 17:51:25,097  INFO - Ending suite Default suite

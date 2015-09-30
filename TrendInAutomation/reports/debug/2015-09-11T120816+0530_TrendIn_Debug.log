@@ -1,0 +1,6 @@
+2015-09-11 12:08:16,825  INFO - Starting suite Default suite
+2015-09-11 12:08:16,847  INFO - Starting test Default test
+2015-09-11 12:08:16,867  INFO - Starting test method: testVerifyGroupSitesOptions
+2015-09-11 12:08:41,475  INFO - Ending test method testVerifyGroupSitesOptions
+2015-09-11 12:08:41,740  INFO - Ending test Default test
+2015-09-11 12:08:41,759  INFO - Ending suite Default suite

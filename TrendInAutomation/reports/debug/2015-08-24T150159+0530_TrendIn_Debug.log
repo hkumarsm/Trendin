@@ -1,0 +1,7 @@
+2015-08-24 15:01:59,903  INFO - Starting suite Default suite
+2015-08-24 15:01:59,916  INFO - Starting test Default test
+2015-08-24 15:02:34,538  INFO - Starting test method: testExistingUserTextFields
+2015-08-24 15:02:56,171  INFO - Ending test method testExistingUserTextFields
+2015-08-24 15:02:56,171 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the email. <b> Cause: </b>java.lang.NullPointerException
+2015-08-24 15:02:56,597  INFO - Ending test Default test
+2015-08-24 15:02:56,881  INFO - Ending suite Default suite

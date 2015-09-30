@@ -1,0 +1,7 @@
+2015-09-14 14:49:54,288  INFO - Starting suite Default suite
+2015-09-14 14:49:54,300  INFO - Starting test Default test
+2015-09-14 14:49:54,318  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 14:53:04,001  INFO - Ending test method testExistingUserTextFields
+2015-09-14 14:53:04,001 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-14 14:53:05,469  INFO - Ending test Default test
+2015-09-14 14:53:05,524  INFO - Ending suite Default suite

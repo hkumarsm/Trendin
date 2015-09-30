@@ -1,0 +1,6 @@
+2015-09-15 11:45:42,305  INFO - Starting suite Default suite
+2015-09-15 11:45:42,350  INFO - Starting test Default test
+2015-09-15 11:45:42,387  INFO - Starting test method: verifyAll
+2015-09-15 11:48:16,809  INFO - Ending test method verifyAll
+2015-09-15 11:48:18,555  INFO - Ending test Default test
+2015-09-15 11:48:18,659  INFO - Ending suite Default suite

@@ -1,0 +1,17 @@
+2015-09-04 13:30:33,819  INFO - Starting suite Default suite
+2015-09-04 13:30:33,829  INFO - Starting test Default test
+2015-09-04 13:30:33,839  INFO - Starting test method: testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 13:31:36,286  INFO - Ending test method testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 13:31:36,286 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'MEN')]"}
+Command duration or timeout: 3.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: ef5011a8-b920-4447-bf99-d8a22873a8fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'MEN')]"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-09-04 13:31:36,664  INFO - Ending test Default test
+2015-09-04 13:31:36,694  INFO - Ending suite Default suite

@@ -1,0 +1,50 @@
+2015-09-24 11:39:04,080  INFO - Starting suite TrendInTestSuite
+2015-09-24 11:39:04,090  INFO - Starting test EndToEnd
+2015-09-24 11:39:04,105  INFO - Starting test method: testScenario3
+2015-09-24 11:41:02,836  INFO - Ending test method testScenario3
+2015-09-24 11:41:03,233  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-24 11:41:41,002  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-24 11:41:41,002 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='accordion']/ul/li/a[contains(.,'PRICE')]"}
+Command duration or timeout: 3.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 244b1d40-85c2-4455-b162-530b0bcce850
+2015-09-24 11:41:41,509  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 11:43:04,089  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 11:43:04,508  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 11:44:23,879  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 11:44:24,282  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 11:45:23,504  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 11:45:23,505 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement to get the Text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-24 11:45:24,049  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 11:46:06,481  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 11:46:06,794  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-24 11:48:02,489  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-24 11:48:02,902  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 11:48:33,050  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 11:48:33,051 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to click on quick view of a product category.. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8b9fe3bd-146e-4669-9288-4e3e4c6ff20f
+2015-09-24 11:48:33,461  INFO - Starting test method: testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 11:49:14,565  INFO - Ending test method testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 11:49:14,566 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to select filter and filter value . <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//div[@id='accordion']/ul/li/a[contains(.,'PRICE')]"}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3954722a-2711-4e65-8083-9c013d914019
+2015-09-24 11:49:14,982  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-24 11:51:24,988  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-24 11:51:25,736  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-24 11:53:50,210  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-24 11:53:50,636  INFO - Ending test EndToEnd
+2015-09-24 11:53:50,692  INFO - Ending suite TrendInTestSuite

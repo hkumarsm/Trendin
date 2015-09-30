@@ -1,0 +1,6 @@
+2015-08-31 15:34:18,751  INFO - Starting suite Default suite
+2015-08-31 15:34:18,762  INFO - Starting test Default test
+2015-08-31 15:34:18,773  INFO - Starting test method: testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 15:34:44,656  INFO - Ending test method testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 15:34:44,661  INFO - Ending test Default test
+2015-08-31 15:34:44,685  INFO - Ending suite Default suite

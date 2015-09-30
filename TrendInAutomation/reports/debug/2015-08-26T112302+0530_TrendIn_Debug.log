@@ -1,0 +1,7 @@
+2015-08-26 11:23:02,621  INFO - Starting suite Default suite
+2015-08-26 11:23:02,631  INFO - Starting test Default test
+2015-08-26 11:23:30,068  INFO - Starting test method: testSignUpPasswordField
+2015-08-26 11:23:35,533  INFO - Ending test method testSignUpPasswordField
+2015-08-26 11:23:35,533 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the name. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not found the element: yourNameXpath, for the Locator: Xpath
+2015-08-26 11:23:35,844  INFO - Ending test Default test
+2015-08-26 11:23:36,044  INFO - Ending suite Default suite

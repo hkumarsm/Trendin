@@ -1,0 +1,7 @@
+2015-09-22 11:59:10,007  INFO - Starting suite Default suite
+2015-09-22 11:59:10,022  INFO - Starting test Default test
+2015-09-22 11:59:10,039  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:00:00,610  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 12:00:00,611 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the google email. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: googleEmailCss, for the Locator: CssSelector
+2015-09-22 12:00:02,085  INFO - Ending test Default test
+2015-09-22 12:00:02,125  INFO - Ending suite Default suite

@@ -1,0 +1,6 @@
+2015-08-25 18:01:02,373  INFO - Starting suite Default suite
+2015-08-25 18:01:02,385  INFO - Starting test Default test
+2015-08-25 18:01:26,147  INFO - Starting test method: testCloseButton
+2015-08-25 18:01:28,705  INFO - Ending test method testCloseButton
+2015-08-25 18:01:28,708  INFO - Ending test Default test
+2015-08-25 18:01:28,995  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-09-22 11:57:48,287  INFO - Starting suite Default suite
+2015-09-22 11:57:48,306  INFO - Starting test Default test
+2015-09-22 11:57:48,321  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 11:58:09,670  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 11:58:09,670 ERROR - <b> Exception: </b>java.lang.NullPointerException. <b> Cause: </b>
+2015-09-22 11:58:11,226  INFO - Ending test Default test
+2015-09-22 11:58:11,279  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-08-24 16:15:16,710  INFO - Starting suite Default suite
+2015-08-24 16:15:16,723  INFO - Starting test Default test
+2015-08-24 16:15:47,788  INFO - Starting test method: testForgotPasswordClick
+2015-08-24 16:15:50,695  INFO - Ending test method testForgotPasswordClick
+2015-08-24 16:15:50,696 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Captcha code . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Captcha code 
+2015-08-24 16:15:50,951  INFO - Ending test Default test
+2015-08-24 16:15:51,192  INFO - Ending suite Default suite

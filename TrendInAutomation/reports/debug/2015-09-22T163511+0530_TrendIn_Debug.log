@@ -1,0 +1,138 @@
+2015-09-22 16:35:11,661  INFO - Starting suite TrendInTestSuite
+2015-09-22 16:35:11,679  INFO - Starting test RegisterSocialElements
+2015-09-22 16:35:11,701  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-22 16:36:08,780  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-22 16:36:09,052  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-22 16:36:58,490  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-22 16:36:58,751  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-22 16:37:56,338  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-22 16:37:56,594  INFO - Starting test method: testLoginOrRegisterPageAgain
+2015-09-22 16:38:21,305  INFO - Ending test method testLoginOrRegisterPageAgain
+2015-09-22 16:38:21,554  INFO - Starting test method: testMyAccountMyOrderNewUserPage
+2015-09-22 16:39:05,799  INFO - Ending test method testMyAccountMyOrderNewUserPage
+2015-09-22 16:39:06,061  INFO - Starting test method: testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 16:40:25,997  INFO - Ending test method testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 16:40:26,277  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 16:41:21,891  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 16:41:22,161  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 16:42:22,209  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 16:42:22,487  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 16:43:16,496  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 16:43:16,789  INFO - Starting test method: testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 16:44:49,894  INFO - Ending test method testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 16:44:50,168  INFO - Starting test method: testMyAccountMyOrderPage
+2015-09-22 16:45:38,266  INFO - Ending test method testMyAccountMyOrderPage
+2015-09-22 16:45:38,530  INFO - Starting test method: testNewToTrendInPage
+2015-09-22 16:46:09,318  INFO - Ending test method testNewToTrendInPage
+2015-09-22 16:46:09,552  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-22 16:46:40,644  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-22 16:46:40,887  INFO - Starting test method: testVeifyReturnsOrRefundsPage
+2015-09-22 16:47:12,700  INFO - Ending test method testVeifyReturnsOrRefundsPage
+2015-09-22 16:47:12,964  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-22 16:48:21,136  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-22 16:48:21,390  INFO - Starting test method: testVerifyClickOnMyOrder
+2015-09-22 16:48:43,981  INFO - Ending test method testVerifyClickOnMyOrder
+2015-09-22 16:48:44,228  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-22 16:49:38,947  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-22 16:49:39,194  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-22 16:50:59,660  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-22 16:50:59,956  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 16:51:43,057  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 16:51:43,300  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-22 16:52:41,339  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-22 16:52:41,626  INFO - Starting test method: testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 16:59:19,252  INFO - Ending test method testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 16:59:19,252 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 16:59:19,736  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 17:00:51,663  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 17:00:51,924  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-22 17:01:13,874  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-22 17:01:14,112  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-22 17:02:25,631  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-22 17:02:25,928  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 17:03:54,264  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 17:03:54,531  INFO - Starting test method: testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 17:05:03,697  INFO - Ending test method testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 17:05:03,943  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-22 17:05:37,644  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-22 17:05:37,900  INFO - Starting test method: testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 17:06:57,009  INFO - Ending test method testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 17:06:57,009 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:06:57,309  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 17:07:44,782  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 17:07:44,784 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='footer_wrap']/div[@class='container main_container']/div[@class='row']//a[contains(.,'MY ACCOUNT')]"}
+Command duration or timeout: 3.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2bcc2ce9-b140-4a1f-a0cf-f73c35d780a3. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='footer_wrap']/div[@class='container main_container']/div[@class='row']//a[contains(.,'MY ACCOUNT')]"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-22 17:07:45,057  INFO - Starting test method: testVerifyMyAccountMyOrder
+2015-09-22 17:09:00,564  INFO - Ending test method testVerifyMyAccountMyOrder
+2015-09-22 17:09:00,833  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 17:09:46,740  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 17:09:47,057  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 17:10:46,072  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 17:10:46,333  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 17:11:44,104  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 17:11:44,368  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 17:12:38,370  INFO - Ending test method testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 17:12:38,634  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 17:14:04,988  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 17:14:05,338  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 17:15:07,870  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 17:15:08,155  INFO - Starting test method: testVerifyMyAccountNewUserGoogleButton
+2015-09-22 17:16:06,846  INFO - Ending test method testVerifyMyAccountNewUserGoogleButton
+2015-09-22 17:16:07,110  INFO - Starting test method: testVerifyMyAccountNewUserGooglePage
+2015-09-22 17:17:04,646  INFO - Ending test method testVerifyMyAccountNewUserGooglePage
+2015-09-22 17:17:04,916  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 17:18:03,959  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 17:18:04,230  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 17:19:02,822  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 17:19:03,087  INFO - Starting test method: testVerifyMyAccountNewUserPage
+2015-09-22 17:20:02,740  INFO - Ending test method testVerifyMyAccountNewUserPage
+2015-09-22 17:20:03,007  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 17:21:20,519  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 17:21:20,519 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 17:21:20,903  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-22 17:22:07,773  INFO - Ending test method testVerifyMyAccountPage
+2015-09-22 17:22:08,036  INFO - Starting test method: testVerifyMyAddressExistingUserPage
+2015-09-22 17:23:01,336  INFO - Ending test method testVerifyMyAddressExistingUserPage
+2015-09-22 17:23:01,610  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 17:24:08,859  INFO - Ending test method testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 17:24:09,133  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 17:25:34,838  INFO - Ending test method testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 17:25:34,839 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 17:25:35,215  INFO - Starting test method: testVerifyMyAddressNewUserPage
+2015-09-22 17:26:01,194  INFO - Ending test method testVerifyMyAddressNewUserPage
+2015-09-22 17:26:01,195 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:26:01,566  INFO - Starting test method: testVerifyNewToTrendInButton
+2015-09-22 17:26:29,221  INFO - Ending test method testVerifyNewToTrendInButton
+2015-09-22 17:26:29,471  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-22 17:27:03,706  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-22 17:27:03,935  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 17:28:14,709  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 17:28:14,709 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 17:28:15,056  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 17:29:42,506  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 17:29:42,506 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 17:29:42,851  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 17:30:09,450  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 17:30:09,450 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:30:09,850  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 17:31:24,338  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 17:31:24,343 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 17:31:24,682  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 17:32:14,579  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 17:32:14,579 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:32:14,932  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 17:32:36,010  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 17:32:36,011 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:32:36,230  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 17:32:57,352  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 17:32:57,352 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 17:32:57,597  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField

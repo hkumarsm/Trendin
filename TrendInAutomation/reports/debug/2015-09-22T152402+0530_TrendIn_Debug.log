@@ -1,0 +1,128 @@
+2015-09-22 15:24:02,663  INFO - Starting suite TrendInTestSuite
+2015-09-22 15:24:02,682  INFO - Starting test RegisterSocialElements
+2015-09-22 15:24:02,704  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-22 15:24:51,178  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-22 15:24:51,437  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-22 15:27:37,404  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-22 15:27:37,656  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-22 15:28:41,450  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-22 15:28:41,685  INFO - Starting test method: testLoginOrRegisterPageAgain
+2015-09-22 15:29:07,718  INFO - Ending test method testLoginOrRegisterPageAgain
+2015-09-22 15:29:07,952  INFO - Starting test method: testMyAccountMyOrderNewUserPage
+2015-09-22 15:29:56,140  INFO - Ending test method testMyAccountMyOrderNewUserPage
+2015-09-22 15:29:56,398  INFO - Starting test method: testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 15:30:53,264  INFO - Ending test method testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 15:30:53,627  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 15:31:55,421  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 15:31:55,694  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 15:32:52,315  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 15:32:52,590  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 15:34:21,641  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 15:34:21,915  INFO - Starting test method: testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 15:36:11,857  INFO - Ending test method testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 15:36:12,125  INFO - Starting test method: testMyAccountMyOrderPage
+2015-09-22 15:36:49,879  INFO - Ending test method testMyAccountMyOrderPage
+2015-09-22 15:36:50,133  INFO - Starting test method: testNewToTrendInPage
+2015-09-22 15:37:15,257  INFO - Ending test method testNewToTrendInPage
+2015-09-22 15:37:15,482  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-22 15:37:41,834  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-22 15:37:42,117  INFO - Starting test method: testVeifyReturnsOrRefundsPage
+2015-09-22 15:38:19,216  INFO - Ending test method testVeifyReturnsOrRefundsPage
+2015-09-22 15:38:19,465  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-22 15:39:05,185  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-22 15:39:05,417  INFO - Starting test method: testVerifyClickOnMyOrder
+2015-09-22 15:39:27,538  INFO - Ending test method testVerifyClickOnMyOrder
+2015-09-22 15:39:27,789  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-22 15:40:07,496  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-22 15:40:07,749  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-22 15:41:02,793  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-22 15:41:03,052  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 15:41:57,505  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 15:41:57,746  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-22 15:42:30,020  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-22 15:42:30,022 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 15:42:30,543  INFO - Starting test method: testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 15:47:08,756  INFO - Ending test method testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 15:47:08,757 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 15:47:09,099  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 15:47:44,952  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 15:47:44,953 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 15:47:45,328  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-22 15:48:08,528  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-22 15:48:09,169  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-22 15:48:41,350  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-22 15:48:41,350 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 15:48:41,690  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 15:49:13,890  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 15:49:13,890 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 15:49:14,405  INFO - Starting test method: testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 15:50:24,462  INFO - Ending test method testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 15:50:24,720  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-22 15:50:58,972  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-22 15:50:59,243  INFO - Starting test method: testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 15:51:36,982  INFO - Ending test method testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 15:51:37,224  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 15:52:40,641  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 15:52:40,948  INFO - Starting test method: testVerifyMyAccountMyOrder
+2015-09-22 15:53:15,801  INFO - Ending test method testVerifyMyAccountMyOrder
+2015-09-22 15:53:16,049  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 15:53:54,664  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 15:53:54,918  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 15:54:42,049  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 15:54:42,317  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 15:55:35,587  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 15:55:35,838  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 15:56:27,764  INFO - Ending test method testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 15:56:28,053  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 15:57:51,253  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 15:57:51,524  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 15:58:53,656  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 15:58:53,932  INFO - Starting test method: testVerifyMyAccountNewUserGoogleButton
+2015-09-22 15:59:46,211  INFO - Ending test method testVerifyMyAccountNewUserGoogleButton
+2015-09-22 15:59:46,463  INFO - Starting test method: testVerifyMyAccountNewUserGooglePage
+2015-09-22 16:00:16,214  INFO - Ending test method testVerifyMyAccountNewUserGooglePage
+2015-09-22 16:00:16,214 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:00:16,534  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 16:00:46,086  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 16:00:46,087 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:00:46,722  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 16:01:17,063  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 16:01:17,064 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:01:17,395  INFO - Starting test method: testVerifyMyAccountNewUserPage
+2015-09-22 16:01:48,562  INFO - Ending test method testVerifyMyAccountNewUserPage
+2015-09-22 16:01:48,562 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:01:48,957  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 16:02:19,193  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 16:02:19,194 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-22 16:02:19,544  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-22 16:03:01,350  INFO - Ending test method testVerifyMyAccountPage
+2015-09-22 16:03:01,592  INFO - Starting test method: testVerifyMyAddressExistingUserPage
+2015-09-22 16:03:50,631  INFO - Ending test method testVerifyMyAddressExistingUserPage
+2015-09-22 16:03:50,914  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 16:04:54,806  INFO - Ending test method testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 16:04:55,083  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 16:06:10,860  INFO - Ending test method testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 16:06:11,158  INFO - Starting test method: testVerifyMyAddressNewUserPage
+2015-09-22 16:07:01,098  INFO - Ending test method testVerifyMyAddressNewUserPage
+2015-09-22 16:07:01,345  INFO - Starting test method: testVerifyNewToTrendInButton
+2015-09-22 16:07:31,443  INFO - Ending test method testVerifyNewToTrendInButton
+2015-09-22 16:07:31,678  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-22 16:08:01,643  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-22 16:08:01,890  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 16:08:55,059  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 16:08:55,675  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 16:09:58,491  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 16:09:58,762  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 16:11:06,284  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 16:11:06,544  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 16:12:26,427  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 16:12:26,700  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 16:13:04,958  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 16:13:05,205  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 16:14:04,157  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 16:14:04,427  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 16:15:49,314  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 16:15:49,583  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField
+2015-09-22 16:16:34,190  INFO - Ending test method testverifyErorMessageOnEmptyEmailTextField
+2015-09-22 16:16:34,499  INFO - Ending test RegisterSocialElements
+2015-09-22 16:16:34,587  INFO - Ending suite TrendInTestSuite

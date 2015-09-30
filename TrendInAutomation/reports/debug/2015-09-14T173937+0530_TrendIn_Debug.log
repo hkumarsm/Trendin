@@ -1,0 +1,44 @@
+2015-09-14 17:39:37,823  INFO - Starting suite TrendInTestSuite
+2015-09-14 17:39:37,839  INFO - Starting test LoginPage
+2015-09-14 17:39:37,852  INFO - Starting test method: testValidationMobileNumber
+2015-09-14 17:40:07,101  INFO - Ending test method testValidationMobileNumber
+2015-09-14 17:40:07,101 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number 
+2015-09-14 17:40:08,577  INFO - Starting test method: testSignUpPasswordField
+2015-09-14 17:40:35,045  INFO - Ending test method testSignUpPasswordField
+2015-09-14 17:40:36,302  INFO - Starting test method: testLoginPageIconClick
+2015-09-14 17:40:57,810  INFO - Ending test method testLoginPageIconClick
+2015-09-14 17:40:59,062  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-14 17:41:22,212  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-14 17:41:23,449  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-14 17:41:49,471  INFO - Ending test method testValidateUsernameTextfield
+2015-09-14 17:41:50,804  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-14 17:42:19,539  INFO - Ending test method testValidateMailIdTextfield
+2015-09-14 17:42:20,836  INFO - Starting test method: testValidateMailIdField
+2015-09-14 17:42:54,804  INFO - Ending test method testValidateMailIdField
+2015-09-14 17:42:56,058  INFO - Starting test method: testValidatePasswordField
+2015-09-14 17:43:21,171  INFO - Ending test method testValidatePasswordField
+2015-09-14 17:43:22,415  INFO - Starting test method: testValidationTermsOfUse
+2015-09-14 17:43:47,358  INFO - Ending test method testValidationTermsOfUse
+2015-09-14 17:43:48,619  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-14 17:44:18,400  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-14 17:44:19,668  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-14 17:44:47,376  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-14 17:44:47,376 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Error message is not displayed when first name is blank. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Error message is not displayed when first name is blank
+2015-09-14 17:44:48,747  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 17:45:12,651  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 17:45:13,891  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-14 17:45:36,094  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-14 17:45:37,387  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-14 17:46:04,713  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-14 17:46:05,968  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-14 17:46:34,212  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-14 17:46:35,470  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 17:46:56,058  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-14 17:46:56,058 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the google button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: signInWithGoogleInLoginPageXpath, for the locator: XPath
+2015-09-14 17:46:57,421  INFO - Starting test method: testVerifyForSignInWithFacebookInLoginPage
+2015-09-14 17:47:17,738  INFO - Ending test method testVerifyForSignInWithFacebookInLoginPage
+2015-09-14 17:47:17,738 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: signInWithFacebookInLoginPageXpath, for the locator: XPath
+2015-09-14 17:47:19,121  INFO - Starting test method: testVerifyNewToTrendinLink
+2015-09-14 17:47:42,036  INFO - Ending test method testVerifyNewToTrendinLink
+2015-09-14 17:47:43,304  INFO - Ending test LoginPage
+2015-09-14 17:47:43,395  INFO - Ending suite TrendInTestSuite

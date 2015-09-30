@@ -1,0 +1,49 @@
+2015-08-26 20:21:24,449  INFO - Starting suite TrendInTestSuite
+2015-08-26 20:21:24,459  INFO - Starting test NormalUser
+2015-08-26 20:21:24,469  INFO - Starting test method: testClickNewTrendIn
+2015-08-26 20:22:48,240  INFO - Ending test method testClickNewTrendIn
+2015-08-26 20:22:48,420  INFO - Starting test method: testCloseButton
+2015-08-26 20:23:10,921  INFO - Ending test method testCloseButton
+2015-08-26 20:23:11,111  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-26 20:23:34,239  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-26 20:23:34,479  INFO - Starting test method: testDropDownUserName
+2015-08-26 20:24:56,387  INFO - Ending test method testDropDownUserName
+2015-08-26 20:24:56,559  INFO - Starting test method: testExistingUserTextFields
+2015-08-26 20:27:02,762  INFO - Ending test method testExistingUserTextFields
+2015-08-26 20:27:02,945  INFO - Starting test method: testForgotPasswordClick
+2015-08-26 20:28:52,450  INFO - Ending test method testForgotPasswordClick
+2015-08-26 20:28:52,570  INFO - Starting test method: testMyAccountClick
+2015-08-26 20:31:53,577  INFO - Ending test method testMyAccountClick
+2015-08-26 20:31:53,737  INFO - Starting test method: testMyOrder
+2015-08-26 20:32:28,258  INFO - Ending test method testMyOrder
+2015-08-26 20:32:28,428  INFO - Starting test method: testRefreshButton
+2015-08-26 20:33:03,854  INFO - Ending test method testRefreshButton
+2015-08-26 20:33:04,004  INFO - Starting test method: testReturn
+2015-08-26 20:33:37,134  INFO - Ending test method testReturn
+2015-08-26 20:33:37,324  INFO - Starting test method: testUserName
+2015-08-26 20:34:11,511  INFO - Ending test method testUserName
+2015-08-26 20:34:11,691  INFO - Starting test method: testVerifyExistingPage
+2015-08-26 20:34:29,157  INFO - Ending test method testVerifyExistingPage
+2015-08-26 20:34:29,338  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-26 20:37:53,244  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-26 20:37:53,455  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-26 20:38:09,405  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-26 20:38:09,517  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-08-26 20:38:24,395  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-08-26 20:38:24,505  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-08-26 20:38:49,503  INFO - Ending test method testVerifyLogoutFunctionality
+2015-08-26 20:38:49,774  INFO - Starting test method: testVerifyRegisterPage
+2015-08-26 20:39:07,587  INFO - Ending test method testVerifyRegisterPage
+2015-08-26 20:39:07,747  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-26 20:39:23,355  INFO - Ending test method testVerifySignUpGoogle
+2015-08-26 20:39:23,355 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to click on sign up with google. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 50 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 9d20fea4-b095-40f2-9c7e-92f0bc1fdcfd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-08-26 20:39:23,699  INFO - Starting test method: testverifySignUpFacebook
+2015-08-26 20:39:52,171  INFO - Ending test method testverifySignUpFacebook
+2015-08-26 20:39:52,290  INFO - Ending test NormalUser
+2015-08-26 20:39:52,310  INFO - Ending suite TrendInTestSuite

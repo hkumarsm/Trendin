@@ -1,0 +1,98 @@
+2015-09-10 16:49:12,442  INFO - Starting suite TrendInTestSuite
+2015-09-10 16:49:12,460  INFO - Starting test LoginPage
+2015-09-10 16:49:12,481  INFO - Starting test method: testClickNewTrendIn
+2015-09-10 16:49:33,171  INFO - Ending test method testClickNewTrendIn
+2015-09-10 16:49:33,421  INFO - Starting test method: testCloseButton
+2015-09-10 16:49:51,706  INFO - Ending test method testCloseButton
+2015-09-10 16:49:52,401  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-10 16:50:10,291  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-10 16:50:10,563  INFO - Starting test method: testDropDownUserName
+2015-09-10 16:50:37,212  INFO - Ending test method testDropDownUserName
+2015-09-10 16:50:37,216 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 78160da6-e102-4abf-b341-780999a788be. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-10 16:50:37,741  INFO - Starting test method: testExistingUserTextFields
+2015-09-10 16:51:04,862  INFO - Ending test method testExistingUserTextFields
+2015-09-10 16:51:04,863 ERROR - <b> Exception: </b>java.lang.Exception: Unable to verify te error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify te error message
+2015-09-10 16:51:05,439  INFO - Starting test method: testForgotPasswordClick
+2015-09-10 16:51:25,496  INFO - Ending test method testForgotPasswordClick
+2015-09-10 16:51:25,736  INFO - Starting test method: testMyAccountClick
+2015-09-10 16:51:53,885  INFO - Ending test method testMyAccountClick
+2015-09-10 16:51:53,887 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c2e408b8-bb61-4d03-bcc0-26850728eb9b. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-10 16:51:54,309  INFO - Starting test method: testMyOrder
+2015-09-10 16:52:26,548  INFO - Ending test method testMyOrder
+2015-09-10 16:52:26,549 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e69421a2-7353-4e9b-9af4-61634acf99c2. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-10 16:52:26,897  INFO - Starting test method: testRefreshButton
+2015-09-10 16:52:48,109  INFO - Ending test method testRefreshButton
+2015-09-10 16:52:48,345  INFO - Starting test method: testReturn
+2015-09-10 16:53:17,712  INFO - Ending test method testReturn
+2015-09-10 16:53:17,714 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8dd74355-c2b0-4501-b0fb-34353c9fa7f9. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-10 16:53:18,057  INFO - Starting test method: testUserName
+2015-09-10 16:53:48,539  INFO - Ending test method testUserName
+2015-09-10 16:53:48,540 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".user_char_ctrl"}
+Command duration or timeout: 3.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b1464035-00ca-45ee-8dc3-870313f549b0. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".user_char_ctrl"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+2015-09-10 16:53:48,903  INFO - Starting test method: testVerifyExistingPage
+2015-09-10 16:54:12,498  INFO - Ending test method testVerifyExistingPage
+2015-09-10 16:54:13,106  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-10 16:57:40,869  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-10 16:57:41,207  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-10 16:58:01,886  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-10 16:58:02,120  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-10 16:58:22,390  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-10 16:58:22,633  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-09-10 16:58:52,095  INFO - Ending test method testVerifyLogoutFunctionality
+2015-09-10 16:58:52,335  INFO - Starting test method: testVerifyRegisterPage
+2015-09-10 16:59:15,517  INFO - Ending test method testVerifyRegisterPage
+2015-09-10 16:59:15,756  INFO - Starting test method: testVerifySignUpGoogle
+2015-09-10 16:59:45,728  INFO - Ending test method testVerifySignUpGoogle
+2015-09-10 16:59:45,987  INFO - Starting test method: testverifySignUpFacebook
+2015-09-10 17:00:17,565  INFO - Ending test method testverifySignUpFacebook
+2015-09-10 17:00:17,863  INFO - Ending test LoginPage
+2015-09-10 17:00:17,925  INFO - Ending suite TrendInTestSuite

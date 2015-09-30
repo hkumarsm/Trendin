@@ -1,0 +1,7 @@
+2015-09-01 16:36:25,884  INFO - Starting suite Default suite
+2015-09-01 16:36:25,904  INFO - Starting test Default test
+2015-09-01 16:36:25,914  INFO - Starting test method: testVerifyProducDetailsPage
+2015-09-01 16:39:08,716  INFO - Ending test method testVerifyProducDetailsPage
+2015-09-01 16:39:08,716 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-01 16:39:17,304  INFO - Ending test Default test
+2015-09-01 16:39:17,326  INFO - Ending suite Default suite

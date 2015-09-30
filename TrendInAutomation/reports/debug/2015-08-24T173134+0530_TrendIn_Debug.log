@@ -1,0 +1,6 @@
+2015-08-24 17:31:35,352  INFO - Starting suite Default suite
+2015-08-24 17:31:35,365  INFO - Starting test Default test
+2015-08-24 17:32:04,751  INFO - Starting test method: testForgotPasswordClick
+2015-08-24 17:32:10,572  INFO - Ending test method testForgotPasswordClick
+2015-08-24 17:32:10,575  INFO - Ending test Default test
+2015-08-24 17:32:10,865  INFO - Ending suite Default suite

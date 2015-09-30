@@ -1,0 +1,44 @@
+2015-09-10 14:46:24,241  INFO - Starting suite TrendInTestSuite
+2015-09-10 14:46:24,254  INFO - Starting test LoginPage
+2015-09-10 14:46:24,270  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-10 14:47:05,188  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-10 14:47:05,449  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-10 14:47:39,468  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-10 14:47:39,734  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-10 14:48:32,156  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-10 14:48:32,441  INFO - Starting test method: testNewToTrendInPage
+2015-09-10 14:48:50,249  INFO - Ending test method testNewToTrendInPage
+2015-09-10 14:48:50,512  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-10 14:49:06,575  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-10 14:49:06,852  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-10 14:49:36,329  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-10 14:49:36,603  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-10 14:50:06,289  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-10 14:50:06,581  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-10 14:50:32,117  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-10 14:50:32,387  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-10 14:50:50,237  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-10 14:50:50,495  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-10 14:51:37,393  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-10 14:51:37,681  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-10 14:52:40,329  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-10 14:52:40,616  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-10 14:53:09,442  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-10 14:53:09,732  INFO - Starting test method: testVerifyMouseOverActionOnSignInWitthGoogle
+2015-09-10 14:53:38,637  INFO - Ending test method testVerifyMouseOverActionOnSignInWitthGoogle
+2015-09-10 14:53:38,916  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 14:54:34,183  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 14:54:34,486  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 14:55:28,908  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 14:55:29,198  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-10 14:56:08,529  INFO - Ending test method testVerifyMyAccountPage
+2015-09-10 14:56:08,796  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-10 14:56:30,312  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-10 14:56:30,583  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField
+2015-09-10 14:57:04,633  INFO - Ending test method testverifyErorMessageOnEmptyEmailTextField
+2015-09-10 14:57:05,632  INFO - Starting test method: textLoginOrRegisterPageAgain
+2015-09-10 14:57:34,561  INFO - Ending test method textLoginOrRegisterPageAgain
+2015-09-10 14:57:34,817  INFO - Starting test method: textVerifyNewToTrendInButton
+2015-09-10 14:57:57,462  INFO - Ending test method textVerifyNewToTrendInButton
+2015-09-10 14:57:58,086  INFO - Ending test LoginPage
+2015-09-10 14:57:58,147  INFO - Ending suite TrendInTestSuite

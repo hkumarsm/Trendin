@@ -1,0 +1,13 @@
+2015-09-03 09:52:20,126  INFO - Starting suite Default suite
+2015-09-03 09:52:20,137  INFO - Starting test Default test
+2015-09-03 09:52:20,148  INFO - Starting test method: testVerifySearchButtonFunctionality
+2015-09-03 09:53:04,537  INFO - Ending test method testVerifySearchButtonFunctionality
+2015-09-03 09:53:04,537 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not clear the data.. <b> Cause: </b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 3.06 seconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 896183c2-a35c-4432-b00d-25d3b8d702ee
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+2015-09-03 09:53:05,032  INFO - Ending test Default test
+2015-09-03 09:53:05,056  INFO - Ending suite Default suite

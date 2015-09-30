@@ -1,0 +1,6 @@
+2015-09-28 12:02:24,098  INFO - Starting suite Default suite
+2015-09-28 12:02:24,113  INFO - Starting test Default test
+2015-09-28 12:02:24,133  INFO - Starting test method: testVerifyForBuyNowFuctionality
+2015-09-28 12:04:04,529  INFO - Ending test method testVerifyForBuyNowFuctionality
+2015-09-28 12:04:06,031  INFO - Ending test Default test
+2015-09-28 12:04:06,071  INFO - Ending suite Default suite

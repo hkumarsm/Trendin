@@ -1,0 +1,6 @@
+2015-09-01 15:36:37,235  INFO - Starting suite Default suite
+2015-09-01 15:36:37,245  INFO - Starting test Default test
+2015-09-01 15:36:37,255  INFO - Starting test method: testVerifyProducDetailsPage
+2015-09-01 15:39:46,658  INFO - Ending test method testVerifyProducDetailsPage
+2015-09-01 15:39:46,839  INFO - Ending test Default test
+2015-09-01 15:39:46,859  INFO - Ending suite Default suite

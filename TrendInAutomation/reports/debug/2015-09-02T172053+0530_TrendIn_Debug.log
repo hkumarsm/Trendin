@@ -1,0 +1,6 @@
+2015-09-02 17:20:53,990  INFO - Starting suite Default suite
+2015-09-02 17:20:54,002  INFO - Starting test Default test
+2015-09-02 17:20:54,014  INFO - Starting test method: testVerifySearchButtonFunctionality
+2015-09-02 17:23:27,347  INFO - Ending test method testVerifySearchButtonFunctionality
+2015-09-02 17:23:35,332  INFO - Ending test Default test
+2015-09-02 17:23:35,344  INFO - Ending suite Default suite

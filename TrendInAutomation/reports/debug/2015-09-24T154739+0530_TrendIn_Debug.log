@@ -1,0 +1,6 @@
+2015-09-24 15:47:39,322  INFO - Starting suite Default suite
+2015-09-24 15:47:39,332  INFO - Starting test Default test
+2015-09-24 15:47:39,348  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 15:49:03,462  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 15:49:03,883  INFO - Ending test Default test
+2015-09-24 15:49:03,905  INFO - Ending suite Default suite

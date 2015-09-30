@@ -1,0 +1,6 @@
+2015-09-22 13:34:54,892  INFO - Starting suite Default suite
+2015-09-22 13:34:54,914  INFO - Starting test Default test
+2015-09-22 13:34:54,932  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageClickOnGoogleButton
+2015-09-22 13:35:35,447  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageClickOnGoogleButton
+2015-09-22 13:35:36,834  INFO - Ending test Default test
+2015-09-22 13:35:36,884  INFO - Ending suite Default suite

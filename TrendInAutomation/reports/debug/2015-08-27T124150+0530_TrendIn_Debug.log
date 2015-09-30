@@ -1,0 +1,30 @@
+2015-08-27 12:41:50,585  INFO - Starting suite TrendInTestSuite
+2015-08-27 12:41:50,596  INFO - Starting test NormalUser
+2015-08-27 12:41:50,606  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 12:42:12,707  INFO - Ending test method testClickNewTrendIn
+2015-08-27 12:42:12,824  INFO - Starting test method: testCloseButton
+2015-08-27 12:42:30,301  INFO - Ending test method testCloseButton
+2015-08-27 12:42:30,628  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 12:42:47,945  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 12:42:48,241  INFO - Starting test method: testDropDownUserName
+2015-08-27 12:43:11,951  INFO - Ending test method testDropDownUserName
+2015-08-27 12:43:12,113  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 12:45:12,635  INFO - Ending test method testExistingUserTextFields
+2015-08-27 12:45:12,824  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 12:45:33,976  INFO - Ending test method testForgotPasswordClick
+2015-08-27 12:45:34,165  INFO - Starting test method: testMyAccountClick
+2015-08-27 12:48:13,772  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,776  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,779  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,781  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,783  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,785  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,787  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,789  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,790  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,792  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,800  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,806  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,814  INFO - Ending test method testMyAccountClick
+2015-08-27 12:48:13,817  INFO - Ending test NormalUser
+2015-08-27 12:48:13,856  INFO - Ending suite TrendInTestSuite

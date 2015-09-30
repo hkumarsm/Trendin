@@ -1,0 +1,6 @@
+2015-09-04 14:23:14,680  INFO - Starting suite Default suite
+2015-09-04 14:23:14,690  INFO - Starting test Default test
+2015-09-04 14:23:14,700  INFO - Starting test method: testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 14:28:24,511  INFO - Ending test method testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 14:28:24,692  INFO - Ending test Default test
+2015-09-04 14:28:24,702  INFO - Ending suite Default suite

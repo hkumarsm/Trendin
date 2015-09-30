@@ -1,0 +1,75 @@
+2015-09-10 15:34:55,285  INFO - Starting suite TrendInTestSuite
+2015-09-10 15:34:55,302  INFO - Starting test LoginPage
+2015-09-10 15:34:55,319  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-10 15:35:39,602  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-10 15:35:39,861  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-10 15:36:21,220  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-10 15:36:21,843  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-10 15:37:29,510  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-10 15:37:29,774  INFO - Starting test method: testLoginOrRegisterPageAgain
+2015-09-10 15:37:51,536  INFO - Ending test method testLoginOrRegisterPageAgain
+2015-09-10 15:37:51,781  INFO - Starting test method: testNewToTrendInPage
+2015-09-10 15:38:12,805  INFO - Ending test method testNewToTrendInPage
+2015-09-10 15:38:13,060  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-10 15:38:34,863  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-10 15:38:35,115  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-10 15:39:13,512  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-10 15:39:13,792  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-10 15:39:42,398  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-10 15:39:42,398 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): https://www.trendin.com/auth/login/facebook
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 49f17555-8f80-4a7c-9059-22df1f513c8e
+2015-09-10 15:39:43,018  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-10 15:40:26,484  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-10 15:40:26,724  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-10 15:40:54,730  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-10 15:40:54,967  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-10 15:41:35,144  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-10 15:41:35,419  INFO - Starting test method: testVerifyFacebookEmailAndPasswordTextFields
+2015-09-10 15:42:00,358  INFO - Ending test method testVerifyFacebookEmailAndPasswordTextFields
+2015-09-10 15:42:00,358 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): https://www.trendin.com/auth/login/facebook
+Command duration or timeout: 23 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4b229dce-f752-410f-90f1-fc6a26c4cfe7
+2015-09-10 15:42:00,819  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-10 15:42:17,288  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-10 15:42:17,545  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-10 15:43:22,397  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-10 15:43:22,688  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-10 15:44:31,041  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-10 15:44:31,310  INFO - Starting test method: testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-10 15:44:54,844  INFO - Ending test method testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-10 15:44:54,844 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): https://www.trendin.com/auth/login/facebook
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd72b37d-6e36-4d06-803b-eb89b84126f1
+2015-09-10 15:44:55,229  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-10 15:45:18,426  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-10 15:45:18,683  INFO - Starting test method: testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-10 15:45:43,239  INFO - Ending test method testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-10 15:45:43,515  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 15:46:23,385  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 15:46:23,656  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 15:47:03,170  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-10 15:47:03,430  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-10 15:47:35,896  INFO - Ending test method testVerifyMyAccountPage
+2015-09-10 15:47:36,189  INFO - Starting test method: testVerifyNewToTrendInButton
+2015-09-10 15:47:53,334  INFO - Ending test method testVerifyNewToTrendInButton
+2015-09-10 15:47:53,572  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-10 15:48:14,069  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-10 15:48:14,311  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-10 15:48:56,789  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-10 15:48:57,061  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField
+2015-09-10 15:49:23,595  INFO - Ending test method testverifyErorMessageOnEmptyEmailTextField
+2015-09-10 15:49:23,934  INFO - Ending test LoginPage
+2015-09-10 15:49:23,975  INFO - Ending suite TrendInTestSuite

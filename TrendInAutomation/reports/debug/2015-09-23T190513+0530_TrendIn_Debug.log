@@ -1,0 +1,16 @@
+2015-09-23 19:05:13,394  INFO - Starting suite TrendInTestSuite
+2015-09-23 19:05:13,409  INFO - Starting test EndToEnd
+2015-09-23 19:05:13,424  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 19:06:19,483  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 19:06:19,923  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-23 19:07:20,478  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-23 19:07:20,824  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 19:07:58,745  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 19:07:59,014  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 19:08:29,824  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 19:08:30,375  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-23 19:10:34,875  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-23 19:10:35,251  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-23 19:12:47,982  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-23 19:12:48,396  INFO - Ending test EndToEnd
+2015-09-23 19:12:48,417  INFO - Ending suite TrendInTestSuite

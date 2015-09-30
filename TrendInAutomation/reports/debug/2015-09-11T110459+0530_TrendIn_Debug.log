@@ -1,0 +1,7 @@
+2015-09-11 11:04:59,447  INFO - Starting suite Default suite
+2015-09-11 11:04:59,467  INFO - Starting test Default test
+2015-09-11 11:04:59,492  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 11:05:51,238  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 11:05:51,241 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-11 11:05:51,811  INFO - Ending test Default test
+2015-09-11 11:05:51,837  INFO - Ending suite Default suite

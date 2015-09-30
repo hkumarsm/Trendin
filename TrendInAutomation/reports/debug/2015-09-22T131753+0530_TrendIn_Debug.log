@@ -1,0 +1,7 @@
+2015-09-22 13:17:54,211  INFO - Starting suite Default suite
+2015-09-22 13:17:54,225  INFO - Starting test Default test
+2015-09-22 13:17:54,239  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:18:43,611  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:18:43,612 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element
+2015-09-22 13:18:45,187  INFO - Ending test Default test
+2015-09-22 13:18:45,243  INFO - Ending suite Default suite

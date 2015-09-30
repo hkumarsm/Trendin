@@ -1,0 +1,6 @@
+2015-09-02 18:58:46,839  INFO - Starting suite Default suite
+2015-09-02 18:58:46,850  INFO - Starting test Default test
+2015-09-02 18:58:46,860  INFO - Starting test method: testVerifyLogoPage
+2015-09-02 18:59:17,436  INFO - Ending test method testVerifyLogoPage
+2015-09-02 18:59:17,621  INFO - Ending test Default test
+2015-09-02 18:59:17,635  INFO - Ending suite Default suite

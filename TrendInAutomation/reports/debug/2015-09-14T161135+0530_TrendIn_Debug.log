@@ -1,0 +1,31 @@
+2015-09-14 16:11:35,652  INFO - Starting suite TrendInTestSuite
+2015-09-14 16:11:35,668  INFO - Starting test LoginPage
+2015-09-14 16:11:35,686  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 16:13:45,662  INFO - Ending test method testExistingUserTextFields
+2015-09-14 16:13:47,006  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 16:17:22,643  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 16:17:23,903  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-14 16:17:38,011  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-14 16:17:39,245  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-14 16:17:53,652  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-14 16:17:54,875  INFO - Starting test method: testVerifyRegisterPage
+2015-09-14 16:18:12,111  INFO - Ending test method testVerifyRegisterPage
+2015-09-14 16:18:13,343  INFO - Starting test method: testVerifyExistingPage
+2015-09-14 16:18:32,864  INFO - Ending test method testVerifyExistingPage
+2015-09-14 16:18:34,101  INFO - Starting test method: testForgotPasswordClick
+2015-09-14 16:18:56,179  INFO - Ending test method testForgotPasswordClick
+2015-09-14 16:18:57,410  INFO - Starting test method: testRefreshButton
+2015-09-14 16:19:16,471  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,476  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,479  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,484  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,488  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,491  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,494  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,497  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,500  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,503  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,506  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,509  INFO - Ending test method testRefreshButton
+2015-09-14 16:19:16,514  INFO - Ending test LoginPage
+2015-09-14 16:19:16,579  INFO - Ending suite TrendInTestSuite

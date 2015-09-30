@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DuplicateAddress]" allow-return-values="true">
+  <test name="TestLoginPage(failed)">
+    <classes>
+      <class name="com.trendin.tests.TestLoginPage">
+        <methods>
+          <include name="start"/>
+          <include name="ending"/>
+          <include name="testVerifyForgotPasswordFunctio"/>
+          <include name="beforeSuite"/>
+          <include name="testForgotPasswordClick"/>
+          <include name="end"/>
+          <include name="finishReport"/>
+          <include name="starting"/>
+        </methods>
+      </class> <!-- com.trendin.tests.TestLoginPage -->
+    </classes>
+  </test> <!-- TestLoginPage(failed) -->
+</suite> <!-- Failed suite [DuplicateAddress] -->

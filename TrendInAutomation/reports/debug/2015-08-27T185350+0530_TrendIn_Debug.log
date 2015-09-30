@@ -1,0 +1,42 @@
+2015-08-27 18:53:51,028  INFO - Starting suite TrendInTestSuite
+2015-08-27 18:53:51,039  INFO - Starting test NormalUserRegisterPage
+2015-08-27 18:53:51,052  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 18:54:12,025  INFO - Ending test method testClickNewTrendIn
+2015-08-27 18:54:12,192  INFO - Starting test method: testCloseButton
+2015-08-27 18:54:29,914  INFO - Ending test method testCloseButton
+2015-08-27 18:54:30,239  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 18:54:48,805  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 18:54:49,147  INFO - Starting test method: testDropDownUserName
+2015-08-27 18:55:11,941  INFO - Ending test method testDropDownUserName
+2015-08-27 18:55:12,105  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 18:57:14,815  INFO - Ending test method testExistingUserTextFields
+2015-08-27 18:57:15,016  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 19:00:04,421  INFO - Ending test method testForgotPasswordClick
+2015-08-27 19:00:04,540  INFO - Starting test method: testMyAccountClick
+2015-08-27 19:00:42,731  INFO - Ending test method testMyAccountClick
+2015-08-27 19:00:42,899  INFO - Starting test method: testMyOrder
+2015-08-27 19:01:19,596  INFO - Ending test method testMyOrder
+2015-08-27 19:01:19,765  INFO - Starting test method: testRefreshButton
+2015-08-27 19:02:37,546  INFO - Ending test method testRefreshButton
+2015-08-27 19:02:37,741  INFO - Starting test method: testReturn
+2015-08-27 19:03:11,628  INFO - Ending test method testReturn
+2015-08-27 19:03:11,750  INFO - Starting test method: testUserName
+2015-08-27 19:04:42,396  INFO - Ending test method testUserName
+2015-08-27 19:04:42,571  INFO - Starting test method: testVerifyExistingPage
+2015-08-27 19:04:59,431  INFO - Ending test method testVerifyExistingPage
+2015-08-27 19:04:59,619  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-27 19:08:21,319  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-27 19:08:21,444  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-27 19:08:35,256  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-27 19:08:35,374  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-08-27 19:08:48,263  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-08-27 19:08:48,378  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-08-27 19:09:12,394  INFO - Ending test method testVerifyLogoutFunctionality
+2015-08-27 19:09:12,566  INFO - Starting test method: testVerifyRegisterPage
+2015-08-27 19:09:27,954  INFO - Ending test method testVerifyRegisterPage
+2015-08-27 19:09:28,115  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-27 19:09:49,419  INFO - Ending test method testVerifySignUpGoogle
+2015-08-27 19:09:49,581  INFO - Starting test method: testverifySignUpFacebook
+2015-08-27 19:10:19,688  INFO - Ending test method testverifySignUpFacebook
+2015-08-27 19:10:19,862  INFO - Ending test NormalUserRegisterPage
+2015-08-27 19:10:19,881  INFO - Ending suite TrendInTestSuite

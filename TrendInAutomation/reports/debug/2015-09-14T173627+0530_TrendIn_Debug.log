@@ -1,0 +1,6 @@
+2015-09-14 17:36:27,812  INFO - Starting suite Default suite
+2015-09-14 17:36:27,831  INFO - Starting test Default test
+2015-09-14 17:36:27,851  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-14 17:36:50,958  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-14 17:36:52,204  INFO - Ending test Default test
+2015-09-14 17:36:52,249  INFO - Ending suite Default suite

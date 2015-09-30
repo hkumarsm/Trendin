@@ -1,0 +1,14 @@
+2015-09-22 17:53:47,617  INFO - Starting suite TrendInTestSuite
+2015-09-22 17:53:47,638  INFO - Starting test RegisterSocialElements
+2015-09-22 17:53:47,661  INFO - Starting test method: testVerifyMyAddressExistingUserPage
+2015-09-22 17:54:40,680  INFO - Ending test method testVerifyMyAddressExistingUserPage
+2015-09-22 17:54:41,002  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 17:55:38,877  INFO - Ending test method testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 17:55:39,183  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 17:56:43,108  INFO - Ending test method testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 17:56:43,390  INFO - Starting test method: testVerifyMyAddressNewUserPage
+2015-09-22 17:57:37,864  INFO - Ending test method testVerifyMyAddressNewUserPage
+2015-09-22 17:57:38,130  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 17:59:15,221  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 17:59:15,503  INFO - Ending test RegisterSocialElements
+2015-09-22 17:59:15,554  INFO - Ending suite TrendInTestSuite

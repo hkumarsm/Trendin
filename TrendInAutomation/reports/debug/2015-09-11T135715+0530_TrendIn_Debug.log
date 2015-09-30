@@ -1,0 +1,23 @@
+2015-09-11 13:57:15,476  INFO - Starting suite TrendInTestSuite
+2015-09-11 13:57:15,495  INFO - Starting test LoginPage
+2015-09-11 13:57:15,515  INFO - Starting test method: testLoginPageIconClick
+2015-09-11 13:57:15,622  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,631  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,639  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,645  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,648  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,660  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,667  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,671  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,677  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,687  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,700  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,703  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,714  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,720  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,728  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,735  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,748  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,767  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:57:15,784  INFO - Ending test LoginPage
+2015-09-11 13:57:15,932  INFO - Ending suite TrendInTestSuite

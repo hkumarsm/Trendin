@@ -1,0 +1,5 @@
+2015-09-21 12:49:41,702  INFO - Starting suite TrendInTestSuite
+2015-09-21 12:49:41,715  INFO - Starting test ENDToEnd
+2015-09-21 12:49:41,726  INFO - Starting test method: testScenario3
+2015-09-21 12:50:57,948  INFO - Ending test method testScenario3
+2015-09-21 12:50:59,277  INFO - Starting test method: testVerifyCancelOrderPage

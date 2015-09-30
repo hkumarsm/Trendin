@@ -1,0 +1,19 @@
+2015-09-24 15:49:32,668  INFO - Starting suite TrendInTestSuite
+2015-09-24 15:49:32,678  INFO - Starting test EndToEnd
+2015-09-24 15:49:32,690  INFO - Starting test method: testScenario3
+2015-09-24 15:50:46,823  INFO - Ending test method testScenario3
+2015-09-24 15:50:46,823 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify Your shipping Address text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Expected shipping text: YOUR SHIPPING ADDRESS is not same as Actual shipping text: 
+2015-09-24 15:50:47,290  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-24 15:53:10,255  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-24 15:53:10,678  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 15:54:32,139  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 15:54:32,479  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 15:55:46,107  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 15:55:46,440  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 15:56:38,926  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 15:56:39,257  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 15:57:22,931  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 15:57:23,193  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-24 15:58:44,095  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-24 15:58:44,096 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to Enter zip code for shipping address page.. <b> Cause: </b>
+2015-09-24 15:58:44,566  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage

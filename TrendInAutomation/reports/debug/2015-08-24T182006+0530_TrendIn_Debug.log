@@ -1,0 +1,6 @@
+2015-08-24 18:20:07,166  INFO - Starting suite Default suite
+2015-08-24 18:20:07,179  INFO - Starting test Default test
+2015-08-24 18:20:36,934  INFO - Starting test method: testMyAccountClick
+2015-08-24 18:20:37,708  INFO - Ending test method testMyAccountClick
+2015-08-24 18:20:37,725  INFO - Ending test Default test
+2015-08-24 18:20:38,020  INFO - Ending suite Default suite

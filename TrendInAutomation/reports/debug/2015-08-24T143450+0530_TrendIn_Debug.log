@@ -1,0 +1,6 @@
+2015-08-24 14:34:50,936  INFO - Starting suite Default suite
+2015-08-24 14:34:50,951  INFO - Starting test Default test
+2015-08-24 14:35:23,010  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-08-24 14:35:23,334  INFO - Ending test method testValidationExistingUserLoginPage
+2015-08-24 14:35:23,346  INFO - Ending test Default test
+2015-08-24 14:35:23,699  INFO - Ending suite Default suite

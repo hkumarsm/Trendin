@@ -1,0 +1,6 @@
+2015-09-02 13:32:43,359  INFO - Starting suite Default suite
+2015-09-02 13:32:43,369  INFO - Starting test Default test
+2015-09-02 13:32:43,380  INFO - Starting test method: testVerifyTinyContactUsPage
+2015-09-02 13:35:04,438  INFO - Ending test method testVerifyTinyContactUsPage
+2015-09-02 13:35:13,338  INFO - Ending test Default test
+2015-09-02 13:35:13,350  INFO - Ending suite Default suite

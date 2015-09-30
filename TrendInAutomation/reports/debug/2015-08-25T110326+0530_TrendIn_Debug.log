@@ -1,0 +1,7 @@
+2015-08-25 11:03:26,887  INFO - Starting suite Default suite
+2015-08-25 11:03:26,903  INFO - Starting test Default test
+2015-08-25 11:03:56,691  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-08-25 11:03:59,294  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-08-25 11:03:59,294 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to enter the name. <b> Cause: </b>java.lang.NullPointerException
+2015-08-25 11:03:59,546  INFO - Ending test Default test
+2015-08-25 11:03:59,726  INFO - Ending suite Default suite

@@ -1,0 +1,5 @@
+2015-08-26 19:45:29,463  INFO - Starting suite TrendInTestSuite
+2015-08-26 19:45:29,474  INFO - Starting test NormalUser
+2015-08-26 19:45:29,485  INFO - Starting test method: testClickNewTrendIn
+2015-08-26 19:46:08,353  INFO - Ending test method testClickNewTrendIn
+2015-08-26 19:46:08,606  INFO - Starting test method: testCloseButton

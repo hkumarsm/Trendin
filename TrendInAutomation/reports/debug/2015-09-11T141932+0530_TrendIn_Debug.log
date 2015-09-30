@@ -1,0 +1,42 @@
+2015-09-11 14:19:32,770  INFO - Starting suite TrendInTestSuite
+2015-09-11 14:19:32,805  INFO - Starting test LoginPage
+2015-09-11 14:19:32,844  INFO - Starting test method: testLoginPageIconClick
+2015-09-11 14:20:02,923  INFO - Ending test method testLoginPageIconClick
+2015-09-11 14:20:03,182  INFO - Starting test method: testSignUpPasswordField
+2015-09-11 14:20:25,369  INFO - Ending test method testSignUpPasswordField
+2015-09-11 14:20:25,637  INFO - Starting test method: testValidateMailIdField
+2015-09-11 14:21:02,425  INFO - Ending test method testValidateMailIdField
+2015-09-11 14:21:02,687  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-11 14:21:23,248  INFO - Ending test method testValidateMailIdTextfield
+2015-09-11 14:21:23,248 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for'already registered mail-id' in the Email address textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield
+2015-09-11 14:21:23,703  INFO - Starting test method: testValidatePasswordField
+2015-09-11 14:22:00,641  INFO - Ending test method testValidatePasswordField
+2015-09-11 14:22:00,906  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-11 14:22:21,010  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-11 14:22:21,661  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-11 14:22:45,702  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 14:22:45,957  INFO - Starting test method: testValidateSignUpPageFunctionality
+2015-09-11 14:23:12,276  INFO - Ending test method testValidateSignUpPageFunctionality
+2015-09-11 14:23:12,529  INFO - Starting test method: testValidateUsernameTextfield
+2015-09-11 14:23:41,370  INFO - Ending test method testValidateUsernameTextfield
+2015-09-11 14:23:41,630  INFO - Starting test method: testValidationBlankFieldsInLoginPage
+2015-09-11 14:24:30,914  INFO - Ending test method testValidationBlankFieldsInLoginPage
+2015-09-11 14:24:31,158  INFO - Starting test method: testValidationExistingUserLoginPage
+2015-09-11 14:24:55,510  INFO - Ending test method testValidationExistingUserLoginPage
+2015-09-11 14:24:55,793  INFO - Starting test method: testValidationIAgreeTermsCheckB
+2015-09-11 14:25:19,963  INFO - Ending test method testValidationIAgreeTermsCheckB
+2015-09-11 14:25:20,206  INFO - Starting test method: testValidationMobileNumber
+2015-09-11 14:25:43,518  INFO - Ending test method testValidationMobileNumber
+2015-09-11 14:25:43,518 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number . <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for alphabets mobile number 
+2015-09-11 14:25:43,857  INFO - Starting test method: testValidationPrivacyPolicy
+2015-09-11 14:26:15,737  INFO - Ending test method testValidationPrivacyPolicy
+2015-09-11 14:26:16,005  INFO - Starting test method: testValidationTermsOfUse
+2015-09-11 14:26:44,020  INFO - Ending test method testValidationTermsOfUse
+2015-09-11 14:26:44,308  INFO - Starting test method: testVerifyForSignInWithFacebookInLoginPage
+2015-09-11 14:27:17,024  INFO - Ending test method testVerifyForSignInWithFacebookInLoginPage
+2015-09-11 14:27:17,298  INFO - Starting test method: testVerifyForSignInWithGoogleInLoginPage
+2015-09-11 14:27:43,330  INFO - Ending test method testVerifyForSignInWithGoogleInLoginPage
+2015-09-11 14:27:43,581  INFO - Starting test method: testVerifyNewToTrendinLink
+2015-09-11 14:28:06,014  INFO - Ending test method testVerifyNewToTrendinLink
+2015-09-11 14:28:06,509  INFO - Ending test LoginPage
+2015-09-11 14:28:06,540  INFO - Ending suite TrendInTestSuite

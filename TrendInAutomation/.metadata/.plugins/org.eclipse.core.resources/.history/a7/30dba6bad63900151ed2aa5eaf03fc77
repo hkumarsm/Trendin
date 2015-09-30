@@ -1,0 +1,21 @@
+package com.trendin.tests;
+
+import org.testng.annotations.Test;
+
+import com.trendin.core.TrendInQuickTestCase;
+import com.trendin.pages.HomePage;
+
+public class TestPages extends TrendInQuickTestCase {
+	@Test
+	public void testFirstTestCase() throws Exception {
+		System.out.println("Hemanth Success.");
+		HomePage homePage = new HomePage();
+		homePage.verifyHomePageLogo(driver);
+	}
+	
+	@Test 
+	public void verifyMyAccountTestCase()  throws Exception {
+		HomePage homePage = new HomePage();
+		homePage.verifyMyAccount(driver);
+	}
+}

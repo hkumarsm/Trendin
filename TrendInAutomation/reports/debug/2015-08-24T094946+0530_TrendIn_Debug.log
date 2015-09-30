@@ -1,0 +1,14 @@
+2015-08-24 09:49:46,471  INFO - Starting suite Default suite
+2015-08-24 09:49:46,486  INFO - Starting test Default test
+2015-08-24 09:50:29,827  INFO - Starting test method: verifyExistingLoginPage
+2015-08-24 09:50:33,651  INFO - Ending test method verifyExistingLoginPage
+2015-08-24 09:50:33,653 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign up with Google button. <b> Cause: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'Sign up with Google')]"}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-Hemanth', ip: '10.50.4.185', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 0059b619-542e-4afe-9934-cc0e7c14e224
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=28.0}]
+2015-08-24 09:50:34,975  INFO - Ending test Default test
+2015-08-24 09:50:35,320  INFO - Ending suite Default suite

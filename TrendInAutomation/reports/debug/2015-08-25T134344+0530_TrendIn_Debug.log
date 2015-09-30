@@ -1,0 +1,7 @@
+2015-08-25 13:43:44,748  INFO - Starting suite Default suite
+2015-08-25 13:43:44,758  INFO - Starting test Default test
+2015-08-25 13:43:58,998  INFO - Starting test method: testValidateMailIdField
+2015-08-25 13:45:53,985  INFO - Ending test method testValidateMailIdField
+2015-08-25 13:45:53,985 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for invalid email id in the your name textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for invalid email id in the your name textfield
+2015-08-25 13:45:54,287  INFO - Ending test Default test
+2015-08-25 13:45:54,457  INFO - Ending suite Default suite

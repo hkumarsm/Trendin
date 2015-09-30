@@ -1,0 +1,7 @@
+2015-09-18 17:12:05,849  INFO - Starting suite Default suite
+2015-09-18 17:12:05,864  INFO - Starting test Default test
+2015-09-18 17:12:05,879  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 17:13:11,078  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-18 17:13:11,079 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: passwordTxtXpath, for the Locator: xpath. <b> Cause: </b>
+2015-09-18 17:13:12,446  INFO - Ending test Default test
+2015-09-18 17:13:12,524  INFO - Ending suite Default suite

@@ -1,0 +1,26 @@
+2015-09-16 20:45:31,723  INFO - Starting suite TrendInTestSuite
+2015-09-16 20:45:31,743  INFO - Starting test TrackOrderPage
+2015-09-16 20:45:31,753  INFO - Starting test method: testTrack
+2015-09-16 20:45:53,405  INFO - Ending test method testTrack
+2015-09-16 20:45:54,655  INFO - Starting test method: testTrackOrderPopUp
+2015-09-16 20:46:13,742  INFO - Ending test method testTrackOrderPopUp
+2015-09-16 20:46:14,973  INFO - Starting test method: verifyEmailIdTextBox
+2015-09-16 20:46:48,809  INFO - Ending test method verifyEmailIdTextBox
+2015-09-16 20:46:50,067  INFO - Starting test method: verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-16 20:47:16,527  INFO - Ending test method verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-16 20:47:17,778  INFO - Starting test method: verifyErrorMsgForMailOrderNo
+2015-09-16 20:47:46,499  INFO - Ending test method verifyErrorMsgForMailOrderNo
+2015-09-16 20:47:47,740  INFO - Starting test method: verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-16 20:48:16,049  INFO - Ending test method verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-16 20:48:17,290  INFO - Starting test method: verifySignUpPageWhenClickOnLoginForMore
+2015-09-16 20:48:50,186  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-16 20:48:51,450  INFO - Starting test method: verifyTrackOrderForRegisterUser
+2015-09-16 20:49:26,388  INFO - Ending test method verifyTrackOrderForRegisterUser
+2015-09-16 20:49:27,638  INFO - Starting test method: verifyTrackOrderForRegisterUserInvalidOrderNumber
+2015-09-16 20:50:05,304  INFO - Ending test method verifyTrackOrderForRegisterUserInvalidOrderNumber
+2015-09-16 20:50:06,555  INFO - Starting test method: verifyTrackOrderMsgForRegisterUserEmptyOrderNumber
+2015-09-16 20:50:41,182  INFO - Ending test method verifyTrackOrderMsgForRegisterUserEmptyOrderNumber
+2015-09-16 20:50:42,423  INFO - Starting test method: verifyTrackOrderMsgForRegisterUserOthersOrderNumber
+2015-09-16 20:51:17,683  INFO - Ending test method verifyTrackOrderMsgForRegisterUserOthersOrderNumber
+2015-09-16 20:51:18,914  INFO - Ending test TrackOrderPage
+2015-09-16 20:51:18,965  INFO - Ending suite TrendInTestSuite

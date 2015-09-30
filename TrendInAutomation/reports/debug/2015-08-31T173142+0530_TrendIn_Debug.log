@@ -1,0 +1,6 @@
+2015-08-31 17:31:42,325  INFO - Starting suite Default suite
+2015-08-31 17:31:42,336  INFO - Starting test Default test
+2015-08-31 17:31:42,347  INFO - Starting test method: testvalidateInvalidMismatchNewAndCofirmPassword
+2015-08-31 17:32:00,442  INFO - Ending test method testvalidateInvalidMismatchNewAndCofirmPassword
+2015-08-31 17:32:00,448  INFO - Ending test Default test
+2015-08-31 17:32:00,475  INFO - Ending suite Default suite

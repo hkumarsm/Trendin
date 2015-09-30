@@ -1,0 +1,53 @@
+2015-08-27 14:41:52,709  INFO - Starting suite TrendInTestSuite
+2015-08-27 14:41:52,720  INFO - Starting test NormalUser
+2015-08-27 14:41:52,731  INFO - Starting test method: testClickNewTrendIn
+2015-08-27 14:43:43,394  INFO - Ending test method testClickNewTrendIn
+2015-08-27 14:43:43,512  INFO - Starting test method: testCloseButton
+2015-08-27 14:44:59,912  INFO - Ending test method testCloseButton
+2015-08-27 14:45:00,201  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-27 14:46:19,382  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-27 14:46:19,629  INFO - Starting test method: testDropDownUserName
+2015-08-27 14:49:43,163  INFO - Ending test method testDropDownUserName
+2015-08-27 14:49:43,428  INFO - Starting test method: testExistingUserTextFields
+2015-08-27 14:54:44,757  INFO - Ending test method testExistingUserTextFields
+2015-08-27 14:54:45,422  INFO - Starting test method: testForgotPasswordClick
+2015-08-27 14:55:06,530  INFO - Ending test method testForgotPasswordClick
+2015-08-27 14:55:06,639  INFO - Starting test method: testMyAccountClick
+2015-08-27 14:55:35,752  INFO - Ending test method testMyAccountClick
+2015-08-27 14:55:35,756 ERROR - <b> Exception: </b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Command duration or timeout: 3.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 12dea2e3-9f7d-414a-9767-91c4f2034040
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".tr.tr-caret-down"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'Qualitest-PC', ip: '10.50.2.176', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-08-27 14:55:36,094  INFO - Starting test method: testMyOrder
+2015-08-27 14:56:11,238  INFO - Ending test method testMyOrder
+2015-08-27 14:56:11,352  INFO - Starting test method: testRefreshButton
+2015-08-27 14:58:42,453  INFO - Ending test method testRefreshButton
+2015-08-27 14:58:42,565  INFO - Starting test method: testReturn
+2015-08-27 15:01:46,464  INFO - Ending test method testReturn
+2015-08-27 15:01:46,584  INFO - Starting test method: testUserName
+2015-08-27 15:02:18,211  INFO - Ending test method testUserName
+2015-08-27 15:02:18,328  INFO - Starting test method: testVerifyExistingPage
+2015-08-27 15:02:35,676  INFO - Ending test method testVerifyExistingPage
+2015-08-27 15:02:35,784  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-08-27 15:05:57,170  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-08-27 15:05:57,299  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-08-27 15:06:13,313  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-08-27 15:06:13,420  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-08-27 15:06:28,860  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-08-27 15:06:28,968  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-08-27 15:06:53,903  INFO - Ending test method testVerifyLogoutFunctionality
+2015-08-27 15:06:54,011  INFO - Starting test method: testVerifyRegisterPage
+2015-08-27 15:15:25,250  INFO - Ending test method testVerifyRegisterPage
+2015-08-27 15:15:25,362  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-27 15:15:48,209  INFO - Ending test method testVerifySignUpGoogle
+2015-08-27 15:15:48,317  INFO - Starting test method: testverifySignUpFacebook
+2015-08-27 15:16:15,925  INFO - Ending test method testverifySignUpFacebook
+2015-08-27 15:16:16,147  INFO - Ending test NormalUser
+2015-08-27 15:16:16,196  INFO - Ending suite TrendInTestSuite

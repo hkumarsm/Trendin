@@ -1,0 +1,28 @@
+2015-09-01 11:52:53,696  INFO - Starting suite TrendInTestSuite
+2015-09-01 11:52:53,707  INFO - Starting test ChangePasswordPage
+2015-09-01 11:52:53,718  INFO - Starting test method: testChangePasswordAccountPage
+2015-09-01 11:53:32,629  INFO - Ending test method testChangePasswordAccountPage
+2015-09-01 11:53:32,759  INFO - Starting test method: testModifyOldPassword
+2015-09-01 11:54:14,123  INFO - Ending test method testModifyOldPassword
+2015-09-01 11:54:14,266  INFO - Starting test method: testvalidateErrorMessageForPasswordField
+2015-09-01 11:57:51,650  INFO - Ending test method testvalidateErrorMessageForPasswordField
+2015-09-01 11:57:51,827  INFO - Starting test method: testvalidateErrorMessageForPasswordTextfields
+2015-09-01 11:58:23,124  INFO - Ending test method testvalidateErrorMessageForPasswordTextfields
+2015-09-01 11:58:23,298  INFO - Starting test method: testvalidateErrorMessageForEmptyPasswordField
+2015-09-01 11:58:59,100  INFO - Ending test method testvalidateErrorMessageForEmptyPasswordField
+2015-09-01 11:58:59,275  INFO - Starting test method: testValidateInvalidOldPassword
+2015-09-01 11:59:39,676  INFO - Ending test method testValidateInvalidOldPassword
+2015-09-01 11:59:39,810  INFO - Starting test method: testvalidateInvalidMismatchNewAndCofirmPassword
+2015-09-01 12:02:30,545  INFO - Ending test method testvalidateInvalidMismatchNewAndCofirmPassword
+2015-09-01 12:02:30,676  INFO - Starting test method: testValidateInvalidCofirmPassword
+2015-09-01 12:03:02,817  INFO - Ending test method testValidateInvalidCofirmPassword
+2015-09-01 12:03:02,990  INFO - Starting test method: testValidateInvalidNewPasswordTextField
+2015-09-01 12:03:34,982  INFO - Ending test method testValidateInvalidNewPasswordTextField
+2015-09-01 12:03:35,159  INFO - Starting test method: testValidateNewPasswordTextField
+2015-09-01 12:04:06,830  INFO - Ending test method testValidateNewPasswordTextField
+2015-09-01 12:04:07,034  INFO - Starting test method: testValidateNewPasswordField
+2015-09-01 12:04:40,090  INFO - Ending test method testValidateNewPasswordField
+2015-09-01 12:04:40,303  INFO - Starting test method: testModifyOldPasswordPreRequisite
+2015-09-01 12:05:12,811  INFO - Ending test method testModifyOldPasswordPreRequisite
+2015-09-01 12:05:13,026  INFO - Ending test ChangePasswordPage
+2015-09-01 12:05:13,041  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,272 @@
+2015-09-22 13:56:28,435  INFO - Starting suite TrendInTestSuite
+2015-09-22 13:56:28,454  INFO - Starting test RegisterSocialElements
+2015-09-22 13:56:28,471  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-22 13:57:08,362  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-22 13:57:08,363 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 13:57:09,858  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-22 13:57:37,028  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-22 13:57:37,029 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 13:57:38,406  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-22 13:58:05,290  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-22 13:58:05,291 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 13:58:06,734  INFO - Starting test method: testLoginOrRegisterPageAgain
+2015-09-22 13:58:46,398  INFO - Ending test method testLoginOrRegisterPageAgain
+2015-09-22 13:58:46,399 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6736_31881}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 49cd82b9221e431172b2c62c34581373
+2015-09-22 13:58:47,846  INFO - Starting test method: testMyAccountMyOrderNewUserPage
+2015-09-22 13:59:44,574  INFO - Ending test method testMyAccountMyOrderNewUserPage
+2015-09-22 13:59:45,857  INFO - Starting test method: testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 14:00:35,286  INFO - Ending test method testMyAccountMyOrderNewUserPageFacebookButtonPage
+2015-09-22 14:00:35,287 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:00:36,675  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 14:01:20,704  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleClickOnFacebookButton
+2015-09-22 14:01:20,705 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:01:22,114  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 14:02:08,313  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-22 14:02:08,313 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:02:09,710  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 14:03:46,764  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-22 14:03:46,765 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:03:48,130  INFO - Starting test method: testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 14:05:37,854  INFO - Ending test method testMyAccountMyOrderNewUserValidCredentialsOnGoogle
+2015-09-22 14:05:39,187  INFO - Starting test method: testMyAccountMyOrderPage
+2015-09-22 14:06:18,535  INFO - Ending test method testMyAccountMyOrderPage
+2015-09-22 14:06:19,802  INFO - Starting test method: testNewToTrendInPage
+2015-09-22 14:07:00,679  INFO - Ending test method testNewToTrendInPage
+2015-09-22 14:07:01,929  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-22 14:07:28,679  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-22 14:07:29,913  INFO - Starting test method: testVeifyReturnsOrRefundsPage
+2015-09-22 14:08:07,707  INFO - Ending test method testVeifyReturnsOrRefundsPage
+2015-09-22 14:08:09,022  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-22 14:09:17,812  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-22 14:09:17,813 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the google password. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not found the element: googlePasswordCss, for the Locator: CssSelector
+2015-09-22 14:09:19,132  INFO - Starting test method: testVerifyClickOnMyOrder
+2015-09-22 14:09:59,631  INFO - Ending test method testVerifyClickOnMyOrder
+2015-09-22 14:10:00,858  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-22 14:10:29,429  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-22 14:10:29,430 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <h4 class="modal-title" id="myModalLabel">...</h4>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 46 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6248_27583}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 94026a7c206ba877a971e54d9224b8a2
+2015-09-22 14:10:30,787  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-22 14:10:51,075  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-22 14:10:51,075 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6420_21577}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3c07cb6269ffe1573f5dc0a8b8b82056
+2015-09-22 14:10:52,417  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 14:11:30,959  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-22 14:11:32,194  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-22 14:12:22,023  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-22 14:12:22,024 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:12:23,426  INFO - Starting test method: testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 14:12:44,244  INFO - Ending test method testVerifyFacebookEmailAndPasswordTextFields
+2015-09-22 14:12:44,245 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir2140_1817}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8c76a64e25c446f57469c2db419eb234
+2015-09-22 14:12:45,583  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 14:13:30,802  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-22 14:13:30,802 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:13:32,190  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-22 14:13:53,316  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-22 14:13:54,606  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-22 14:14:20,078  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-22 14:14:20,079 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir7032_18530}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d0eb543b8141f822d8bb2bdc8e0b696. <b> Cause: </b>
+2015-09-22 14:14:21,685  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 14:14:46,937  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-22 14:14:46,938 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir5920_11019}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: feacacb765ab2eb73641e2e49ce328fa. <b> Cause: </b>
+2015-09-22 14:14:48,361  INFO - Starting test method: testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 14:15:17,771  INFO - Ending test method testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-22 14:15:17,772 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:15:19,167  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-22 14:15:49,132  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-22 14:15:49,136 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:15:50,501  INFO - Starting test method: testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 14:16:12,517  INFO - Ending test method testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-22 14:16:12,518 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6124_11453}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 32872fdab6e7dca4ab3a96cbb77f1c98
+2015-09-22 14:16:13,899  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 14:16:38,162  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-22 14:16:38,163 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir4976_24530}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0315a2101c5a758f3f54b7e5e8d582ee. <b> Cause: </b>
+2015-09-22 14:16:39,520  INFO - Starting test method: testVerifyMyAccountMyOrder
+2015-09-22 14:17:36,062  INFO - Ending test method testVerifyMyAccountMyOrder
+2015-09-22 14:17:37,358  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 14:18:34,324  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUser
+2015-09-22 14:18:35,613  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 14:19:42,487  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserMouseOverOnGoogle
+2015-09-22 14:19:42,488 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:19:43,840  INFO - Starting test method: testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 14:20:30,891  INFO - Ending test method testVerifyMyAccountMyOrderLinkNewUserPageClickOnGmailButton
+2015-09-22 14:20:30,891 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:20:32,266  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 14:21:20,631  INFO - Ending test method testVerifyMyAccountMyOrderNewUserGmailPage
+2015-09-22 14:21:20,632 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:21:22,058  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 14:22:08,388  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogInToGmailTextFields
+2015-09-22 14:22:08,388 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:22:09,823  INFO - Starting test method: testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 14:23:00,032  INFO - Ending test method testVerifyMyAccountMyOrderNewUserLogIntoGmail
+2015-09-22 14:23:00,033 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:23:01,418  INFO - Starting test method: testVerifyMyAccountNewUserGoogleButton
+2015-09-22 14:23:50,545  INFO - Ending test method testVerifyMyAccountNewUserGoogleButton
+2015-09-22 14:23:50,546 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir4644_3438}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bcca38b5cfa368dad6f4dd59e1082687. <b> Cause: </b>
+2015-09-22 14:23:51,888  INFO - Starting test method: testVerifyMyAccountNewUserGooglePage
+2015-09-22 14:24:41,464  INFO - Ending test method testVerifyMyAccountNewUserGooglePage
+2015-09-22 14:24:41,465 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 14:24:42,803  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 14:25:08,214  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-22 14:25:08,219 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 14:25:09,536  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 14:25:32,270  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-22 14:25:32,270 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 57 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6848_29089}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a27cfc57aabb935d5c0ad5eefce41703. <b> Cause: </b>
+2015-09-22 14:25:33,608  INFO - Starting test method: testVerifyMyAccountNewUserPage
+2015-09-22 14:25:58,785  INFO - Ending test method testVerifyMyAccountNewUserPage
+2015-09-22 14:25:58,786 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir1376_19150}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3ed727a1264310ea4f5a6b3be27e08e0. <b> Cause: </b>
+2015-09-22 14:26:00,141  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 14:26:44,657  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-22 14:26:44,658 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:26:46,088  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-22 14:27:12,437  INFO - Ending test method testVerifyMyAccountPage
+2015-09-22 14:27:12,438 ERROR - <b> Exception: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (230, 658). Other element would receive the click: <div class="footer_wrap">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6780_22376}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a847aafb7c0b5c38ae0bb54eac66c04b. <b> Cause: </b>
+2015-09-22 14:27:13,780  INFO - Starting test method: testVerifyMyAddressExistingUserPage
+2015-09-22 14:27:59,928  INFO - Ending test method testVerifyMyAddressExistingUserPage
+2015-09-22 14:28:01,241  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 14:28:54,545  INFO - Ending test method testVerifyMyAddressNewUserFaceBookButton
+2015-09-22 14:28:54,546 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:28:55,929  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 14:29:49,374  INFO - Ending test method testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 14:29:49,375 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:29:50,713  INFO - Starting test method: testVerifyMyAddressNewUserPage
+2015-09-22 14:30:50,128  INFO - Ending test method testVerifyMyAddressNewUserPage
+2015-09-22 14:30:51,423  INFO - Starting test method: testVerifyNewToTrendInButton
+2015-09-22 14:31:13,645  INFO - Ending test method testVerifyNewToTrendInButton
+2015-09-22 14:31:13,646 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir6492_16568}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9948c5f7c8540fc88c68bb863d704dad
+2015-09-22 14:31:15,035  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-22 14:31:36,109  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-22 14:31:36,111 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not Click the element: loginIconXpath, for the locator: XPath. <b> Cause: </b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1001, 18). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=45.0.2454.93)
+  (Driver info: chromedriver=2.19.346078 (6f1f0cde889532d48ce8242342d0b84f94b114a1),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir5936_19276}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.93, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 91b31fde35e18c101c81c24ba7e1a1dc
+2015-09-22 14:31:37,436  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 14:32:23,507  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-22 14:32:24,822  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 14:33:24,323  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageClickOnFacebookButton
+2015-09-22 14:33:24,326 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:33:25,701  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 14:34:06,663  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 14:34:06,664 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:34:08,040  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 14:34:48,689  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPageTextFields
+2015-09-22 14:34:48,690 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:34:50,120  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 14:35:21,393  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPage
+2015-09-22 14:35:22,624  INFO - Starting test method: testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 14:36:14,812  INFO - Ending test method testVerifyReturnsOrRefundsNewUserPageMouseOverOnGoogle
+2015-09-22 14:36:14,812 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:36:16,237  INFO - Starting test method: testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 14:37:07,245  INFO - Ending test method testVerifyReturnsRefundsPersonalInformationWhenlogsIntoGoogleAccount
+2015-09-22 14:37:07,246 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:37:08,658  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField
+2015-09-22 14:37:39,264  INFO - Ending test method testverifyErorMessageOnEmptyEmailTextField
+2015-09-22 14:37:39,264 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not matching the color Hexa deciamal value.
+2015-09-22 14:37:40,574  INFO - Ending test RegisterSocialElements
+2015-09-22 14:37:40,912  INFO - Ending suite TrendInTestSuite

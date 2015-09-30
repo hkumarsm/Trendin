@@ -1,0 +1,6 @@
+2015-09-21 11:24:14,697  INFO - Starting suite Default suite
+2015-09-21 11:24:14,708  INFO - Starting test Default test
+2015-09-21 11:24:14,721  INFO - Starting test method: testScenario3
+2015-09-21 11:30:04,895  INFO - Ending test method testScenario3
+2015-09-21 11:30:06,320  INFO - Ending test Default test
+2015-09-21 11:30:06,357  INFO - Ending suite Default suite

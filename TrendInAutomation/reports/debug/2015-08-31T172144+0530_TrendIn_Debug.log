@@ -1,0 +1,6 @@
+2015-08-31 17:21:44,401  INFO - Starting suite Default suite
+2015-08-31 17:21:44,412  INFO - Starting test Default test
+2015-08-31 17:21:44,423  INFO - Starting test method: testValidateInvalidOldPassword
+2015-08-31 17:22:21,201  INFO - Ending test method testValidateInvalidOldPassword
+2015-08-31 17:22:21,449  INFO - Ending test Default test
+2015-08-31 17:22:21,461  INFO - Ending suite Default suite

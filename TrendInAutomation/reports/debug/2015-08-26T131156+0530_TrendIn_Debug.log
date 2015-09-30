@@ -1,0 +1,7 @@
+2015-08-26 13:11:56,507  INFO - Starting suite Default suite
+2015-08-26 13:11:56,518  INFO - Starting test Default test
+2015-08-26 13:12:12,947  INFO - Starting test method: testValidateMailIdField
+2015-08-26 13:12:19,197  INFO - Ending test method testValidateMailIdField
+2015-08-26 13:12:19,197 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'spaces' in the Email address textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'spaces' in the Email address textfield
+2015-08-26 13:12:19,497  INFO - Ending test Default test
+2015-08-26 13:12:19,677  INFO - Ending suite Default suite

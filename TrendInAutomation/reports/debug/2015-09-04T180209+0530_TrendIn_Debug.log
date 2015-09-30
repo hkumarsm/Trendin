@@ -1,0 +1,48 @@
+2015-09-04 18:02:10,014  INFO - Starting suite TrendInTestSuite
+2015-09-04 18:02:10,024  INFO - Starting test LouisPhilippePage
+2015-09-04 18:02:10,044  INFO - Starting test method: testClickOnCartButton
+2015-09-04 18:05:23,302  INFO - Ending test method testClickOnCartButton
+2015-09-04 18:05:23,514  INFO - Starting test method: testClickOnShopByBrandOptionAndVerify
+2015-09-04 18:06:12,303  INFO - Ending test method testClickOnShopByBrandOptionAndVerify
+2015-09-04 18:06:12,464  INFO - Starting test method: testClickOnTrendInLogo
+2015-09-04 18:06:37,532  INFO - Ending test method testClickOnTrendInLogo
+2015-09-04 18:06:37,702  INFO - Starting test method: testExistingUserLoginAndVerify
+2015-09-04 18:07:13,738  INFO - Ending test method testExistingUserLoginAndVerify
+2015-09-04 18:07:13,950  INFO - Starting test method: testVerifyBrandLouisPhilippe
+2015-09-04 18:07:42,431  INFO - Ending test method testVerifyBrandLouisPhilippe
+2015-09-04 18:07:42,601  INFO - Starting test method: testVerifyDefaultSearchLabel
+2015-09-04 18:08:26,402  INFO - Ending test method testVerifyDefaultSearchLabel
+2015-09-04 18:08:26,613  INFO - Starting test method: testVerifyErrorMessageForEmptySearchButton
+2015-09-04 18:09:05,731  INFO - Ending test method testVerifyErrorMessageForEmptySearchButton
+2015-09-04 18:09:05,911  INFO - Starting test method: testVerifyErrorMessageForInvalidKeyword
+2015-09-04 18:10:28,296  INFO - Ending test method testVerifyErrorMessageForInvalidKeyword
+2015-09-04 18:10:28,478  INFO - Starting test method: testVerifyForAllBrandLink
+2015-09-04 18:10:58,756  INFO - Ending test method testVerifyForAllBrandLink
+2015-09-04 18:10:58,916  INFO - Starting test method: testVerifyForCloseShopByBrands
+2015-09-04 18:11:29,190  INFO - Ending test method testVerifyForCloseShopByBrands
+2015-09-04 18:11:29,517  INFO - Starting test method: testVerifyGuestUser
+2015-09-04 18:13:41,862  INFO - Ending test method testVerifyGuestUser
+2015-09-04 18:13:41,993  INFO - Starting test method: testVerifyLogoPage
+2015-09-04 18:15:37,308  INFO - Ending test method testVerifyLogoPage
+2015-09-04 18:15:37,480  INFO - Starting test method: testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 18:17:23,137  INFO - Ending test method testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 18:17:23,308  INFO - Starting test method: testVerifySearchButtonFunctionality
+2015-09-04 18:19:18,143  INFO - Ending test method testVerifySearchButtonFunctionality
+2015-09-04 18:19:18,585  INFO - Starting test method: testVerifySubCategoryNavigationPage
+2015-09-04 18:20:22,691  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 18:20:22,932  INFO - Starting test method: testVerifyTinyContactUsPage
+2015-09-04 18:21:42,360  INFO - Ending test method testVerifyTinyContactUsPage
+2015-09-04 18:22:08,655  INFO - Starting test method: testVerifyTinyStorePage
+2015-09-04 18:23:26,989  INFO - Ending test method testVerifyTinyStorePage
+2015-09-04 18:23:50,825  INFO - Starting test method: testVerifyTinyTrackOrderPage
+2015-09-04 18:24:56,744  INFO - Ending test method testVerifyTinyTrackOrderPage
+2015-09-04 18:25:20,583  INFO - Starting test method: testVerifyTinyUserNamePage
+2015-09-04 18:26:05,954  INFO - Ending test method testVerifyTinyUserNamePage
+2015-09-04 18:26:05,954 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-04 18:26:11,854  INFO - Starting test method: testVerifyUserDropDown
+2015-09-04 18:26:58,254  INFO - Ending test method testVerifyUserDropDown
+2015-09-04 18:27:40,555  INFO - Starting test method: testVerifyUserDropDownNavigationPage
+2015-09-04 18:28:32,212  INFO - Ending test method testVerifyUserDropDownNavigationPage
+2015-09-04 18:28:32,212 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-04 18:28:35,612  INFO - Ending test LouisPhilippePage
+2015-09-04 18:28:35,642  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,6 @@
+2015-09-24 11:10:10,573  INFO - Starting suite Default suite
+2015-09-24 11:10:10,614  INFO - Starting test Default test
+2015-09-24 11:10:10,631  INFO - Starting test method: testVerifyBrandLouisPhilippe
+2015-09-24 11:11:16,344  INFO - Ending test method testVerifyBrandLouisPhilippe
+2015-09-24 11:11:16,730  INFO - Ending test Default test
+2015-09-24 11:11:16,751  INFO - Ending suite Default suite

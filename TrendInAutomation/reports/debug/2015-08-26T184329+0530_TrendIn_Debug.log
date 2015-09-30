@@ -1,0 +1,9 @@
+2015-08-26 18:43:29,638  INFO - Starting suite TrendInTestSuite
+2015-08-26 18:43:39,601  INFO - Starting test NormalUser
+2015-08-26 18:44:30,713  INFO - Starting test method: testClickNewTrendIn
+2015-08-26 18:45:07,674  INFO - Ending test method testClickNewTrendIn
+2015-08-26 18:45:07,856  INFO - Starting test method: testCloseButton
+2015-08-26 18:45:26,711  INFO - Ending test method testCloseButton
+2015-08-26 18:45:26,983  INFO - Starting test method: testCloseButtonForgotPassword
+2015-08-26 18:45:44,432  INFO - Ending test method testCloseButtonForgotPassword
+2015-08-26 18:45:44,684  INFO - Starting test method: testDropDownUserName

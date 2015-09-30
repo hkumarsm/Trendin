@@ -1,0 +1,6 @@
+2015-09-14 12:48:16,989  INFO - Starting suite Default suite
+2015-09-14 12:48:16,999  INFO - Starting test Default test
+2015-09-14 12:48:17,011  INFO - Starting test method: verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:48:55,051  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:48:55,058  INFO - Ending test Default test
+2015-09-14 12:48:55,120  INFO - Ending suite Default suite

@@ -1,0 +1,7 @@
+2015-08-26 13:18:59,999  INFO - Starting suite Default suite
+2015-08-26 13:19:00,012  INFO - Starting test Default test
+2015-08-26 13:19:15,855  INFO - Starting test method: testSignUpPasswordField
+2015-08-26 13:19:19,875  INFO - Ending test method testSignUpPasswordField
+2015-08-26 13:19:19,877 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: NOt able to verify the error message
+2015-08-26 13:19:20,201  INFO - Ending test Default test
+2015-08-26 13:19:20,333  INFO - Ending suite Default suite

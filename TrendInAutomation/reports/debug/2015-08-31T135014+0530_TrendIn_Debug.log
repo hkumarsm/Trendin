@@ -1,0 +1,6 @@
+2015-08-31 13:50:14,269  INFO - Starting suite Default suite
+2015-08-31 13:50:14,280  INFO - Starting test Default test
+2015-08-31 13:50:14,290  INFO - Starting test method: testChangePasswordAccountPage
+2015-08-31 13:50:52,321  INFO - Ending test method testChangePasswordAccountPage
+2015-08-31 13:50:52,454  INFO - Ending test Default test
+2015-08-31 13:50:52,467  INFO - Ending suite Default suite

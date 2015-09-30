@@ -1,0 +1,6 @@
+2015-09-22 11:25:22,526  INFO - Starting suite Default suite
+2015-09-22 11:25:22,543  INFO - Starting test Default test
+2015-09-22 11:25:22,559  INFO - Starting test method: testVerifyApplicationDisplaysLogInWhenUserClicksMyOrders
+2015-09-22 11:26:03,056  INFO - Ending test method testVerifyApplicationDisplaysLogInWhenUserClicksMyOrders
+2015-09-22 11:26:04,414  INFO - Ending test Default test
+2015-09-22 11:26:04,456  INFO - Ending suite Default suite

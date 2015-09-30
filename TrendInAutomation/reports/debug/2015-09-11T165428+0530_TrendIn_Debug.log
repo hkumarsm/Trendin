@@ -1,0 +1,6 @@
+2015-09-11 16:54:28,969  INFO - Starting suite Default suite
+2015-09-11 16:54:28,985  INFO - Starting test Default test
+2015-09-11 16:54:29,001  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-11 16:55:05,531  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:55:06,270  INFO - Ending test Default test
+2015-09-11 16:55:06,290  INFO - Ending suite Default suite

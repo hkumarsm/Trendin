@@ -1,0 +1,6 @@
+2015-09-04 17:30:59,631  INFO - Starting suite Default suite
+2015-09-04 17:30:59,643  INFO - Starting test Default test
+2015-09-04 17:30:59,655  INFO - Starting test method: testVerifySubCategoryNavigationPage
+2015-09-04 17:34:09,527  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:34:09,531  INFO - Ending test Default test
+2015-09-04 17:34:09,554  INFO - Ending suite Default suite

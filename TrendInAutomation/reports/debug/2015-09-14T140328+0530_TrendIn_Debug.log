@@ -1,0 +1,31 @@
+2015-09-14 14:03:28,664  INFO - Starting suite TrendInTestSuite
+2015-09-14 14:03:28,681  INFO - Starting test LoginPage
+2015-09-14 14:03:28,701  INFO - Starting test method: testClickNewTrendIn
+2015-09-14 14:03:56,863  INFO - Ending test method testClickNewTrendIn
+2015-09-14 14:03:58,397  INFO - Starting test method: testCloseButton
+2015-09-14 14:04:36,454  INFO - Ending test method testCloseButton
+2015-09-14 14:04:38,026  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-14 14:04:58,526  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-14 14:05:00,107  INFO - Starting test method: testDropDownUserName
+2015-09-14 14:05:51,717  INFO - Ending test method testDropDownUserName
+2015-09-14 14:05:53,304  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 14:06:26,572  INFO - Ending test method testExistingUserTextFields
+2015-09-14 14:06:26,572 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Ccouln't click on the password button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to enter the text in the field: existingPasswordXpath, for the Locator: Xpath
+2015-09-14 14:06:28,439  INFO - Starting test method: testForgotPasswordClick
+2015-09-14 14:07:03,636  INFO - Ending test method testForgotPasswordClick
+2015-09-14 14:07:05,143  INFO - Starting test method: testMyAccountClick
+2015-09-14 14:07:39,701  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,707  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,710  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,714  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,718  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,735  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,746  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,753  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,758  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,774  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,782  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,798  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,802  INFO - Ending test method testMyAccountClick
+2015-09-14 14:07:39,806  INFO - Ending test LoginPage
+2015-09-14 14:07:39,911  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,6 @@
+2015-08-26 14:13:35,304  INFO - Starting suite Default suite
+2015-08-26 14:13:35,315  INFO - Starting test Default test
+2015-08-26 14:14:11,882  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-08-26 14:14:16,719  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-08-26 14:14:16,722  INFO - Ending test Default test
+2015-08-26 14:14:16,846  INFO - Ending suite Default suite

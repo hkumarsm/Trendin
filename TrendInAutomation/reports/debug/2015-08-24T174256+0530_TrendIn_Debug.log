@@ -1,0 +1,16 @@
+2015-08-24 17:42:57,145  INFO - Starting suite Default suite
+2015-08-24 17:42:57,157  INFO - Starting test Default test
+2015-08-24 17:43:26,707  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-24 17:43:29,040  INFO - Ending test method testVerifySignUpGoogle
+2015-08-24 17:43:29,042 ERROR - <b> Exception: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-Hemanth', ip: '10.50.4.185', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 55ba15cf-9e3e-46e8-b2f1-1889bde090f0
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=28.0}]. <b> Cause: </b>org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-Hemanth', ip: '10.50.4.185', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+2015-08-24 17:43:29,446  INFO - Ending test Default test
+2015-08-24 17:43:29,694  INFO - Ending suite Default suite

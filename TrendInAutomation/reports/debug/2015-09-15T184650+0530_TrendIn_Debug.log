@@ -1,0 +1,16 @@
+2015-09-15 18:46:50,463  INFO - Starting suite TrendInTestSuite
+2015-09-15 18:46:50,499  INFO - Starting test TrackOrderPage
+2015-09-15 18:46:50,517  INFO - Starting test method: testTrack
+2015-09-15 18:46:50,541  INFO - Ending test method testTrack
+2015-09-15 18:46:50,545  INFO - Ending test method testTrack
+2015-09-15 18:46:50,548  INFO - Ending test method testTrack
+2015-09-15 18:46:50,551  INFO - Ending test method testTrack
+2015-09-15 18:46:50,581  INFO - Ending test method testTrack
+2015-09-15 18:46:50,585  INFO - Ending test method testTrack
+2015-09-15 18:46:50,589  INFO - Ending test method testTrack
+2015-09-15 18:46:50,595  INFO - Ending test method testTrack
+2015-09-15 18:46:50,605  INFO - Ending test method testTrack
+2015-09-15 18:46:50,618  INFO - Ending test method testTrack
+2015-09-15 18:46:50,630  INFO - Ending test method testTrack
+2015-09-15 18:46:50,634  INFO - Ending test TrackOrderPage
+2015-09-15 18:46:50,712  INFO - Ending suite TrendInTestSuite

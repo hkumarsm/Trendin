@@ -1,0 +1,7 @@
+2015-09-22 12:55:10,811  INFO - Starting suite Default suite
+2015-09-22 12:55:10,838  INFO - Starting test Default test
+2015-09-22 12:55:10,852  INFO - Starting test method: testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 12:56:24,808  INFO - Ending test method testVerifyMyAddressNewUserFaceBookPage
+2015-09-22 12:56:24,809 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not navigate to facebook page. <b> Cause: </b>
+2015-09-22 12:56:26,349  INFO - Ending test Default test
+2015-09-22 12:56:26,394  INFO - Ending suite Default suite

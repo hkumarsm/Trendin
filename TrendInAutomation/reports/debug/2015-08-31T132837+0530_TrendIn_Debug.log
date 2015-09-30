@@ -1,0 +1,7 @@
+2015-08-31 13:28:37,584  INFO - Starting suite Default suite
+2015-08-31 13:28:37,595  INFO - Starting test Default test
+2015-08-31 13:28:37,606  INFO - Starting test method: testvalidateErrorMessageForPasswordField
+2015-08-31 13:30:00,661  INFO - Ending test method testvalidateErrorMessageForPasswordField
+2015-08-31 13:30:00,661 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the Change Password button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element
+2015-08-31 13:30:09,021  INFO - Ending test Default test
+2015-08-31 13:30:09,044  INFO - Ending suite Default suite

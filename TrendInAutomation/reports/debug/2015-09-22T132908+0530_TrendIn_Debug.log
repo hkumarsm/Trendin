@@ -1,0 +1,7 @@
+2015-09-22 13:29:08,482  INFO - Starting suite Default suite
+2015-09-22 13:29:08,499  INFO - Starting test Default test
+2015-09-22 13:29:08,514  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyOrderHistoryPage
+2015-09-22 13:30:06,713  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyOrderHistoryPage
+2015-09-22 13:30:06,715 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-22 13:30:08,236  INFO - Ending test Default test
+2015-09-22 13:30:08,287  INFO - Ending suite Default suite

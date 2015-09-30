@@ -1,0 +1,42 @@
+2015-09-11 16:49:40,135  INFO - Starting suite TrendInTestSuite
+2015-09-11 16:49:40,157  INFO - Starting test LoginPage
+2015-09-11 16:49:40,179  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-11 16:50:24,249  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-11 16:50:24,530  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-11 16:50:57,228  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-11 16:50:57,501  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-11 16:51:34,065  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,072  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,077  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,081  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,095  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,098  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,104  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,110  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,117  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,145  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,148  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,150  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,158  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,164  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,176  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,182  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,192  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,208  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,211  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,213  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,222  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,239  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,243  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,246  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,249  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,260  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,266  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,274  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,278  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,287  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,294  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,300  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,307  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:51:34,310  INFO - Ending test LoginPage
+2015-09-11 16:51:34,420  INFO - Ending suite TrendInTestSuite

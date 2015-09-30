@@ -1,0 +1,6 @@
+2015-08-26 13:27:01,524  INFO - Starting suite Default suite
+2015-08-26 13:27:01,536  INFO - Starting test Default test
+2015-08-26 13:27:24,806  INFO - Starting test method: testValidationPrivacyPolicy
+2015-08-26 13:27:44,645  INFO - Ending test method testValidationPrivacyPolicy
+2015-08-26 13:27:44,648  INFO - Ending test Default test
+2015-08-26 13:27:44,822  INFO - Ending suite Default suite

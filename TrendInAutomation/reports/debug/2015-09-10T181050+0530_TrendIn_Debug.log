@@ -1,0 +1,51 @@
+2015-09-10 18:10:50,482  INFO - Starting suite TrendInTestSuite
+2015-09-10 18:10:50,497  INFO - Starting test LoginPage
+2015-09-10 18:10:50,512  INFO - Starting test method: testClickNewTrendIn
+2015-09-10 18:11:15,080  INFO - Ending test method testClickNewTrendIn
+2015-09-10 18:11:15,331  INFO - Starting test method: testCloseButton
+2015-09-10 18:11:37,043  INFO - Ending test method testCloseButton
+2015-09-10 18:11:37,303  INFO - Starting test method: testCloseButtonForgotPassword
+2015-09-10 18:12:00,777  INFO - Ending test method testCloseButtonForgotPassword
+2015-09-10 18:12:01,064  INFO - Starting test method: testDropDownUserName
+2015-09-10 18:12:32,067  INFO - Ending test method testDropDownUserName
+2015-09-10 18:12:32,317  INFO - Starting test method: testExistingUserTextFields
+2015-09-10 18:12:56,719  INFO - Ending test method testExistingUserTextFields
+2015-09-10 18:12:56,719 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Unable to verify the error message
+2015-09-10 18:12:57,198  INFO - Starting test method: testForgotPasswordClick
+2015-09-10 18:13:18,369  INFO - Ending test method testForgotPasswordClick
+2015-09-10 18:13:18,618  INFO - Starting test method: testMyAccountClick
+2015-09-10 18:13:56,186  INFO - Ending test method testMyAccountClick
+2015-09-10 18:13:56,456  INFO - Starting test method: testMyOrder
+2015-09-10 18:14:28,588  INFO - Ending test method testMyOrder
+2015-09-10 18:14:28,884  INFO - Starting test method: testRefreshButton
+2015-09-10 18:14:51,174  INFO - Ending test method testRefreshButton
+2015-09-10 18:14:51,434  INFO - Starting test method: testReturn
+2015-09-10 18:15:34,787  INFO - Ending test method testReturn
+2015-09-10 18:15:35,053  INFO - Starting test method: testUserName
+2015-09-10 18:16:16,753  INFO - Ending test method testUserName
+2015-09-10 18:16:17,023  INFO - Starting test method: testVerifyExistingPage
+2015-09-10 18:16:34,920  INFO - Ending test method testVerifyExistingPage
+2015-09-10 18:16:35,178  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-10 18:19:44,974  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-10 18:19:44,975 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 3.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 62b997ac-ce2a-4376-a2ff-f8abe3672f8a
+2015-09-10 18:19:45,351  INFO - Starting test method: testVerifyLoginPageIconIsDisplayed
+2015-09-10 18:20:06,335  INFO - Ending test method testVerifyLoginPageIconIsDisplayed
+2015-09-10 18:20:06,578  INFO - Starting test method: testVerifyLoginPageIsDisplayed
+2015-09-10 18:20:25,989  INFO - Ending test method testVerifyLoginPageIsDisplayed
+2015-09-10 18:20:26,260  INFO - Starting test method: testVerifyLogoutFunctionality
+2015-09-10 18:20:55,978  INFO - Ending test method testVerifyLogoutFunctionality
+2015-09-10 18:20:56,285  INFO - Starting test method: testVerifyRegisterPage
+2015-09-10 18:21:19,639  INFO - Ending test method testVerifyRegisterPage
+2015-09-10 18:21:19,901  INFO - Starting test method: testVerifySignUpGoogle
+2015-09-10 18:21:50,003  INFO - Ending test method testVerifySignUpGoogle
+2015-09-10 18:21:50,280  INFO - Starting test method: testverifySignUpFacebook
+2015-09-10 18:22:23,342  INFO - Ending test method testverifySignUpFacebook
+2015-09-10 18:22:23,607  INFO - Ending test LoginPage
+2015-09-10 18:22:23,637  INFO - Ending suite TrendInTestSuite

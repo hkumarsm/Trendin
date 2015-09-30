@@ -1,0 +1,6 @@
+2015-08-31 11:39:46,260  INFO - Starting suite Default suite
+2015-08-31 11:39:46,271  INFO - Starting test Default test
+2015-08-31 11:39:46,282  INFO - Starting test method: testModifyOldPassword
+2015-08-31 11:40:14,198  INFO - Ending test method testModifyOldPassword
+2015-08-31 11:40:14,205  INFO - Ending test Default test
+2015-08-31 11:40:14,233  INFO - Ending suite Default suite

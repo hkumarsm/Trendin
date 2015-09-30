@@ -1,0 +1,7 @@
+2015-08-25 18:05:14,286  INFO - Starting suite Default suite
+2015-08-25 18:05:14,297  INFO - Starting test Default test
+2015-08-25 18:05:31,937  INFO - Starting test method: testClickNewTrendIn
+2015-08-25 18:05:37,925  INFO - Ending test method testClickNewTrendIn
+2015-08-25 18:05:37,925 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign up with Google button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-08-25 18:05:38,162  INFO - Ending test Default test
+2015-08-25 18:05:38,300  INFO - Ending suite Default suite

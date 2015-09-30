@@ -1,0 +1,14 @@
+2015-09-21 11:33:11,289  INFO - Starting suite TrendInTestSuite
+2015-09-21 11:33:11,299  INFO - Starting test ENDToEnd
+2015-09-21 11:33:11,309  INFO - Starting test method: testScenario3
+2015-09-21 11:34:32,989  INFO - Ending test method testScenario3
+2015-09-21 11:34:34,386  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-21 11:36:08,356  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-21 11:36:09,633  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-21 11:37:42,980  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-21 11:37:44,277  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-21 11:39:18,802  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-21 11:39:20,075  INFO - Starting test method: testVerifyOrderPlacingByLogginginInHomePage
+2015-09-21 11:40:51,783  INFO - Ending test method testVerifyOrderPlacingByLogginginInHomePage
+2015-09-21 11:40:53,069  INFO - Ending test ENDToEnd
+2015-09-21 11:40:53,139  INFO - Ending suite TrendInTestSuite

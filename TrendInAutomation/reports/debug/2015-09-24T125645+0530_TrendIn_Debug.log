@@ -1,0 +1,6 @@
+2015-09-24 12:56:45,673  INFO - Starting suite Default suite
+2015-09-24 12:56:45,689  INFO - Starting test Default test
+2015-09-24 12:56:45,703  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-24 12:58:57,524  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-24 12:58:57,903  INFO - Ending test Default test
+2015-09-24 12:58:57,921  INFO - Ending suite Default suite

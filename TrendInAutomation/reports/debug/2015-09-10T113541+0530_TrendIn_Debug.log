@@ -1,0 +1,6 @@
+2015-09-10 11:35:41,629  INFO - Starting suite Default suite
+2015-09-10 11:35:41,646  INFO - Starting test Default test
+2015-09-10 11:35:41,662  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 11:36:35,698  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-10 11:36:35,996  INFO - Ending test Default test
+2015-09-10 11:36:36,021  INFO - Ending suite Default suite

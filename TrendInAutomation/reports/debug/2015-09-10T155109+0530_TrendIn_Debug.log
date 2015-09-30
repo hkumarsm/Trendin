@@ -1,0 +1,13 @@
+2015-09-10 15:51:10,210  INFO - Starting suite Default suite
+2015-09-10 15:51:10,227  INFO - Starting test Default test
+2015-09-10 15:51:10,240  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-10 15:51:35,930  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-10 15:51:35,930 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): https://www.trendin.com/auth/login/facebook
+Command duration or timeout: 25 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d035b6cd-c8ee-49ab-b4ea-406c25716545
+2015-09-10 15:51:36,474  INFO - Ending test Default test
+2015-09-10 15:51:36,522  INFO - Ending suite Default suite

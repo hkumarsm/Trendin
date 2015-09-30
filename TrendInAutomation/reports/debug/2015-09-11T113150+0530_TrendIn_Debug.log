@@ -1,0 +1,14 @@
+2015-09-11 11:31:50,211  INFO - Starting suite TrendInTestSuite
+2015-09-11 11:31:50,230  INFO - Starting test LoginPage
+2015-09-11 11:31:50,248  INFO - Starting test method: testVerifyMyAccountNewUserGoogleButton
+2015-09-11 11:32:44,328  INFO - Ending test method testVerifyMyAccountNewUserGoogleButton
+2015-09-11 11:32:44,822  INFO - Starting test method: testVerifyMyAccountNewUserGooglePage
+2015-09-11 11:33:39,431  INFO - Ending test method testVerifyMyAccountNewUserGooglePage
+2015-09-11 11:33:39,724  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 11:34:41,552  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 11:34:41,830  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 11:35:37,175  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 11:35:37,450  INFO - Starting test method: testVerifyMyAccountNewUserPage
+2015-09-11 11:36:29,050  INFO - Ending test method testVerifyMyAccountNewUserPage
+2015-09-11 11:36:29,350  INFO - Ending test LoginPage
+2015-09-11 11:36:29,375  INFO - Ending suite TrendInTestSuite

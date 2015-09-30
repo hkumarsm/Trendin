@@ -1,0 +1,6 @@
+2015-09-14 18:45:36,662  INFO - Starting suite Default suite
+2015-09-14 18:45:36,675  INFO - Starting test Default test
+2015-09-14 18:45:36,689  INFO - Starting test method: testVerifyNewToTrendinLink
+2015-09-14 18:46:03,623  INFO - Ending test method testVerifyNewToTrendinLink
+2015-09-14 18:46:05,047  INFO - Ending test Default test
+2015-09-14 18:46:05,087  INFO - Ending suite Default suite

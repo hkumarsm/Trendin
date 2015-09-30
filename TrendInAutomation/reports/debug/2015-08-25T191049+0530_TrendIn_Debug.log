@@ -1,0 +1,6 @@
+2015-08-25 19:10:50,156  INFO - Starting suite Default suite
+2015-08-25 19:10:50,166  INFO - Starting test Default test
+2015-08-25 19:11:07,651  INFO - Starting test method: testClickNewTrendIn
+2015-08-25 19:11:10,476  INFO - Ending test method testClickNewTrendIn
+2015-08-25 19:11:10,486  INFO - Ending test Default test
+2015-08-25 19:11:10,656  INFO - Ending suite Default suite

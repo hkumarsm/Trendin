@@ -1,0 +1,29 @@
+2015-09-11 13:53:09,604  INFO - Starting suite TrendInTestSuite
+2015-09-11 13:53:09,625  INFO - Starting test LoginPage
+2015-09-11 13:53:09,645  INFO - Starting test method: testLoginPageIconClick
+2015-09-11 13:53:37,169  INFO - Ending test method testLoginPageIconClick
+2015-09-11 13:53:37,435  INFO - Starting test method: testSignUpPasswordField
+2015-09-11 13:54:05,503  INFO - Ending test method testSignUpPasswordField
+2015-09-11 13:54:05,757  INFO - Starting test method: testValidateMailIdField
+2015-09-11 13:54:41,525  INFO - Ending test method testValidateMailIdField
+2015-09-11 13:54:41,793  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-11 13:55:08,837  INFO - Ending test method testValidateMailIdTextfield
+2015-09-11 13:55:09,100  INFO - Starting test method: testValidatePasswordField
+2015-09-11 13:55:34,455  INFO - Ending test method testValidatePasswordField
+2015-09-11 13:55:34,745  INFO - Starting test method: testValidateSignInWithFacebookButton
+2015-09-11 13:55:57,012  INFO - Ending test method testValidateSignInWithFacebookButton
+2015-09-11 13:55:57,313  INFO - Starting test method: testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,951  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,957  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,961  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,964  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,968  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,973  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,976  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,984  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,988  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:17,997  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:18,000  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:18,010  INFO - Ending test method testValidateSignInWithGoogleButton
+2015-09-11 13:56:18,016  INFO - Ending test LoginPage
+2015-09-11 13:56:18,134  INFO - Ending suite TrendInTestSuite

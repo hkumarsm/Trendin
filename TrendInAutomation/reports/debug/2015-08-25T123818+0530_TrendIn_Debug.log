@@ -1,0 +1,6 @@
+2015-08-25 12:38:18,978  INFO - Starting suite Default suite
+2015-08-25 12:38:18,989  INFO - Starting test Default test
+2015-08-25 12:38:45,698  INFO - Starting test method: testValidateUsernameTextfield
+2015-08-25 12:38:53,249  INFO - Ending test method testValidateUsernameTextfield
+2015-08-25 12:38:53,254  INFO - Ending test Default test
+2015-08-25 12:38:53,431  INFO - Ending suite Default suite

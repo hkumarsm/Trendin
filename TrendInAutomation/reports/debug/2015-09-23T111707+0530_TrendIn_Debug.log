@@ -1,0 +1,6 @@
+2015-09-23 11:17:08,035  INFO - Starting suite Default suite
+2015-09-23 11:17:08,055  INFO - Starting test Default test
+2015-09-23 11:17:08,075  INFO - Starting test method: testVerifyMyAddressNewUserGooglePage
+2015-09-23 11:18:18,870  INFO - Ending test method testVerifyMyAddressNewUserGooglePage
+2015-09-23 11:18:19,150  INFO - Ending test Default test
+2015-09-23 11:18:19,170  INFO - Ending suite Default suite

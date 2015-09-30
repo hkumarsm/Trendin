@@ -1,0 +1,7 @@
+2015-09-22 13:12:48,637  INFO - Starting suite Default suite
+2015-09-22 13:12:48,651  INFO - Starting test Default test
+2015-09-22 13:12:48,666  INFO - Starting test method: testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:13:09,984  INFO - Ending test method testVerifyReturnsAndRefundsNewUserPageVerifyFacebookPage
+2015-09-22 13:13:09,985 ERROR - <b> Exception: </b>java.lang.NullPointerException. <b> Cause: </b>
+2015-09-22 13:13:11,539  INFO - Ending test Default test
+2015-09-22 13:13:11,584  INFO - Ending suite Default suite

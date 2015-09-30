@@ -1,0 +1,7 @@
+2015-09-03 15:44:25,033  INFO - Starting suite Default suite
+2015-09-03 15:44:25,053  INFO - Starting test Default test
+2015-09-03 15:44:25,063  INFO - Starting test method: testClickOnCartButton
+2015-09-03 15:45:28,647  INFO - Ending test method testClickOnCartButton
+2015-09-03 15:45:28,647 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-03 15:45:29,001  INFO - Ending test Default test
+2015-09-03 15:45:29,021  INFO - Ending suite Default suite

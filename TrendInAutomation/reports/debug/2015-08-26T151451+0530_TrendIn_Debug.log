@@ -1,0 +1,6 @@
+2015-08-26 15:14:51,223  INFO - Starting suite Default suite
+2015-08-26 15:14:51,233  INFO - Starting test Default test
+2015-08-26 15:15:08,304  INFO - Starting test method: testVerifySignUpGoogle
+2015-08-26 15:15:30,636  INFO - Ending test method testVerifySignUpGoogle
+2015-08-26 15:15:30,640  INFO - Ending test Default test
+2015-08-26 15:15:39,467  INFO - Ending suite Default suite

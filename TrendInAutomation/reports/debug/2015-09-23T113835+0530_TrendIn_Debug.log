@@ -1,0 +1,7 @@
+2015-09-23 11:38:35,578  INFO - Starting suite Default suite
+2015-09-23 11:38:35,595  INFO - Starting test Default test
+2015-09-23 11:38:35,606  INFO - Starting test method: testVerifyMyPersonalInfoExistingUserPage
+2015-09-23 11:39:08,944  INFO - Ending test method testVerifyMyPersonalInfoExistingUserPage
+2015-09-23 11:39:08,944 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 11:39:09,385  INFO - Ending test Default test
+2015-09-23 11:39:09,415  INFO - Ending suite Default suite

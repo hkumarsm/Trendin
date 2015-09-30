@@ -1,0 +1,98 @@
+2015-09-11 16:17:59,878  INFO - Starting suite TrendInTestSuite
+2015-09-11 16:17:59,897  INFO - Starting test LoginPage
+2015-09-11 16:17:59,923  INFO - Starting test method: testEmailAndPasswordTextfield
+2015-09-11 16:18:45,407  INFO - Ending test method testEmailAndPasswordTextfield
+2015-09-11 16:18:45,683  INFO - Starting test method: testErrorPasswordEmptyTextfield
+2015-09-11 16:19:27,725  INFO - Ending test method testErrorPasswordEmptyTextfield
+2015-09-11 16:19:27,981  INFO - Starting test method: testGmailUsernameInHomePage
+2015-09-11 16:20:21,234  INFO - Ending test method testGmailUsernameInHomePage
+2015-09-11 16:20:21,235 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-11 16:20:21,843  INFO - Starting test method: testLoginOrRegisterPageAgain
+2015-09-11 16:20:44,777  INFO - Ending test method testLoginOrRegisterPageAgain
+2015-09-11 16:20:45,036  INFO - Starting test method: testMyAccountMyOrderNewUserPage
+2015-09-11 16:21:25,227  INFO - Ending test method testMyAccountMyOrderNewUserPage
+2015-09-11 16:21:25,489  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-11 16:21:53,446  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnFacebookButton
+2015-09-11 16:21:53,446 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-11 16:21:53,811  INFO - Starting test method: testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-11 16:22:43,580  INFO - Ending test method testMyAccountMyOrderNewUserPageGoogleColorChangeOnGoogleButton
+2015-09-11 16:22:43,890  INFO - Starting test method: testMyAccountMyOrderPage
+2015-09-11 16:23:12,283  INFO - Ending test method testMyAccountMyOrderPage
+2015-09-11 16:23:12,283 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Login Icon status.. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement
+2015-09-11 16:23:12,723  INFO - Starting test method: testNewToTrendInPage
+2015-09-11 16:23:34,541  INFO - Ending test method testNewToTrendInPage
+2015-09-11 16:23:35,129  INFO - Starting test method: testNewToTrendInSignUpPage
+2015-09-11 16:23:57,486  INFO - Ending test method testNewToTrendInSignUpPage
+2015-09-11 16:23:57,738  INFO - Starting test method: testVerifyClickOnGoogleButton
+2015-09-11 16:24:38,608  INFO - Ending test method testVerifyClickOnGoogleButton
+2015-09-11 16:24:38,875  INFO - Starting test method: testVerifyClickOnSignInFacebookButton
+2015-09-11 16:25:09,929  INFO - Ending test method testVerifyClickOnSignInFacebookButton
+2015-09-11 16:25:09,930 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 304 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c26eb91d-8ed5-4f7e-9ec8-c06e0e6f899e
+2015-09-11 16:25:10,273  INFO - Starting test method: testVerifyClickOnSignInWithGoogleButton
+2015-09-11 16:25:51,208  INFO - Ending test method testVerifyClickOnSignInWithGoogleButton
+2015-09-11 16:25:51,482  INFO - Starting test method: testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-11 16:26:25,980  INFO - Ending test method testVerifyColorChangeOnMouseOverGoogleButton
+2015-09-11 16:26:26,248  INFO - Starting test method: testVerifyFacebookButtonInmYAccountPage
+2015-09-11 16:27:16,298  INFO - Ending test method testVerifyFacebookButtonInmYAccountPage
+2015-09-11 16:27:16,586  INFO - Starting test method: testVerifyFacebookEmailAndPasswordTextFields
+2015-09-11 16:27:47,169  INFO - Ending test method testVerifyFacebookEmailAndPasswordTextFields
+2015-09-11 16:27:47,170 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 38 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5f0d5525-0ade-4b7b-8e4a-ebccc384a9df
+2015-09-11 16:27:47,635  INFO - Starting test method: testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-11 16:29:09,025  INFO - Ending test method testVerifyGooglePageEmailAndPasswordTextfields
+2015-09-11 16:29:09,348  INFO - Starting test method: testVerifyLoginPagePopUp
+2015-09-11 16:29:31,469  INFO - Ending test method testVerifyLoginPagePopUp
+2015-09-11 16:29:31,728  INFO - Starting test method: testVerifyLoginToFacebook
+2015-09-11 16:30:42,667  INFO - Ending test method testVerifyLoginToFacebook
+2015-09-11 16:30:43,181  INFO - Starting test method: testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-11 16:32:05,901  INFO - Ending test method testVerifyLoginToFacebookAtVerifyPersonalInformation
+2015-09-11 16:32:06,388  INFO - Starting test method: testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-11 16:32:36,874  INFO - Ending test method testVerifyLoginToTrendInWithFaceBookAccount
+2015-09-11 16:32:36,875 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the facebook button. <b> Cause: </b>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object XrayWrapper [object HTMLSpanElement]]
+Command duration or timeout: 42 milliseconds
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'QualiTest-PC', ip: '192.168.220.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0ea070fd-b0e8-4191-b09f-71ac80afc723
+2015-09-11 16:32:37,330  INFO - Starting test method: testVerifyMouseOverActionOnGoogleButton
+2015-09-11 16:33:06,992  INFO - Ending test method testVerifyMouseOverActionOnGoogleButton
+2015-09-11 16:33:08,040  INFO - Starting test method: testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-11 16:33:51,745  INFO - Ending test method testVerifyMouseOverActionOnSignInWithGoogle
+2015-09-11 16:33:52,009  INFO - Starting test method: testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-11 16:34:46,934  INFO - Ending test method testVerifyMyAccountExistingUserAndNewUserPage
+2015-09-11 16:34:47,205  INFO - Starting test method: testVerifyMyAccountNewUserGoogleButton
+2015-09-11 16:35:37,871  INFO - Ending test method testVerifyMyAccountNewUserGoogleButton
+2015-09-11 16:35:38,140  INFO - Starting test method: testVerifyMyAccountNewUserGooglePage
+2015-09-11 16:36:34,561  INFO - Ending test method testVerifyMyAccountNewUserGooglePage
+2015-09-11 16:36:34,848  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 16:37:38,702  INFO - Ending test method testVerifyMyAccountNewUserGooglePageFields
+2015-09-11 16:37:38,986  INFO - Starting test method: testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 16:38:33,827  INFO - Ending test method testVerifyMyAccountNewUserGooglePageLogos
+2015-09-11 16:38:34,104  INFO - Starting test method: testVerifyMyAccountNewUserPage
+2015-09-11 16:39:25,062  INFO - Ending test method testVerifyMyAccountNewUserPage
+2015-09-11 16:39:25,334  INFO - Starting test method: testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-11 16:40:23,765  INFO - Ending test method testVerifyMyAccountNewUserPageConnectFaceBookPage
+2015-09-11 16:40:24,040  INFO - Starting test method: testVerifyMyAccountPage
+2015-09-11 16:41:04,054  INFO - Ending test method testVerifyMyAccountPage
+2015-09-11 16:41:04,324  INFO - Starting test method: testVerifyNewToTrendInButton
+2015-09-11 16:41:29,508  INFO - Ending test method testVerifyNewToTrendInButton
+2015-09-11 16:41:29,763  INFO - Starting test method: testVerifyNewToTrendInSignUpPage
+2015-09-11 16:41:53,668  INFO - Ending test method testVerifyNewToTrendInSignUpPage
+2015-09-11 16:41:53,925  INFO - Starting test method: testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-11 16:42:47,129  INFO - Ending test method testVerifyNewUserRadioButtonInMyAccountPage
+2015-09-11 16:42:47,531  INFO - Starting test method: testverifyErorMessageOnEmptyEmailTextField
+2015-09-11 16:43:25,136  INFO - Ending test method testverifyErorMessageOnEmptyEmailTextField
+2015-09-11 16:43:25,408  INFO - Ending test LoginPage
+2015-09-11 16:43:25,474  INFO - Ending suite TrendInTestSuite

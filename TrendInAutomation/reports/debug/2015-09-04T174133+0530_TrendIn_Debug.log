@@ -1,0 +1,40 @@
+2015-09-04 17:41:33,287  INFO - Starting suite TrendInTestSuite
+2015-09-04 17:41:33,301  INFO - Starting test LouisPhilippePage
+2015-09-04 17:41:33,316  INFO - Starting test method: testClickOnCartButton
+2015-09-04 17:45:34,342  INFO - Ending test method testClickOnCartButton
+2015-09-04 17:45:34,567  INFO - Starting test method: testClickOnShopByBrandOptionAndVerify
+2015-09-04 17:46:14,159  INFO - Ending test method testClickOnShopByBrandOptionAndVerify
+2015-09-04 17:46:14,363  INFO - Starting test method: testClickOnTrendInLogo
+2015-09-04 17:46:56,870  INFO - Ending test method testClickOnTrendInLogo
+2015-09-04 17:46:57,036  INFO - Starting test method: testExistingUserLoginAndVerify
+2015-09-04 17:47:51,811  INFO - Ending test method testExistingUserLoginAndVerify
+2015-09-04 17:47:52,012  INFO - Starting test method: testVerifyBrandLouisPhilippe
+2015-09-04 17:48:26,705  INFO - Ending test method testVerifyBrandLouisPhilippe
+2015-09-04 17:48:26,924  INFO - Starting test method: testVerifyDefaultSearchLabel
+2015-09-04 17:49:33,283  INFO - Ending test method testVerifyDefaultSearchLabel
+2015-09-04 17:49:33,416  INFO - Starting test method: testVerifyErrorMessageForEmptySearchButton
+2015-09-04 17:50:14,217  INFO - Ending test method testVerifyErrorMessageForEmptySearchButton
+2015-09-04 17:50:14,349  INFO - Starting test method: testVerifyErrorMessageForInvalidKeyword
+2015-09-04 17:51:39,856  INFO - Ending test method testVerifyErrorMessageForInvalidKeyword
+2015-09-04 17:51:40,079  INFO - Starting test method: testVerifyForAllBrandLink
+2015-09-04 17:52:06,559  INFO - Ending test method testVerifyForAllBrandLink
+2015-09-04 17:52:06,678  INFO - Starting test method: testVerifyForCloseShopByBrands
+2015-09-04 17:52:24,802  INFO - Ending test method testVerifyForCloseShopByBrands
+2015-09-04 17:52:25,097  INFO - Starting test method: testVerifyGuestUser
+2015-09-04 17:52:56,342  INFO - Ending test method testVerifyGuestUser
+2015-09-04 17:52:56,581  INFO - Starting test method: testVerifyLogoPage
+2015-09-04 17:54:00,252  INFO - Ending test method testVerifyLogoPage
+2015-09-04 17:54:00,576  INFO - Starting test method: testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 17:55:27,726  INFO - Ending test method testVerifyMegaMenuLabelInLouisPhilippePages
+2015-09-04 17:55:27,862  INFO - Starting test method: testVerifySearchButtonFunctionality
+2015-09-04 17:57:08,206  INFO - Ending test method testVerifySearchButtonFunctionality
+2015-09-04 17:57:08,406  INFO - Starting test method: testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,286  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,289  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,292  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,294  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,296  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,318  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,321  INFO - Ending test method testVerifySubCategoryNavigationPage
+2015-09-04 17:57:41,323  INFO - Ending test LouisPhilippePage
+2015-09-04 17:57:41,405  INFO - Ending suite TrendInTestSuite

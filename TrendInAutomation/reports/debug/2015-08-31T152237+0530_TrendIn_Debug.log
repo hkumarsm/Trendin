@@ -1,0 +1,7 @@
+2015-08-31 15:22:37,227  INFO - Starting suite Default suite
+2015-08-31 15:22:37,238  INFO - Starting test Default test
+2015-08-31 15:22:37,248  INFO - Starting test method: testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 15:24:54,336  INFO - Ending test method testvalidateErrorMessageForEmptyPasswordField
+2015-08-31 15:24:54,336 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-08-31 15:25:02,715  INFO - Ending test Default test
+2015-08-31 15:25:02,738  INFO - Ending suite Default suite

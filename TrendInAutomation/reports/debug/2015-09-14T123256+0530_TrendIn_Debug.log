@@ -1,0 +1,22 @@
+2015-09-14 12:32:56,116  INFO - Starting suite TrendInTestSuite
+2015-09-14 12:32:56,127  INFO - Starting test TrackOrderPage
+2015-09-14 12:32:56,140  INFO - Starting test method: testTrack
+2015-09-14 12:33:37,662  INFO - Ending test method testTrack
+2015-09-14 12:33:39,032  INFO - Starting test method: testTrackOrderPopUp
+2015-09-14 12:34:01,782  INFO - Ending test method testTrackOrderPopUp
+2015-09-14 12:34:03,082  INFO - Starting test method: verifyEmailIdTextBox
+2015-09-14 12:34:39,600  INFO - Ending test method verifyEmailIdTextBox
+2015-09-14 12:34:40,966  INFO - Starting test method: verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-14 12:35:12,673  INFO - Ending test method verifyErrorMsgForEmptyMailIdAndOrderNo
+2015-09-14 12:35:14,001  INFO - Starting test method: verifyErrorMsgForMailOrderNo
+2015-09-14 12:35:48,295  INFO - Ending test method verifyErrorMsgForMailOrderNo
+2015-09-14 12:35:49,619  INFO - Starting test method: verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-14 12:36:18,319  INFO - Ending test method verifyErrorMsgForOthersEmailIdAndOrderNo
+2015-09-14 12:36:19,699  INFO - Starting test method: verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,564  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,572  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,581  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,586  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,589  INFO - Ending test method verifySignUpPageWhenClickOnLoginForMore
+2015-09-14 12:36:39,646  INFO - Ending test TrackOrderPage
+2015-09-14 12:36:39,738  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,7 @@
+2015-09-11 12:58:51,919  INFO - Starting suite Default suite
+2015-09-11 12:58:51,941  INFO - Starting test Default test
+2015-09-11 12:58:51,960  INFO - Starting test method: testValidateMailIdTextfield
+2015-09-11 12:59:16,730  INFO - Ending test method testValidateMailIdTextfield
+2015-09-11 12:59:16,732 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't click on the him button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the error message for 'already registered mail-id' in the Email address textfield
+2015-09-11 12:59:17,166  INFO - Ending test Default test
+2015-09-11 12:59:17,189  INFO - Ending suite Default suite

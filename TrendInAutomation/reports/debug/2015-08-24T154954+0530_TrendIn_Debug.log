@@ -1,0 +1,6 @@
+2015-08-24 15:49:54,286  INFO - Starting suite Default suite
+2015-08-24 15:49:54,298  INFO - Starting test Default test
+2015-08-24 15:50:25,608  INFO - Starting test method: TestVerifyLogoutFunctionality
+2015-08-24 15:50:37,028  INFO - Ending test method TestVerifyLogoutFunctionality
+2015-08-24 15:50:37,033  INFO - Ending test Default test
+2015-08-24 15:50:37,304  INFO - Ending suite Default suite

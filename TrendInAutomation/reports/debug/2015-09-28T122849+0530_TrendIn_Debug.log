@@ -1,0 +1,7 @@
+2015-09-28 12:28:49,518  INFO - Starting suite Default suite
+2015-09-28 12:28:49,536  INFO - Starting test Default test
+2015-09-28 12:28:49,555  INFO - Starting test method: testVerifyForBuyNowInQuickViewFuctionality
+2015-09-28 12:30:44,223  INFO - Ending test method testVerifyForBuyNowInQuickViewFuctionality
+2015-09-28 12:30:44,224 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-28 12:30:45,660  INFO - Ending test Default test
+2015-09-28 12:30:45,710  INFO - Ending suite Default suite

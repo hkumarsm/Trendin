@@ -1,0 +1,5 @@
+2015-09-10 18:41:22,594  INFO - Starting suite Default suite
+2015-09-10 18:41:22,609  INFO - Starting test Default test
+2015-09-10 18:41:22,619  INFO - Starting test method: testExistingUserTextFields
+2015-09-10 18:42:02,818  INFO - Ending test method testExistingUserTextFields
+2015-09-10 18:42:02,819 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Couldn't verify the error message for EMPTY FIELD in the empty textfield. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement

@@ -1,0 +1,6 @@
+2015-09-02 18:57:06,728  INFO - Starting suite Default suite
+2015-09-02 18:57:06,738  INFO - Starting test Default test
+2015-09-02 18:57:06,748  INFO - Starting test method: testVerifyTinyTrackOrderPage
+2015-09-02 18:57:34,616  INFO - Ending test method testVerifyTinyTrackOrderPage
+2015-09-02 18:57:34,798  INFO - Ending test Default test
+2015-09-02 18:57:34,808  INFO - Ending suite Default suite

@@ -1,0 +1,25 @@
+2015-09-14 15:29:10,141  INFO - Starting suite TrendInTestSuite
+2015-09-14 15:29:10,155  INFO - Starting test LoginPage
+2015-09-14 15:29:10,171  INFO - Starting test method: testExistingUserTextFields
+2015-09-14 15:31:20,846  INFO - Ending test method testExistingUserTextFields
+2015-09-14 15:31:22,268  INFO - Starting test method: testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,241  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,248  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,257  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,263  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,275  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,280  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,286  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,295  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,303  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,306  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,313  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,322  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,328  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,342  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,350  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,353  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,357  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,363  INFO - Ending test method testVerifyForgotPasswordFunctio
+2015-09-14 15:32:17,367  INFO - Ending test LoginPage
+2015-09-14 15:32:17,494  INFO - Ending suite TrendInTestSuite

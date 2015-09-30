@@ -1,0 +1,7 @@
+2015-08-26 15:46:01,673  INFO - Starting suite Default suite
+2015-08-26 15:46:01,683  INFO - Starting test Default test
+2015-08-26 15:46:18,569  INFO - Starting test method: testverifySignUpFacebook
+2015-08-26 15:46:21,448  INFO - Ending test method testverifySignUpFacebook
+2015-08-26 15:46:21,458 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign in with Google button. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify the Sign in with Google button
+2015-08-26 15:46:21,678  INFO - Ending test Default test
+2015-08-26 15:46:21,870  INFO - Ending suite Default suite

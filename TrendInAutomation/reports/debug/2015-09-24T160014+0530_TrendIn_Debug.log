@@ -1,0 +1,28 @@
+2015-09-24 16:00:14,964  INFO - Starting suite TrendInTestSuite
+2015-09-24 16:00:14,974  INFO - Starting test EndToEnd
+2015-09-24 16:00:14,986  INFO - Starting test method: testScenario3
+2015-09-24 16:01:41,309  INFO - Ending test method testScenario3
+2015-09-24 16:01:41,310 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to verify Your shipping Address text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Expected shipping text: YOUR SHIPPING ADDRESS is not same as Actual shipping text: 
+2015-09-24 16:01:41,844  INFO - Starting test method: testVerifyCancelOrderPage
+2015-09-24 16:04:00,833  INFO - Ending test method testVerifyCancelOrderPage
+2015-09-24 16:04:01,246  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 16:05:29,039  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-24 16:05:29,481  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 16:06:45,762  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-24 16:06:46,093  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 16:07:48,287  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-24 16:07:48,571  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 16:08:30,854  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-24 16:08:31,126  INFO - Starting test method: testVerifyNewlyRegisteredUser
+2015-09-24 16:10:40,237  INFO - Ending test method testVerifyNewlyRegisteredUser
+2015-09-24 16:10:40,660  INFO - Starting test method: testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 16:13:23,138  INFO - Ending test method testVerifyOrderPlacingByLogginginInAddressPage
+2015-09-24 16:13:23,466  INFO - Starting test method: testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 16:15:24,174  INFO - Ending test method testVerifyOrderPlacingByLogginginInHomePage
+2015-09-24 16:15:24,611  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-24 16:17:36,382  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-24 16:17:36,774  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-24 16:19:52,119  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-24 16:19:52,120 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could find the webElement to get the Text. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-24 16:19:52,535  INFO - Ending test EndToEnd
+2015-09-24 16:19:52,563  INFO - Ending suite TrendInTestSuite

@@ -1,0 +1,6 @@
+2015-09-02 10:30:42,444  INFO - Starting suite Default suite
+2015-09-02 10:30:42,455  INFO - Starting test Default test
+2015-09-02 10:30:42,465  INFO - Starting test method: testVerifyDeleteFunctionality
+2015-09-02 10:32:03,451  INFO - Ending test method testVerifyDeleteFunctionality
+2015-09-02 10:32:03,650  INFO - Ending test Default test
+2015-09-02 10:32:03,665  INFO - Ending suite Default suite

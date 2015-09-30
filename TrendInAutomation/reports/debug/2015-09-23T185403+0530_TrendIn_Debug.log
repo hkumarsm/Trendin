@@ -1,0 +1,18 @@
+2015-09-23 18:54:03,610  INFO - Starting suite TrendInTestSuite
+2015-09-23 18:54:03,619  INFO - Starting test EndToEnd
+2015-09-23 18:54:03,632  INFO - Starting test method: testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 18:55:05,430  INFO - Ending test method testVerifyCouponsAndVouchersFaceBookNavigation
+2015-09-23 18:55:05,431 ERROR - <b> Exception: </b>com.trendin.core.util.exceptions.POMMethodExecException: Not able to get the Element. <b> Cause: </b>com.trendin.core.util.exceptions.POMMethodExecException: Could not find the matching element
+2015-09-23 18:55:06,119  INFO - Starting test method: testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-23 18:55:26,979  INFO - Ending test method testVerifyCouponsAndVouchersGoogleNavigation
+2015-09-23 18:55:26,980 ERROR - <b> Exception: </b>java.lang.NullPointerException. <b> Cause: </b>
+2015-09-23 18:55:27,330  INFO - Starting test method: testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:58:38,005  INFO - Ending test method testVerifyLoginOrRegisterFacebookNavigation
+2015-09-23 18:58:38,319  INFO - Starting test method: testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:59:27,201  INFO - Ending test method testVerifyLoginOrRegisterGoogleNavigation
+2015-09-23 18:59:27,464  INFO - Starting test method: testVerifyUserNameInHomePageFromFacebook
+2015-09-23 19:01:04,454  INFO - Ending test method testVerifyUserNameInHomePageFromFacebook
+2015-09-23 19:01:04,847  INFO - Starting test method: testVerifyUserNameInHomePageFromGoogle
+2015-09-23 19:02:56,472  INFO - Ending test method testVerifyUserNameInHomePageFromGoogle
+2015-09-23 19:02:56,855  INFO - Ending test EndToEnd
+2015-09-23 19:02:56,884  INFO - Ending suite TrendInTestSuite
