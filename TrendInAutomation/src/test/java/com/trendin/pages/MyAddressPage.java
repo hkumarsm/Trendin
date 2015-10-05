@@ -189,18 +189,10 @@ public class MyAddressPage extends TrendInTestSuite {
 		try {
 			Thread.sleep(2000);
 			String expectedNewAddressText = "New Address";
-			
 			String actualNewAddressText = eo.getText(driver, "xPath", "newAddAddressTextXpath");
 			//verify new address text.
-			assertEquals(expectedNewAddressText.equalsIgnoreCase(actualNewAddressText), "Expected new address text is : "+expectedNewAddressText+ " same as actual new address text: "+actualNewAddressText+ "Pop-Up is displayed.",
+			assertEqualsIgnoreCase(expectedNewAddressText, actualNewAddressText, "Expected new address text is : "+expectedNewAddressText+ " same as actual new address text: "+actualNewAddressText+ "Pop-Up is displayed.",
 					"Expected new address text is not same as Actual new address text.");
-			
-			/*if(expectedNewAddressText.equalsIgnoreCase(actualNewAddressText)) {
-				
-				addComment("Expected new address text is : "+expectedNewAddressText+ " same as actual new address text: "+actualNewAddressText+ "Pop-Up is displayed.");
-			} else {
-				throw new POMMethodExecException("Expected new address text is not same as Actual new address text.");
-			}*/
 			//Check zip/postal is displayed.
 			boolean zipPostalDisplayStatus = driver.findElement(By.xpath(GetElementIdentifier.getProperty("zipPostalCodeXpath", "MyAddressPage"))).isDisplayed();
 			if(zipPostalDisplayStatus) {
@@ -474,7 +466,7 @@ public class MyAddressPage extends TrendInTestSuite {
 		Thread.sleep(2000);
 		String expectedAddedAddressText = "Address Added !!.";
 		String actualAddedAddressText = eo.getText(driver, "xPath", "addressAddedDeletedXpath");
-		assertEquals(actualAddedAddressText.contains(expectedAddedAddressText), "Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText, 
+		assertContains(actualAddedAddressText, expectedAddedAddressText, "Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText, 
 												"Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText);
 	}
 	//Verify address is Edited.
@@ -482,7 +474,7 @@ public class MyAddressPage extends TrendInTestSuite {
 			Thread.sleep(1000);
 			String expectedAddedAddressText = "Address Edited !!.";
 			String actualAddedAddressText = eo.getText(driver, "xPath", "addressAddedDeletedXpath");
-			assertEquals(actualAddedAddressText.contains(expectedAddedAddressText), "Verified Expected text is: "+expectedAddedAddressText+" is same as Actual text: "+actualAddedAddressText, 
+			assertContains(actualAddedAddressText, expectedAddedAddressText, "Verified Expected text is: "+expectedAddedAddressText+" is same as Actual text: "+actualAddedAddressText, 
 													"Verified Expected text is: "+expectedAddedAddressText+" is same as Actual text: "+actualAddedAddressText);
 		}
 	//Verify address is deleted.
@@ -490,7 +482,7 @@ public class MyAddressPage extends TrendInTestSuite {
 		Thread.sleep(1000);
 		String expectedAddedAddressText = "Address Deleted !!.";
 		String actualAddedAddressText = eo.getText(driver, "xPath", "addressAddedDeletedXpath");
-		assertEquals(actualAddedAddressText.contains(expectedAddedAddressText), "Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText, 
+		assertContains(actualAddedAddressText, expectedAddedAddressText, "Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText, 
 												"Verified Expected added address text is: "+expectedAddedAddressText+" is same as Actual added address text: "+actualAddedAddressText);
 		addComment("Address is deleted.");
 	}
@@ -526,7 +518,7 @@ public class MyAddressPage extends TrendInTestSuite {
 			Thread.sleep(2000);
 			String expectedErrorMsg = "The city can only consist of alphabets!!";
 			String actualErrorMsg = eo.getText(driver, "xPath", "cityErrorMsgXpath");
-			assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified city error message is same: "+actualErrorMsg, "Verified city error message is same: "+actualErrorMsg);
+			assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified city error message is same: "+actualErrorMsg, "Verified city error message is same: "+actualErrorMsg);
 		} catch(Exception e) {
 			throw new POMMethodExecException("Cities actual error message is not same as expected error message",e);
 		}
@@ -622,7 +614,7 @@ public class MyAddressPage extends TrendInTestSuite {
 		try {
 			String expectedErrorMessage = "Mobile Number should not start with 0";
 			String actualErrorMessage = eo.getText(driver, "xPath", "mobileNoErrorMsgZeroXpath");
-			assertEquals(expectedErrorMessage.equalsIgnoreCase(actualErrorMessage), "Verified Expected Error message is same as Actual Error message: "+actualErrorMessage, "Verified Expected Error message is not same as Actual Error message: "+actualErrorMessage);
+			assertEqualsIgnoreCase(expectedErrorMessage, actualErrorMessage, "Verified Expected Error message is same as Actual Error message: "+actualErrorMessage, "Verified Expected Error message is not same as Actual Error message: "+actualErrorMessage);
 		} catch(Exception e) {
 			throw new POMMethodExecException("Verified Expected error message is not same Actual error message.",e);
 		}
@@ -648,7 +640,7 @@ public class MyAddressPage extends TrendInTestSuite {
 			Thread.sleep(2000);
 			String expectedErrorMessage = "Alias must be between 5 to 15 characters";
 			String actualErrorMessage = eo.getText(driver, "xPath", "aliasErrorMsgLessCharctersXpath");
-			assertEquals(expectedErrorMessage.equalsIgnoreCase(actualErrorMessage), "Verified Expected Error message is same as Actual Error message: "+actualErrorMessage, "Verified Expected Error message is not same as Actual Error message: "+actualErrorMessage);
+			assertEqualsIgnoreCase(expectedErrorMessage, actualErrorMessage, "Verified Expected Error message is same as Actual Error message: "+actualErrorMessage, "Verified Expected Error message is not same as Actual Error message: "+actualErrorMessage);
 		} catch(Exception e) {
 			throw new POMMethodExecException("Verified Expected error message is not same Actual error message.",e);
 		}

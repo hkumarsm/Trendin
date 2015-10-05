@@ -4,21 +4,26 @@ import org.testng.annotations.Test;
 
 import com.trendin.core.ExcelReader;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.pages.CategoryModulePage;
 import com.trendin.pages.CheckOutPage;
-import com.trendin.pages.ContactUsPage;
 import com.trendin.pages.EndToEnd;
+import com.trendin.pages.HomePage;
 import com.trendin.pages.LoginPage;
 import com.trendin.pages.QuickViewPage;
 
 public class TestCheckOutPage extends TrendInTestSuite {
-
+	
 	// TC_TrendIN_CheckOut_001
 	@Test(groups = "CheckOut")
 	public void testVerifyCheckOutSummaryPage() throws Exception {
+		String selectedProductTitle = "";
 		QuickViewPage quickViewPage = new QuickViewPage();
-		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -31,9 +36,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testClickOnProduct() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -48,8 +57,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifySelectSizeListOnClickingEditLink() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -64,9 +78,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testSelectSizeFromSizeDropDownAndClickOnSave() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -85,9 +103,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testSelectSizeFromSizeDropDownAndClickCancelLink() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -102,9 +124,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testClickOnDeleteIcon() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		String selectedProductTitle = "";
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -119,8 +145,8 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testClickOnCouponsAndTrendInCredits() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -132,7 +158,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
 		checkOutPage.verifyDiscountCouponsPageHeader(driver);
 	}
@@ -142,8 +168,8 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testClickOnAvailableOffer() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -155,7 +181,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
 		checkOutPage.verifyDiscountCouponsPageHeader(driver);
 		checkOutPage.clickOnAvailableOfferLink(driver);
@@ -166,9 +192,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testVerifyApplyBtnIsDisabled() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		LoginPage loginPage = new LoginPage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -176,13 +212,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		checkOutPage.clickOnCartIcon(driver);
 		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
-		LoginPage loginPage = new LoginPage();
-		loginPage.clickAlreadyRegisteredLink(driver);
-		String userName = ExcelReader.getValue("UserName");
-		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
-		//checkOutPage.verifyDiscountCouponsPageHeader(driver);
 		checkOutPage.verifyApplyBtnIsDisabled(driver);
 
 	}
@@ -191,9 +221,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testVerifyForInvalidVoucherCode() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		LoginPage loginPage = new LoginPage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.clickAlreadyRegisteredLink(driver);
+		String userName = ExcelReader.getValue("UserName");
+		String passWord = ExcelReader.getValue("Password");
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -201,16 +241,10 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		checkOutPage.clickOnCartIcon(driver);
 		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
-		LoginPage loginPage = new LoginPage();
-		loginPage.clickAlreadyRegisteredLink(driver);
-		String userName = ExcelReader.getValue("UserName");
-		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
 		checkOutPage.verifyDiscountCouponsPageHeader(driver);
 		checkOutPage.enterVoucherCode(driver);
 		checkOutPage.clickOnApplyBtn(driver);
-		checkOutPage.verifyErrMsgForInvaldVoucherCode(driver);
+		checkOutPage.verifyErrMsgForInvalidVoucherCode(driver);
 	}
 
 	// TC_TrendIN_CheckOut_016
@@ -218,8 +252,8 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyForValidVoucherCode() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -231,7 +265,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
 		checkOutPage.verifyDiscountCouponsPageHeader(driver);
 		checkOutPage.enterVoucherCode(driver);
@@ -243,9 +277,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testVerifyForAnyDiscountCoupon() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -257,7 +295,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		checkOutPage.ClickOnCouponsAndTrendInCredits(driver);
 		checkOutPage.verifyDiscountCouponsPageHeader(driver);
 		checkOutPage.clickOnAvailableOfferLink(driver);
@@ -268,9 +306,14 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	@Test(groups = "CheckOut")
 	public void testVerifyZipCodeErrorMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
 		EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -288,8 +331,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testErrMsgsOnClickingContinueToPaymentBtn() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -308,9 +356,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyFirstNameErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		//EndToEnd endToEnd = new EndToEnd();
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -330,8 +382,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyLastNameErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -351,8 +408,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyAddressLine1ErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -372,8 +434,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyAddressLine2ErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -392,8 +459,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyAddressLine3ErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -412,8 +484,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyLandMarkErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -432,8 +509,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifymobNumberErrMsg() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -452,8 +534,13 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyClearFormBtn() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		EndToEnd endToEnd = new EndToEnd();
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -471,10 +558,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyMessageClickOnGiftWrapMessageCheckbox() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -489,10 +577,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyErrorMessageClickOnEmptySumbitButtonInGiftWrapPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -509,10 +598,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyCheckBoxIsSelectedInGiftWrapCheckBoXInCheckOutPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -529,10 +619,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyUnCheckedCheckBoxWhenUserCleclOnCancelButtoninGiftWrap() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -548,10 +639,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyEditFunctionalityAfterClickedOnSubmitButton() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -568,10 +660,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyAddMoreProductsButtonInTheCheckOutPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -591,10 +684,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyNavigateToContactUsPageInCheckOutPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -609,10 +703,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testClickOnPlaceOrderInCheckOutPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -626,10 +721,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVeirfyEmailTextfieldInPlaceOrderPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -646,10 +742,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyValidEmailTextFieldInPlaceOrderPage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -665,10 +762,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyAlreadyRegistereDMailMessage() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -685,10 +783,11 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyPinCodeTextfield() throws Exception {
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String megaMenuName = ExcelReader.getValue("MegaMenuName");
 		String megaMenuCategoryName = ExcelReader.getValue("MegaMenuCategoryName");
 		endToEnd.clickOnMegaMenuCategory(driver, megaMenuName, megaMenuCategoryName);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnAddToBagLink(driver);
 		loginPage.verifyForTopButton(driver);
@@ -707,14 +806,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testVerifyPlaceOrderForRegisteredUser() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -730,14 +834,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	public void testClickOnShipNewAddressCheckBox() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -752,17 +861,22 @@ public class TestCheckOutPage extends TrendInTestSuite {
 
 	// TC_TrendIN_CheckOut_066
 	@Test(groups = "CheckOut")
-	public void testClickOnExixtingAddressRadioBtn() throws Exception {
+	public void testClickOnExistingAddressRadioBtn() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -782,13 +896,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		String selectedProductTitle = "";
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -797,7 +917,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
 		endToEnd.clickOnPlaceOrder();
 		checkOutPage.verifyShippingAddressPageHeader(driver);
-		checkOutPage.clickOnEditLinkInShippinghAddrsPage(driver);
+		checkOutPage.clickOnEditLinkInShippingAddrsPage(driver);
 		checkOutPage.verifyEditAddressPage(driver);
 	}
 
@@ -807,13 +927,15 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		HomePage homePage = new HomePage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -822,8 +944,7 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
 		endToEnd.clickOnPlaceOrder();
 		checkOutPage.verifyShippingAddressPageHeader(driver);
-		ContactUsPage contactUsPage = new ContactUsPage();
-		contactUsPage.clickContactUsFooter(driver);
+		homePage.clickFooterContactUsIcon(driver);
 	}
 
 	// TC_TrendIN_CheckOut_069
@@ -832,13 +953,18 @@ public class TestCheckOutPage extends TrendInTestSuite {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -851,18 +977,19 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	}
 
 	// TC_TrendIN_CheckOut_070
-	@Test(groups = "")
+	@Test(groups = "CheckOut")
 	public void testClickOnNoOfItemsLink() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -874,18 +1001,23 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	}
 
 	// TC_TrendIN_CheckOut_071
-	@Test(groups = "")
+	@Test(groups = "CheckOut")
 	public void testClickOnContinueBtnInCartSummaryPage() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -899,18 +1031,23 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	}
 
 	// TC_TrendIN_CheckOut_072
-	@Test(groups = "")
+	@Test(groups = "CheckOut")
 	public void testClickOnCancelIconInCartSummaryPage() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -924,18 +1061,23 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	}
 	
 	// TC_TrendIN_CheckOut_073
-	@Test(groups = "")
+	@Test(groups = "CheckOut")
 	public void testClickOnContinueToPayment() throws Exception {
 		QuickViewPage quickViewPage = new QuickViewPage();
 		LoginPage loginPage = new LoginPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		EndToEnd endToEnd = new EndToEnd();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
-		quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-		endToEnd.clickOnProductCategory(driver);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
+		String selectedProductTitle = "";
+		String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+		String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+		categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+		categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+		selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 		quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 		quickViewPage.clickAddToMyBag(driver);
 		quickViewPage.checkCartValue(driver);
@@ -950,18 +1092,23 @@ public class TestCheckOutPage extends TrendInTestSuite {
 	}
 	
 	// TC_TrendIN_CheckOut_074
-		@Test(groups = "")
+		@Test(groups = "CheckOut")
 		public void testVerifyCashOnDeliveryRadBtnIsDisplayed() throws Exception {
 			QuickViewPage quickViewPage = new QuickViewPage();
 			LoginPage loginPage = new LoginPage();
 			EndToEnd endToEnd = new EndToEnd();
-			loginPage.loginOrRegister(driver);
+			CategoryModulePage categoryModulePage = new CategoryModulePage();
+			loginPage.gotoLoginOrRegisterMenu(driver);
 			loginPage.clickAlreadyRegisteredLink(driver);
 			String userName = ExcelReader.getValue("UserName");
 			String passWord = ExcelReader.getValue("Password");
-			loginPage.verifyExistingUserLogin(driver, userName, passWord);
-			quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-			endToEnd.clickOnProductCategory(driver);
+			loginPage.loginToTrendInAccount(driver, userName, passWord);
+			String selectedProductTitle = "";
+			String mainCategory = ExcelReader.getValue("MegaMenuBarsToClick");
+			String level2LinkToClick = ExcelReader.getValue("ItemToClick");
+			categoryModulePage.selectMainCategoryLink(driver, mainCategory);
+			categoryModulePage.selectLevel2CategoryLink(driver, level2LinkToClick);
+			selectedProductTitle = categoryModulePage.clickOnProductCategory(driver);
 			quickViewPage.selectSizeAndVerifyNumOfPiecesAvailableMsg(driver);
 			quickViewPage.clickAddToMyBag(driver);
 			quickViewPage.checkCartValue(driver);

@@ -4,9 +4,9 @@ import org.testng.annotations.Test;
 
 import com.trendin.core.ExcelReader;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.pages.CategoryModulePage;
 import com.trendin.pages.EndToEnd;
 import com.trendin.pages.LoginPage;
-import com.trendin.pages.LouisPhilippePage;
 import com.trendin.pages.QuickViewPage;
 
 public class TestEndToEnd extends TrendInTestSuite {
@@ -16,6 +16,7 @@ public class TestEndToEnd extends TrendInTestSuite {
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
 		loginPage.clickLoginOrRegister(driver);
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		String yourName = ExcelReader.getValue("YourName");
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
@@ -29,7 +30,7 @@ public class TestEndToEnd extends TrendInTestSuite {
 																				// Philippe
 																				// (392)";
 		endToEnd.selectFilterType(driver, filterTypeName, selectFilterValue);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnBuyNow();
 		endToEnd.clickOnPlaceOrder();
@@ -118,18 +119,18 @@ public class TestEndToEnd extends TrendInTestSuite {
 	public void testVerifyOrderPlacingByLogginginInHomePage() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		QuickViewPage quickViewPage = new QuickViewPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		loginPage.verifyTinyLoginIcon(driver);
 		loginPage.clickLoginOrRegister(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.clickOnTheHomeBanner(driver);
 		String filterTypeName = ExcelReader.getValue("FilterTypeName");
 		String selectFilterValue = ExcelReader.getValue("SelectFilterValue");
 		endToEnd.selectFilterType(driver, filterTypeName, selectFilterValue);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		loginPage.verifyForAddCartPlaceOrderFuctionality(driver);
 	}
@@ -140,17 +141,17 @@ public class TestEndToEnd extends TrendInTestSuite {
 	public void testVerifyCancelOrderPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		QuickViewPage quickViewPage = new QuickViewPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		loginPage.clickLoginOrRegister(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.clickOnTheHomeBanner(driver);
 		String filterTypeName = ExcelReader.getValue("FilterTypeName");
 		String selectFilterValue = ExcelReader.getValue("SelectFilterValue");
 		endToEnd.selectFilterType(driver, filterTypeName, selectFilterValue);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		loginPage.verifyForAddCartPlaceOrderFuctionality(driver);
 		loginPage.clickOnCancelOrder(driver);
@@ -186,9 +187,9 @@ public class TestEndToEnd extends TrendInTestSuite {
 	public void testVerifyCouponsAndVouchersGoogleNavigation() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		QuickViewPage quickViewPage = new QuickViewPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		loginPage.clickOnTheHomeBanner(driver);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnBuyNow();
 		endToEnd.clickOnCoupnsAndVochersButton(driver);
@@ -203,9 +204,9 @@ public class TestEndToEnd extends TrendInTestSuite {
 	public void testVerifyCouponsAndVouchersFaceBookNavigation() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		EndToEnd endToEnd = new EndToEnd();
-		QuickViewPage quickViewPage = new QuickViewPage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		loginPage.clickOnTheHomeBanner(driver);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnBuyNow();
 		endToEnd.clickOnCoupnsAndVochersButton(driver);
@@ -221,8 +222,9 @@ public class TestEndToEnd extends TrendInTestSuite {
 	  LoginPage loginPage = new LoginPage();
 	  QuickViewPage quickViewPage = new QuickViewPage();
 	  EndToEnd endToEnd = new EndToEnd();
+	  CategoryModulePage categoryModulePage = new CategoryModulePage();
 	  quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-	  endToEnd.clickOnProductCategory(driver);
+	  categoryModulePage.clickOnProductCategory(driver);
 	  loginPage.clickOnProductSize(driver);
 	  endToEnd.clickOnBuyNow();
 	  quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
@@ -255,8 +257,9 @@ public class TestEndToEnd extends TrendInTestSuite {
 	  LoginPage loginPage = new LoginPage();
 	  QuickViewPage quickViewPage = new QuickViewPage();
 	  EndToEnd endToEnd = new EndToEnd();
+	  CategoryModulePage categoryModulePage = new CategoryModulePage();
 	  quickViewPage.clickOnMegaMenuAndSelectCategory(driver);
-	  endToEnd.clickOnProductCategory(driver);
+	  categoryModulePage.clickOnProductCategory(driver);
 	  loginPage.clickOnProductSize(driver);
 	  endToEnd.clickOnBuyNow();
 	  quickViewPage.VerifyCheckOutSummaryPageTitle(driver);
@@ -279,6 +282,5 @@ public class TestEndToEnd extends TrendInTestSuite {
 	  loginPage.verifyMyAccountPage(driver);
 	  loginPage.verifyMyAccountNewUserPage(driver);
 	  loginPage.signInWithFacebook(driver);
-
 	 }
 }

@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.trendin.core.ExcelReader;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.pages.CategoryModulePage;
 import com.trendin.pages.EndToEnd;
 import com.trendin.pages.LoginPage;
 import com.trendin.pages.LouisPhilippePage;
@@ -72,7 +73,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.existingUserLoginPageLogoVerify(driver);
 	}
 
@@ -87,7 +88,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyUserDropDown(driver);
 	}
 
@@ -102,7 +103,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.verifyMyAccount(driver);
 		loginPage.verifyMyOrder(driver);
 		loginPage.verifyReturn(driver);
@@ -120,7 +121,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.userNameClick(driver);
 		louisPhilippePage.verifyTinyUserNamePage(driver);
 
@@ -137,7 +138,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyTinyStorePage(driver);
 
 	}
@@ -153,7 +154,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyTinyTrackOrderPage(driver);
 
 	}
@@ -169,7 +170,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyTinyContactUsPage(driver);
 
 	}
@@ -185,7 +186,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyLogoPage(driver);
 
 	}
@@ -201,7 +202,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyDefaultSearchLabel(driver);
 
 	}
@@ -217,7 +218,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		String searchKeyword = ExcelReader.getValue("SearchKeywordName");
 		louisPhilippePage.verifySearchButtonFunctionality(driver, searchKeyword);
 		louisPhilippePage.verifySearchButtonNavigationPage(driver);
@@ -235,7 +236,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		String searchKeyword = ExcelReader.getValue("SearchKeywordName");
 		louisPhilippePage.verifySearchButtonFunctionality(driver, searchKeyword);
 		louisPhilippePage.verifyErrorMeassageForSearchButton(driver);
@@ -253,7 +254,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyErrorMessageForInvalidKeyword(driver);
 
 	}
@@ -269,7 +270,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.clickOnCartButton(driver);
 
 	}
@@ -285,7 +286,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		louisPhilippePage.verifyMegaMenuLabelInLouisPhilippePages(driver);
 	}
 
@@ -315,6 +316,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 	@Test(groups = "Module5")
 	public void testVerifyForBuyNowFuctionality() throws Exception {
 		LouisPhilippePage louisPhilippePage = new LouisPhilippePage();
+		CategoryModulePage categoryModulePage = new CategoryModulePage();
 		EndToEnd endToEnd = new EndToEnd();
 		LoginPage loginPage = new LoginPage();
 		louisPhilippePage.clickOnShopByBrands(driver);
@@ -323,7 +325,7 @@ public class TestLouisPhilippePage extends TrendInTestSuite {
 		louisPhilippePage.verifySearchButtonFunctionality(driver, searchKeyword);
 		louisPhilippePage.selectLeftNavigation(driver);
 		louisPhilippePage.selectBrandAndVerify(driver);
-		endToEnd.clickOnProductCategory(driver);
+		categoryModulePage.clickOnProductCategory(driver);
 		louisPhilippePage.verifyProductPage(driver);
 		loginPage.clickOnProductSize(driver);
 		endToEnd.clickOnBuyNow();

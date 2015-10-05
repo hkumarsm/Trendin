@@ -28,7 +28,7 @@ import jxl.read.biff.BiffException;
  */
 
 public class ExcelReader {
-	static Utility utility = new Utility();
+	
 	/**
 	 * 
 	 * The worksheet to read in Excel file
@@ -150,7 +150,7 @@ public class ExcelReader {
 	public void columnDictionary() {
 		// Iterate through all the columns in the Excel sheet and store the
 		// value in Hashtable
-		for (int col = 0; col < wrksheet.getColumns(); col++) {
+		for (int col = 0; col <  wrksheet.getColumns(); col++) {
 			dict.put(ReadCell(col, 0), col);
 			System.out.println("Contents of the set are: "+ dict.get(ReadCell(col, 0)));
 		}
@@ -182,7 +182,7 @@ public class ExcelReader {
 
 	public static String getValue(String colName) {
 		// int value = GetCell(colName);
-		colName = utility.readExcelData(colName);
+		colName = Utility.readExcelData(colName);
 		return colName;
 	}
 

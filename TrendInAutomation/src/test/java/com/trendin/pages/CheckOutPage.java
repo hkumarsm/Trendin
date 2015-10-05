@@ -18,14 +18,15 @@ import com.trendin.core.ElementOperation;
 import com.trendin.core.ExcelReader;
 import com.trendin.core.GetElementIdentifier;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.core.Utility;
 import com.trendin.core.util.exceptions.POMMethodExecException;
 
 public class CheckOutPage extends TrendInTestSuite {
 	final String curApp = "CheckOutPage";
 	ElementOperation eo = new ElementOperation(curApp);	
 
-	//To Click on any available product image
-	/**
+	/*//To Click on any available product image
+	 *//**
 	 * <p>
 	 * <b>Method Name:</b> clickOnProductImage
 	 * </p>
@@ -40,7 +41,7 @@ public class CheckOutPage extends TrendInTestSuite {
 	 * 
 	 * @author Sowmya H M
 	 * 
-	 **/
+	 **//*
 	public void clickOnProductImage(WebDriver driver) throws Exception {
 
 		Random random = new Random();
@@ -66,7 +67,7 @@ public class CheckOutPage extends TrendInTestSuite {
 		eo.verifyElementIsDisplayed(driver, "XPath", "productDescriptionXpath");
 		addComment("Product Description page is displayed");
 	}
-
+	  */
 	//To Click on Cart Icon
 	/**
 	 * <p>
@@ -86,9 +87,11 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 
 	public void clickOnCartIcon(WebDriver driver) throws Exception {
-
-		eo.wait(4000);
 		driver.switchTo().defaultContent();
+
+		// Waits until the Locate Store button is displayed..
+		Utility.waitUntilExists(driver, "XPath", "cartIconXpath", curApp);
+		//To Click on Cart Icon
 		eo.clickElement(driver, "XPath", "cartIconXpath");
 		addComment("Successfully clicked on Cart Icon");
 	}
@@ -112,15 +115,13 @@ public class CheckOutPage extends TrendInTestSuite {
 	public void enterZipCodeAndClickOnCheckBtn(WebDriver driver) throws Exception {
 
 		String zip = ExcelReader.getValue("ZipCode");
-		try {
-			eo.enterText(driver, "XPath", "zipTextBoxXpath", zip);
-			addComment("Successfully entered the zip/Postal Code");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the Zip/Postal Code", e);
-		}
 
+		eo.enterText(driver, "XPath", "zipTextBoxXpath", zip);
+		addComment("Successfully entered the zip/Postal Code");
+
+		// Waits until the Check button is loaded
+		Utility.waitUntilExists(driver, "XPath", "checkBtnXpath", curApp);
 		//To click on Check button
-		eo.wait(3000);
 		eo.clickElement(driver, "XPath", "checkBtnXpath");
 		addComment("Successfully clicked on Check Button");
 	}	
@@ -172,7 +173,10 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 
 	public void clickOnContinueToPayment(WebDriver driver)  throws Exception {
-		eo.wait(3000);
+
+		// Waits until the  'Continue to payment' is displayed
+		Utility.waitUntilExists(driver, "XPath", "continueToPaymentBtnXpath", curApp);
+		//To click on 'Continue to payment' button
 		eo.clickElement(driver, "XPath", "continueToPaymentBtnXpath");
 		addComment("Successfully clicked on Continue To Payment Button");
 
@@ -250,13 +254,13 @@ public class CheckOutPage extends TrendInTestSuite {
 	public void enterFirstname(WebDriver driver) throws Exception {
 
 		String fname = ExcelReader.getValue("Fname");
-		try {
-			eo.wait(3000);
-			eo.enterText(driver, "XPath", "fNameTextBoxXpath", fname);
-			addComment("Successfully entered the First Name");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the First Name", e);
-		}
+
+		// Waits until the Address' page is loaded
+		Utility.waitUntilExists(driver, "XPath", "fNameTextBoxXpath", curApp);
+		//To enter First name field
+		eo.enterText(driver, "XPath", "fNameTextBoxXpath", fname);
+		addComment("Successfully entered the First Name");
+
 	}
 
 	//To Verify First Name Error message
@@ -282,14 +286,9 @@ public class CheckOutPage extends TrendInTestSuite {
 
 		//To Verify msg "Please enter valid first name. Allowed characters (a-z)."
 
-		String actualFNameErrMsg = eo.getText(driver, "XPath", "fnameErrMsgXpath");
-		addComment("The message "  + actualFNameErrMsg + " is displayed ");
-		String expectedFNameErrMsg = "Please enter valid first name. Allowed characters (a-z).";
-		if (actualFNameErrMsg.equals(expectedFNameErrMsg)) {
-			addComment("'Please enter valid first name. Allowed characters (a-z).' message is displayed");
-		} else {
-			throw new POMMethodExecException("Not able to Verify First Name Error message");
-		}
+		String firstNameErrMsg = eo.getText(driver, "Xpath", "fnameErrMsgXpath");
+		addComment("First name Error message displayed in UI: " + firstNameErrMsg);
+		assertTrue(firstNameErrMsg.equalsIgnoreCase("Please enter valid first name. Allowed characters (a-z).") == true, "Successfully verified the Error Message : " + firstNameErrMsg, "Not able to verify the Error Message");
 	}
 
 	//To enter Last Name
@@ -372,12 +371,9 @@ public class CheckOutPage extends TrendInTestSuite {
 	public void enterAddressLine1(WebDriver driver) throws Exception {
 		eo.wait(3000);
 		String addLine1 = ExcelReader.getValue("AddLine1");
-		try {
+		
 			eo.enterText(driver, "XPath", "addLine1TextBoxXpath", addLine1);
 			addComment("Successfully entered the Address Line1");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the Address Line1", e);
-		}	
 	}
 
 	//To Verify Address line1 Error message
@@ -401,15 +397,12 @@ public class CheckOutPage extends TrendInTestSuite {
 
 		driver.switchTo().defaultContent();
 
-		//To Verify  Error message."		
-		String actualAddressLine1ErrMsg = eo.getText(driver, "XPath", "addLine1ErrMsgXpath");
-		addComment("The message "  + actualAddressLine1ErrMsg + " is displayed ");
-		String expectedAddressLine1ErrMsg = "Allowed special characteres /.:#,-' .";
-		if (actualAddressLine1ErrMsg.equals(expectedAddressLine1ErrMsg)) {
-			addComment("'Allowed special characteres /.:#,-' .' message is displayed");
-		} else {
-			throw new POMMethodExecException("Not able to Verify Address line 1 Error message");
-		}
+		//To Verify  Error message.	
+		
+		String addressLine1ErrMsg = eo.getText(driver, "Xpath", "addLine1ErrMsgXpath");
+		addComment("Address line 1 Error message displayed in UI: " + addressLine1ErrMsg);
+		assertTrue(addressLine1ErrMsg.equalsIgnoreCase("Allowed special characteres /.:#,-' .") == true, "Successfully verified the Error Message : " + addressLine1ErrMsg, "Not able to verify the Error Message");
+		
 	}
 
 	//To enter Address line 2
@@ -437,7 +430,8 @@ public class CheckOutPage extends TrendInTestSuite {
 			addComment("Successfully entered the Address Line2");
 		} catch (Exception e) {
 			throw new POMMethodExecException("Not able to enter the Address Line2", e);
-		}	
+		}
+		
 	}
 	//To Verify Address line2 Error message
 	/**
@@ -461,14 +455,10 @@ public class CheckOutPage extends TrendInTestSuite {
 		driver.switchTo().defaultContent();
 
 		//To Verify Error message 
-		String actualAddressLine2ErrMsg = eo.getText(driver, "XPath", "addLine2ErrMsgXpath");
-		addComment("The message "  + actualAddressLine2ErrMsg + " is displayed ");
-		String expectedAddressLine2ErrMsg = "Allowed special characteres /.:#,-' .";
-		if (actualAddressLine2ErrMsg.equals(expectedAddressLine2ErrMsg)) {
-			addComment("'Allowed special characteres /.:#,-' .' message is displayed");
-		} else {
-			throw new POMMethodExecException("Not able to Verify Address line 2 Error message");
-		}
+		
+		String addressLine2ErrMsg = eo.getText(driver, "Xpath", "addLine2ErrMsgXpath");
+		addComment("Address line 1 Error message displayed in UI: " + addressLine2ErrMsg);
+		assertTrue(addressLine2ErrMsg.equalsIgnoreCase("Allowed special characteres /.:#,-' .") == true, "Successfully verified the Error Message : " + addressLine2ErrMsg, "Not able to verify the Error Message");
 
 	}
 	//To enter Address line 3
@@ -489,14 +479,14 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 
 	public void enterAddressLine3(WebDriver driver) throws Exception {
-		eo.wait(3000);
+
 		String addLine3 = ExcelReader.getValue("AddLine3");
-		try {
-			eo.enterText(driver, "XPath", "addLine3TextBoxXpath", addLine3);
-			addComment("Successfully entered the Address Line3");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the Address Line3", e);
-		}	
+
+		Utility.waitUntilExists(driver, "XPath", "addLine3TextBoxXpath", curApp);
+
+		eo.enterText(driver, "XPath", "addLine3TextBoxXpath", addLine3);
+		addComment("Successfully entered the Address Line3");
+
 	}
 	//To Verify Address line3 Error message
 	/**
@@ -520,16 +510,10 @@ public class CheckOutPage extends TrendInTestSuite {
 		driver.switchTo().defaultContent();
 
 		//To Verify Error message 
-		String actualAddressLine3ErrMsg = eo.getText(driver, "XPath", "addLine3ErrMsgXpath");
-		addComment("The message "  + actualAddressLine3ErrMsg + " is displayed ");
-		String expectedAddressLine3ErrMsg = "Allowed special characteres /.:#,-' .";
-		if (actualAddressLine3ErrMsg.equals(expectedAddressLine3ErrMsg)) {
-			addComment("'Allowed special characteres /.:#,-' .' message is displayed");
-		} else {
-			throw new POMMethodExecException("Not able to Verify Address line 3 Error message");
-		}
-
-
+		
+		String addressLine3 = eo.getText(driver, "Xpath", "addLine3ErrMsgXpath");
+		addComment("Address line 3 Error message displayed in UI: " + addressLine3);
+		assertTrue(addressLine3.equalsIgnoreCase("Allowed special characteres /.:#,-' .") == true, "Successfully verified the Error message : " + addressLine3, "Not able to verify the Error Message");
 	}
 	//To enter Landmark
 	/**
@@ -549,14 +533,11 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void enterLandMark(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "landMarkTextBoxXpath", curApp);
 		String landMark = ExcelReader.getValue("LandMark");
-		try {
+		
 			eo.enterText(driver, "XPath", "landMarkTextBoxXpath", landMark);
 			addComment("Successfully entered the Address Land mark");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the Address LAnd mark", e);
-		}	
 	}
 
 	//To Verify Address Land Mark Error message
@@ -579,15 +560,11 @@ public class CheckOutPage extends TrendInTestSuite {
 
 		driver.switchTo().defaultContent();
 
-		//To Verify Error message 
-		String actualAddressLandMarkErrMsg = eo.getText(driver, "XPath", "landMarkErrMsgXpath");
-		addComment("The message "  + actualAddressLandMarkErrMsg + " is displayed ");
-		String expectedAddressLandMarkErrMsg = "Allowed special characteres /.:#,-' .";
-		if (actualAddressLandMarkErrMsg.equals(expectedAddressLandMarkErrMsg)) {
-			addComment("'Allowed special characteres /.:#,-' .' message is displayed");
-		} else {
-			throw new POMMethodExecException("Not able to Verify Address Land mark Error message");
-		}
+		//To Verify Error message
+		String landMarkErrMsg = eo.getText(driver, "Xpath", "landMarkErrMsgXpath");
+		addComment("Land mark Error message displayed in UI: " + landMarkErrMsg);
+		assertTrue(landMarkErrMsg.equalsIgnoreCase("Allowed special characteres /.:#,-' .") == true, "Successfully verified the Error Message : " + landMarkErrMsg, "Not able to verify the Error Message");
+		
 	}
 	//To enter Mobile Number
 	/**
@@ -703,7 +680,9 @@ public class CheckOutPage extends TrendInTestSuite {
 	public void clickOnClearFormBtn(WebDriver driver) throws Exception {
 
 		driver.switchTo().defaultContent();
-		eo.wait(3000);
+
+		// Waits until the 'Address page'  is loaded
+		Utility.waitUntilExists(driver, "XPath", "clearFormBtnXpath", curApp);
 		//To Click on Clear Form Button
 		eo.clickElement(driver, "XPath", "clearFormBtnXpath");
 		addComment("Successfully clicked on Clear Form Button.");
@@ -727,7 +706,7 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void clickOnEditLink(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "editLinkXpath", curApp);
 		//To Click on Edit Link
 		eo.clickElement(driver, "XPath", "editLinkXpath");
 		addComment("Successfully clicked on Edit link.");
@@ -752,7 +731,8 @@ public class CheckOutPage extends TrendInTestSuite {
 
 	public void verifySelectSizeListIsDisplayed(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "selectSizeListXpath", curApp);
+
 		boolean selectSizeListDisplay = eo.verifyElementIsDisplayed(driver, "xpath", "selectSizeListXpath");
 		assertTrue(selectSizeListDisplay, "Select Size List is displayed.", "Select Size List is not displayed.");	
 	}	
@@ -857,17 +837,17 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void verifySizeIsNotChangedAfterClickingCancel(WebDriver driver) throws Exception {
 
-		eo.wait(5000);
+		Utility.waitUntilExists(driver, "XPath", "sizeOptionSelectedXpath", curApp);
 		String actualSize = eo.getText(driver, "XPath", "sizeOptionSelectedXpath");
 		addComment("The Actual Size is : " + actualSize);
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "editLinkXpath", curApp);
 		//To Click on Edit Link
 		eo.clickElement(driver, "XPath", "editLinkXpath");
 		addComment("Successfully clicked on Edit link.");
-
+	
 		String size = ExcelReader.getValue("Size");
-
+		
 		try {
 			WebElement element = driver.findElement(By.id(GetElementIdentifier.getProperty("sizeOptionXpath", curApp)));
 			Select sizeOption=new Select(element);
@@ -877,11 +857,12 @@ public class CheckOutPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to Edit size from drop down", e);
 		}
 
+		Utility.waitUntilExists(driver, "XPath", "cancelBtnXpath", curApp);
 		//To Click on Cancel link
 		eo.clickElement(driver, "XPath", "cancelBtnXpath");
 		addComment("Successfully clicked on Cancel link.");
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "cancelBtnXpath", curApp);
 		//To verify Edited size is not saved after clicking Cancel button
 		if (actualSize != size){
 			addComment("Edited Size is not saved");
@@ -932,6 +913,8 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void ClickOnCouponsAndTrendInCredits(WebDriver driver) throws Exception {
 
+		driver.switchTo().defaultContent();
+		Utility.waitUntilExists(driver, "XPath", "couponsXpath", curApp);
 		//To Click on Coupons And TrendIn Credits
 		eo.clickElement(driver, "XPath", "couponsXpath");
 		addComment("Successfully clicked on Coupons And TrendIn Credits.");
@@ -965,7 +948,6 @@ public class CheckOutPage extends TrendInTestSuite {
 		assertTrue(couponDetailLabel.equalsIgnoreCase("Enter Coupon Details")==true, "Successfully verified the text : " + couponDetailLabel, 
 				"Not able to verify the text");
 
-		//eo.wait(3000);
 		//To verify 'Available Offers' is displayed
 		String availableOffersText = eo.getText(driver, "Xpath", "availableOffersTextXpath");
 		assertTrue(availableOffersText.equalsIgnoreCase("AVAILABLE OFFERS")==true, "Successfully verified the text : " + availableOffersText, 
@@ -1076,7 +1058,8 @@ public class CheckOutPage extends TrendInTestSuite {
 	 * 
 	 */
 	public void clickOnApplyBtn(WebDriver driver) throws Exception {
-		eo.wait(3000);
+		
+		Utility.waitUntilExists(driver, "XPath", "applyBtnXpath", curApp);
 		eo.clickElement(driver, "XPath", "applyBtnXpath");
 		addComment("Successfully clicked on Apply Button");
 	}
@@ -1099,14 +1082,10 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void enterVoucherCode(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "couponDetailTextBoxXpath", curApp);
 		String voucherCode = ExcelReader.getValue("VoucherCode");
-		try {
 			eo.enterText(driver, "XPath", "couponDetailTextBoxXpath", voucherCode);
 			addComment("Successfully entered the Voucher Code");
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to enter the Voucher Code", e);
-		}
 	}
 
 	//To Verify error message when invalid voucher code is entered in Discount Coupons / vouchers screen
@@ -1126,10 +1105,10 @@ public class CheckOutPage extends TrendInTestSuite {
 	 * 
 	 */
 
-	public void verifyErrMsgForInvaldVoucherCode(WebDriver driver) throws Exception {
+	public void verifyErrMsgForInvalidVoucherCode(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
-
+		Utility.waitUntilExists(driver, "XPath", "voucherCodeErrMsg", curApp);
+		
 		String voucherCodeErrMsgText = eo.getText(driver, "Xpath", "voucherCodeErrMsg");
 		assertTrue(voucherCodeErrMsgText.equals("Voucher not exists. Please enter valid code.") == true, "Successfully verified the error message : " + voucherCodeErrMsgText, 
 				"Not able to verify the error message");
@@ -1154,8 +1133,9 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void verifyApplyBtnIsDisabled(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		Utility.waitUntilExists(driver, "XPath", "applyBtnXpath", curApp);
 		driver.switchTo().frame(0);
+
 		try {
 
 			WebElement applyBtn = driver.findElement(By.xpath(GetElementIdentifier.getProperty("applyBtnXpath", curApp)));
@@ -1481,9 +1461,12 @@ public class CheckOutPage extends TrendInTestSuite {
 	 * 
 	 */
 
-	public void clickOnEditLinkInShippinghAddrsPage(WebDriver driver) throws Exception {
+	public void clickOnEditLinkInShippingAddrsPage(WebDriver driver) throws Exception {
 
-		eo.wait(1000);
+		// Waits until the 'Edit link' element is loaded
+		Utility.waitUntilExists(driver, "XPath", "shipingAddressEditLinkXpath", curApp);
+
+		// To click on edit link
 		eo.clickElement(driver, "Xpath", "shipingAddressEditLinkXpath");
 		addComment("Successfully clicked on edit link");
 	}
@@ -1506,7 +1489,9 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void verifyEditAddressPage(WebDriver driver) throws Exception {
 
-		eo.wait(3000);
+		// Waits until the 'Edit Address' page header  is loaded
+		Utility.waitUntilExists(driver, "XPath", "editAdressHeaderXpath", curApp);
+
 		String actualEditAddressHeader = eo.getText(driver, "XPath", "editAdressHeaderXpath");
 		addComment("The message "  + actualEditAddressHeader + " is displayed ");
 
@@ -1536,7 +1521,7 @@ public class CheckOutPage extends TrendInTestSuite {
 
 	public void clickOnBackBtn(WebDriver driver) throws Exception {
 
-		eo.wait(1000);
+		Utility.waitUntilExists(driver, "XPath", "backBtnXpath", curApp);
 		eo.clickElement(driver, "Xpath", "backBtnXpath");
 		addComment("Successfully clicked on Back Button");
 	}
@@ -1562,7 +1547,9 @@ public class CheckOutPage extends TrendInTestSuite {
 		eo.clickElement(driver, "Xpath", "noOfItemsLinkXpath");
 		addComment("Successfully clicked on No. Of Items link");
 
-		eo.wait(2000);
+		// Waits until the 'CART SUMMARY' header page is loaded
+		Utility.waitUntilExists(driver, "XPath", "cartSummaryHeaderXpath", curApp);
+
 		// To verify 'CART SUMMARY' header is displayed
 		String cartSummaryHeader = eo.getText(driver, "Xpath", "cartSummaryHeaderXpath");
 		assertTrue(cartSummaryHeader.equalsIgnoreCase("CART SUMMARY")==true, "Successfully verified the header : " + cartSummaryHeader, 
@@ -1610,13 +1597,20 @@ public class CheckOutPage extends TrendInTestSuite {
 	 */
 	public void clickOnCancelIconInCartSummaryPage(WebDriver driver) throws Exception {
 
-		driver.switchTo().defaultContent();
-		Actions action = new Actions(driver);
-		WebElement ele = driver.findElement(By.xpath(GetElementIdentifier.getProperty("cancelIconInCartSummaryPageXpath", curApp)));
-		action.moveToElement(ele).build().perform();
-		ele.click();
-		addComment("Successfully clicked on Cancel Icon");	
-	}
+		// Waits until the 'Cancel Icon' is displayed
+		Utility.waitUntilExists(driver, "XPath", "cancelIconInCartSummaryPageXpath", curApp);
+
+		try {
+			driver.switchTo().defaultContent();
+			Actions action = new Actions(driver);
+			WebElement ele = driver.findElement(By.xpath(GetElementIdentifier.getProperty("cancelIconInCartSummaryPageXpath", curApp)));
+			action.moveToElement(ele).build().perform();
+			ele.click();
+			addComment("Successfully clicked on Cancel Icon");	
+		} catch (Exception e) {
+			throw new POMMethodExecException("Not able to Click On Cancel Icon", e);
+		}
+	}		
 
 	/**
 	 * <p>
@@ -1800,7 +1794,7 @@ public class CheckOutPage extends TrendInTestSuite {
 		}
 		addComment("Length of the pin code number before Entering into text box : " + "<br>" + pinCodeNumbers.length() + "</b>");
 		try {
-			eo.cleardata(driver, "Xpath", "guestShippingPinCodeXpath");
+			eo.clearData(driver, "Xpath", "guestShippingPinCodeXpath");
 			eo.enterText(driver, "Xpath", "guestShippingPinCodeXpath", pinCodeNumbers);
 			String pinCodeField = driver.findElement(By.xpath(GetElementIdentifier.getProperty("guestShippingPinCodeXpath", curApp))).getAttribute("maxlength");
 			// pinCodeField.length();
@@ -1830,8 +1824,9 @@ public class CheckOutPage extends TrendInTestSuite {
 	 * 
 	 */
 	public void verifyPaymentPageDisplay(WebDriver driver) throws Exception {
-		
-		eo.wait(2000);
+
+		Utility.waitUntilExists(driver, "XPath", "paymentPageHeaderXpath", curApp);
+
 		String paymentPageHeader = eo.getText(driver, "Xpath", "paymentPageHeaderXpath");
 		assertTrue(paymentPageHeader.equalsIgnoreCase("SECURE PAYMENT OPTIONS")==true, "Successfully verified the header : " + paymentPageHeader, 
 				"Not able to verify the Header");
@@ -1839,27 +1834,28 @@ public class CheckOutPage extends TrendInTestSuite {
 	}
 
 	// To verify Cash On Delivery Option is displayed
-		/**
-		 * <p>
-		 * <b>Method Name:</b> verifyPaymentPageDisplay
-		 * </p>
-		 * 
-		 * <p>
-		 * <b>Description:</b> To verify Cash On Delivery Option is displayed
-		 * </p>
-		 * <p>
-		 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
-		 * </p>
-		 * 
-		 * @author Sowmya H M
-		 * 
-		 */
+	/**
+	 * <p>
+	 * <b>Method Name:</b> verifyPaymentPageDisplay
+	 * </p>
+	 * 
+	 * <p>
+	 * <b>Description:</b> To verify Cash On Delivery Option is displayed
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b>  Browser.Launch - > Home page - > category page -> Checkout summary Page -> Shipping address Page
+	 * </p>
+	 * 
+	 * @author Sowmya H M
+	 * 
+	 */
 	public void verifyCashOnDeliveryOptionIsDisplayed(WebDriver driver) throws Exception {
-		
-		eo.wait(2000);
+
+		Utility.waitUntilExists(driver, "XPath", "cashOnDeliveryOptionXpath", curApp);
+
 		String cashOnDeliveryOption = eo.getText(driver, "Xpath", "cashOnDeliveryOptionXpath");
-		assertTrue(cashOnDeliveryOption.equalsIgnoreCase("Cash on Delivery (COD)")==true, "Successfully verified the header : " + cashOnDeliveryOption, 
-				"Not able to verify the Header");
+		assertTrue(cashOnDeliveryOption.equalsIgnoreCase("Cash on Delivery (COD)")==true, "Successfully verified the  Option : " + cashOnDeliveryOption, 
+				"Not able to verify the COD OPtion");
 	}
 
 }

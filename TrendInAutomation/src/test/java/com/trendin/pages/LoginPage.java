@@ -15,13 +15,15 @@ import com.trendin.core.ElementOperation;
 import com.trendin.core.ExcelReader;
 import com.trendin.core.GetElementIdentifier;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.core.Utility;
 import com.trendin.core.util.exceptions.POMMethodExecException;
 
 public class LoginPage extends TrendInTestSuite {
-	
+
 	final String curApp = "LoginPage";
 	ElementOperation eo = new ElementOperation(curApp);
-
+	
+	
 	/**
 	 * <p>
 	 * <b>Method Name:</b> verifyTinyLoginIcon
@@ -40,10 +42,11 @@ public class LoginPage extends TrendInTestSuite {
 	 */
 	// To verify Login/Register icon displays[TC_01]
 	public void verifyTinyLoginIcon(WebDriver driver) throws Exception {
-		eo.wait(3000);
+		
 		// To verify Login/Register icon displays
-			boolean logoDisplayed = eo.verifyElementIsDisplayed(driver, "XPath", "loginIconXpath");
-			assertTrue(logoDisplayed, "Login/Register icon is displayed", "Login/Register icon is not displayed");
+		Utility.waitUntilExists(driver, "XPath", "loginIconXpath", curApp);
+		boolean logoDisplayed = eo.verifyElementIsDisplayed(driver, "XPath", "loginIconXpath");
+		assertTrue(logoDisplayed, "Login/Register icon is displayed", "Login/Register icon is not displayed");
 	}
 
 	/**
@@ -63,19 +66,16 @@ public class LoginPage extends TrendInTestSuite {
 	 * 
 	 */
 	// To click on Login or Register button.
-	public void loginOrRegister(WebDriver driver) throws Exception {
+	public void gotoLoginOrRegisterMenu(WebDriver driver) throws Exception {
 		// To click on Login or Register button.
-		eo.wait(2000);
+		Utility.waitUntilClickable(driver, "XPath", "loginIconXpath", curApp, "60");
 		boolean pageStatus = false;
 		eo.clickElement(driver, "XPath", "loginIconXpath");
 		addComment("Clicked on Login or Register Button.");
-		for (int i = 0; i <= 5000; i++) {
-			pageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "verifyLoginPageXpath");
-			if (pageStatus) {
-				addComment("Login/Register page is displayed");
-				break;
-			}
-		}
+
+		Utility.waitUntilExists(driver, "XPath", "verifyLoginPageXpath", curApp);
+		pageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "verifyLoginPageXpath");
+		assertTrue(pageStatus, "Login/Register menu is displayed.", "Login/Register menu is not displayed.");
 	}
 
 	/**
@@ -98,10 +98,10 @@ public class LoginPage extends TrendInTestSuite {
 	// To click on Login or Register button.
 	public void clickLoginOrRegister(WebDriver driver) throws Exception {
 		// To click on Login or Register button.
-			eo.clickElement(driver, "XPath", "loginregisterLinkXpath");
-			addComment("Clicked on Login or Register Button.");
-		eo.wait(2000);
+		eo.clickElement(driver, "XPath", "loginregisterLinkXpath");
+		addComment("Clicked on Login or Register Button.");
 		// To validate the Login or Register page
+		Utility.waitUntilExists(driver, "Xpath", "verifyLoginPageXpath", curApp,"300");
 		boolean pageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "verifyLoginPageXpath");
 		assertTrue(pageStatus, "Login/Register page is displayed", "Login/Register page is not displayed");
 	}
@@ -125,63 +125,63 @@ public class LoginPage extends TrendInTestSuite {
 	 */
 	public void verifyLoginPageDetails(WebDriver driver) throws Exception {
 		// To verify Login/Register header is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginTextXpath");
-			addComment("Login/Register header is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginTextXpath");
+		addComment("Login/Register header is displayed");
 		// To verify 'Sign Up' title is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginSignUpXpath");
-			addComment("Sign up text is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginSignUpXpath");
+		addComment("Sign up text is displayed");
 		// To verify 'Your Name' label is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "yourNameLabelXpath");
-			addComment("Your Name label is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "yourNameLabelXpath");
+		addComment("Your Name label is displayed");
 		// To verify 'Your Name' text box is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginFirstNameXpath");
-			addComment("Name Text box is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginFirstNameXpath");
+		addComment("Name Text box is displayed");
 		// To verify 'Email Address' label is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "emailLabelXpath");
-			addComment("Email Address label is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "emailLabelXpath");
+		addComment("Email Address label is displayed");
 		// To verify 'Email Address' text box is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginEmailXpath");
-			addComment("Email Address text box is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginEmailXpath");
+		addComment("Email Address text box is displayed");
 		// To verify 'password' label is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "passwordLabelXpath");
-			addComment("Password label is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "passwordLabelXpath");
+		addComment("Password label is displayed");
 		// To verify 'password' text box is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginPasswordXpath");
-			addComment("Password text box is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginPasswordXpath");
+		addComment("Password text box is displayed");
 		// To verify 'Mobile number' label is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "mobileNumberLabelXpath");
-			addComment("Mobile number label is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "mobileNumberLabelXpath");
+		addComment("Mobile number label is displayed");
 		// To verify 'Mobile number' text box is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginMobileNumberXpath");
-			addComment("Mobile number text is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginMobileNumberXpath");
+		addComment("Mobile number text is displayed");
 		// To verify 'Terms and Policy' label is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "termsPolicyLabelXpath");
-			addComment("Terms and policy text is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "termsPolicyLabelXpath");
+		addComment("Terms and policy text is displayed");
 		// To verify 'For Him' button is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginForHimXpath");
-			addComment("For him button is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginForHimXpath");
+		addComment("For him button is displayed");
 		// To verify 'For Her' button is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "loginForHerXpath");
-			addComment("For her button is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "loginForHerXpath");
+		addComment("For her button is displayed");
 		// To verify 'Sign up with Google' button is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "signInWithgoogleXpath");
-			addComment("Sign up with Google button is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "signInWithgoogleXpath");
+		addComment("Sign up with Google button is displayed");
 		// To verify 'Sign up with Facebook' button is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "signInWithFacebookXpath");
-			addComment("Sign up with Facebook button is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "signInWithFacebookXpath");
+		addComment("Sign up with Facebook button is displayed");
 		// To verify 'Already Registered Link' is displayed
-			eo.verifyElementIsDisplayed(driver, "XPath", "alreadyRegisteredXpath");
-			addComment("Already Registered Link is displayed");
+		eo.verifyElementIsDisplayed(driver, "XPath", "alreadyRegisteredXpath");
+		addComment("Already Registered Link is displayed");
 	}
 
 	// To Click on 'Already Registered Link'.
 	public void clickAlreadyRegisteredLink(WebDriver driver) throws Exception {
 		// To click on 'Already Registered Link'
-			eo.wait(2000);
-			eo.clickElement(driver, "XPath", "alreadyRegisteredXpath");
-			addComment("Already registered link is clicked");
+		Utility.waitUntilClickable(driver, "XPath", "alreadyRegisteredXpath", curApp, "60");
+		eo.clickElement(driver, "XPath", "alreadyRegisteredXpath");
+		addComment("Successfully clicked on 'Already Registered' link");
 		boolean pageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "existingUserPageXpath");
-		assertTrue(pageStatus, "Existing user page is displayed", "Existing User page is not displayed");
+		assertTrue(pageStatus, "'Existing User' menu is displayed", "'Existing User' menu is not displayed");
 	}
 
 	/**
@@ -206,93 +206,99 @@ public class LoginPage extends TrendInTestSuite {
 		// To verify 'Existing User' title
 
 		boolean existingUserLabel = eo.verifyElementIsDisplayed(driver, "XPath", "existingUserLabelXpath");
-			if (existingUserLabel) {
-				addComment("Existing User label is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Existing User label");
-			}
+		assertTrue(existingUserLabel, "Existing User label is displayed", "Not able to verify the Existing User label");
 
 		// To verify 'Email Address' label
 
 		boolean emailLabel = eo.verifyElementIsDisplayed(driver, "XPath", "emailExistingUserXpath");
-			if (emailLabel) {
-				addComment("Email Address label is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Email Address label");
-			}
+		assertTrue(emailLabel, "Email Address label is displayed", "Not able to verify the Email Address label");
+	
 		// To verify 'Email Address' text box
 
 		boolean emailTextBox = eo.verifyElementIsDisplayed(driver, "XPath", "existingEmailXpath");
-			if (emailTextBox) {
-				addComment("Email Address text is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Email Address text");
-			}
+		assertTrue(emailTextBox, "Email Address text is displayed", "Not able to verify the Email Address text");
+		
 		// To verify 'Password' label
 
 		boolean passwordLabel = eo.verifyElementIsDisplayed(driver, "XPath", "passwordExistingXpath");
-			if (passwordLabel) {
-				addComment("Password label is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Password label");
-			}
+		assertTrue(passwordLabel, "Password label is displayed", "Not able to verify the Password label");
+		
 		// To verify 'Password' text box
 
 		boolean passwordText = eo.verifyElementIsDisplayed(driver, "XPath", "existingPasswordXpath");
-			if (passwordText) {
-				addComment("Password Text is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Password Text");
-			}
+		assertTrue(passwordText, "Password Text is displayed", "Not able to verify the Password Text");
+
 		// To verify 'Login' button is displayed
 
 		boolean loginButton = eo.verifyElementIsDisplayed(driver, "XPath", "existingLoginButtonXpath");
-			if (loginButton) {
-				addComment("Login button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Login button");
-			}
+		assertTrue(loginButton, "Login button is displayed", "Not able to verify the Login button");
+		
 
 		// To verify 'Forgot Password Link' is displayed
 
 		boolean forgotPasswordLink = eo.verifyElementIsDisplayed(driver, "CssSelector", "forgotPasswordLinkCss");
-			if (forgotPasswordLink) {
-				addComment("Forgot password link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Forgot password link");
-			}
+		assertTrue(forgotPasswordLink, "Forgot password link is displayed", "Not able to verify the Forgot password link");
+		
 
 		// To verify 'New TrendIn Link' is displayed
 
 		boolean newTrendInLink = eo.verifyElementIsDisplayed(driver, "CssSelector", "newToTrendInCss");
-			if (newTrendInLink) {
-				addComment("New to trend in link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the New to trend in link");
-			}
+		assertTrue(newTrendInLink, "New to trend in link is displayed", "Not able to verify the New to trend in link");
+		
 
 		// To verify 'Sign in with google' button is displayed
 
 		boolean signInGoogle = eo.verifyElementIsDisplayed(driver, "XPath", "signInWithgoogleXpath");
-			if (signInGoogle) {
-				addComment("Sign in with Google button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Sign in with Google button");
-			}
+		assertTrue(signInGoogle, "Sign in with Google button is displayed", "Not able to verify the Sign in with Google button");
+		
 
 		// To verify 'Sign in with facebook' button is displayed
 
 		boolean signInFacebook = eo.verifyElementIsDisplayed(driver, "XPath", "signInWithFacebookXpath");
-			if (signInFacebook) {
-				addComment("Sign in with Facebook button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Sign in with Facebook button");
-			}
+		assertTrue(signInFacebook, "Sign in with Facebook button is displayed", "Not able to verify the Sign in with Facebook button");
+		
 	}
 
 	/**
+	 * 
 	 * <p>
-	 * <b>Method Name:</b> existingUser
+	 * <b>Method Name:</b> gotoMyAccountPage
+	 * </p>
+	 * <p>
+	 * <b>Description:</b> This method is used to navigate to the 'My Account' page after logging in
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b> Launch >> Login 
+	 * </p>
+	 * <p>
+	 * <b>Arguments:</b> NIL
+	 * </p>
+	 * 
+	 * @author Kavya Prabhakar
+	 * 
+	 */
+	public void gotoMyAccountPage(WebDriver driver) throws Exception {
+		Actions act = new Actions(driver);
+		try {
+			WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", curApp)));
+			act.moveToElement(ele).build().perform();
+		} catch (Exception e) {
+			throw new POMMethodExecException("Unable to move the cursour");
+		}
+		eo.clickElement(driver, "XPath", "myAccountxpath");
+		addComment("Successfully clicked on 'My Account'");
+
+		Utility.waitUntilExists(driver, "XPath", "accountAndInfoMenuXpath", curApp);
+
+		String windowTitle = eo.getWindowTitle(driver);
+		addComment("'My Account' page title is: " + windowTitle);
+		assertEquals(windowTitle, "My Information", "'My Account' page title is as expected.", "'My Account' page title is not as expected.");
+	}
+	
+	
+	/**
+	 * <p>
+	 * <b>Method Name:</b> loginToTrendInAccount
 	 * </p>
 	 * 
 	 * <p>
@@ -306,36 +312,31 @@ public class LoginPage extends TrendInTestSuite {
 	 * @author
 	 * 
 	 */
-	public void verifyExistingUserLogin(WebDriver driver, String userName, String password) throws Exception {
+	public void loginToTrendInAccount(WebDriver driver, String userName, String password) throws Exception {
 		// To verify the title
 		boolean textDisplayedStatus = eo.verifyElementIsDisplayed(driver, "XPath", "existingUserLabelXpath");
-			if (textDisplayedStatus) {
-				addComment("Existing User Label is verified");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Existing User Label");
-			}
-		// To enter email address
-			eo.enterText(driver, "XPath", "existingEmailXpath", userName);
-			addComment("Successfully entered the email: " + userName);
-		// To enter password
-			eo.enterText(driver, "XPath", "existingPasswordXpath", password);
-			// driver.findElement(By.xpath(GetElementIdentifier.getProperty("existingPasswordXpath",
-			// curApp))).sendKeys(password);
-			addComment("Successfully entered the password: " + password);
+		assertTrue(textDisplayedStatus, "Existing User Label is verified", "Not able to verify the Existing User Label");
+		// Enter email address
+		eo.enterText(driver, "XPath", "existingEmailXpath", userName);
+		addComment("Successfully entered the email: " + userName);
+		// Enter password
+		eo.enterText(driver, "XPath", "existingPasswordXpath", password);
+		addComment("Successfully entered the password: " + password);
 		// To click on submit button
-			eo.clickElement(driver, "XPath", "existingLoginButtonXpath");
-			addComment("Successfully clicked on the submit button");
-			Thread.sleep(5000);
-		// implement the validation for logged in (verify the user name after
-		// logging in)
-
+		eo.clickElement(driver, "XPath", "existingLoginButtonXpath");
+		addComment("Successfully clicked on the submit button");
+		
+		//wait for the icon to appear
+		Utility.waitUntilExists(driver, "XPath", "loggedUserStatusIconXpath", curApp);
+		boolean loggedUserIconStatus = eo.verifyElementIsDisplayed(driver, "XPath", "loggedUserStatusIconXpath");
+		assertTrue(loggedUserIconStatus, "Logged User Icon is displayed.", "Logged user icon is not displayed after logging in.");
 	}
 
 	// To click on forgot password
 	public void clickForgotPasswordLink(WebDriver driver) throws Exception {
 		// To click on 'Forgot Password' link
-			eo.clickElement(driver, "CssSelector", "forgotPasswordLinkCss");
-			addComment("Successfully clicked on Forgot Password link");
+		eo.clickElement(driver, "CssSelector", "forgotPasswordLinkCss");
+		addComment("Successfully clicked on Forgot Password link");
 	}
 
 	/**
@@ -358,68 +359,47 @@ public class LoginPage extends TrendInTestSuite {
 	public void verifyForgotPasswordPage(WebDriver driver) throws Exception {
 
 		// To verify 'Forgot password' label is displayed
-		eo.wait(3000);
+		Utility.waitUntilExists(driver,"Xpath","forgotPasswordLabelXpath",curApp,"300");
 		boolean forgotPasswordLabel = eo.verifyElementIsDisplayed(driver, "Xpath", "forgotPasswordLabelXpath");
-			if (forgotPasswordLabel) {
-				addComment("Forgot Password label is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Forgot Password label ");
-			}
+		assertTrue(forgotPasswordLabel, "Forgot Password label is displayed", "Not able to verify the Forgot Password label ");
+		
 		// To verify 'Email Address' label is displayed
 
 		boolean forgotPasswordEmailLabel = eo.verifyElementIsDisplayed(driver, "Xpath", "forgotPasswordEmailLabel");
-			if (forgotPasswordEmailLabel) {
-				addComment("Email label is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Email label ");
-			}
+		assertTrue(forgotPasswordEmailLabel, "Email label is displayed", "Not able to verify the Email label ");
+		
 		// To verify 'Email Address' text box is displayed
 
 		boolean forgotPasswordEmailText = eo.verifyElementIsDisplayed(driver, "id", "forgotPasswordEmailText");
-			if (forgotPasswordEmailText) {
-				addComment("Email text is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Email text ");
-			}
+		assertTrue(forgotPasswordEmailText, "Email text is displayed", "Not able to verify the Email text ");
+		
 		// To verify 'Captcha code' is displayed
+		Utility.waitUntilExists(driver,"Xpath","captureNumberXpath",curApp,"300");
 
 		boolean captchaCodeNumber = eo.verifyElementIsDisplayed(driver, "Xpath", "captureNumberXpath");
-			if (captchaCodeNumber) {
-				addComment("Captcha code is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Captcha code ");
-			}
+		assertTrue(captchaCodeNumber, "Captcha code is displayed", "Not able to verify the Captcha code ");
+		
 		// To verify 'Refresh button' is displayed
 
 		boolean refreshButton = driver.findElement(By.xpath(GetElementIdentifier.getProperty("refreshButtonXpath", curApp))).isDisplayed();
-			if (refreshButton) {
-				addComment("Refresh button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Refresh button ");
-			}
+		assertTrue(refreshButton, "Refresh button is displayed", "Not able to verify the Refresh button ");
+		
 
 		// To verify 'Captcha' text box is displayed
-
 		boolean captchaTextBox = eo.verifyElementIsDisplayed(driver, "Xpath", "captureTextXpath");
-			if (captchaTextBox) {
-				addComment("Captcha text box is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Captcha text box ");
-			}
+		assertTrue(captchaTextBox, "Captcha text box is displayed", "Not able to verify the Captcha text box ");
+		
 		// To verify 'Forgot Password' button is displayed
 
 		boolean forgotPasswordButton = eo.verifyElementIsDisplayed(driver, "Xpath", "forgotPasswordButton");
-			if (forgotPasswordButton) {
-				addComment("'Forgot your Password' button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the 'Forgot your Password' button ");
-			}
+		assertTrue(forgotPasswordButton, "'Forgot your Password' button is displayed", "Not able to verify the 'Forgot your Password' button ");
+		
 	}
 
 	// To click close on login/register pop up and forgot password pop up
 	public void clickClose(WebDriver driver) throws Exception {
-			eo.clickElement(driver, "Xpath", "clickCloseXpath");
-			addComment("Successfully clicked on close button");
+		eo.clickElement(driver, "Xpath", "clickCloseXpath");
+		addComment("Successfully clicked on close button");
 	}
 
 	/**
@@ -441,15 +421,15 @@ public class LoginPage extends TrendInTestSuite {
 	// To logout from the application
 	public void clickLogoutTrendIn(WebDriver driver) throws Exception {
 		Actions act = new Actions(driver);
-		try{
-		WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", curApp)));
-		act.moveToElement(ele).build().perform();
-		Thread.sleep(2000);
-		WebElement ele1 = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutButtonCss", curApp)));
-		act.click(ele1).build().perform();
-		addComment("Clicked on logout");
-		} catch (Exception e){
-			throw new POMMethodExecException("Could not click on logout" ,e);
+		try {
+			WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", curApp)));
+			act.moveToElement(ele).build().perform();
+			Utility.waitUntilExists(driver, "cssSelector", "logoutButtonCss", curApp,"60");
+			WebElement ele1 = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutButtonCss", curApp)));
+			act.click(ele1).build().perform();
+			addComment("Clicked on logout");
+		} catch (Exception e) {
+			throw new POMMethodExecException("Could not click on logout", e);
 		}
 
 	}
@@ -471,27 +451,23 @@ public class LoginPage extends TrendInTestSuite {
 	 */
 	// To click on 'My Account' link from tiny header (TC-014)
 	public void verifyMyAccount(WebDriver driver) throws Exception {
-		Thread.sleep(3000);
+		Utility.waitUntilExists(driver, "CssSelector", "logoutClickCss", curApp,"180");
 		Actions act = new Actions(driver);
 		try {
-		WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", curApp)));
-		act.moveToElement(ele).build().perform();
-		Thread.sleep(2000);
-		WebElement ele1 = driver.findElement(By.xpath(GetElementIdentifier.getProperty("myAccountLogoutClick", curApp)));
-		act.click(ele1).build().perform();
-		addComment("Clicked on My Account");
-		} catch (Exception e){
-			throw new POMMethodExecException("Could not click on my account ",e);
+			WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", curApp)));
+			act.moveToElement(ele).build().perform();
+			Utility.waitUntilExists(driver, "CssSelector", "myAccountLogoutClick", curApp,"120");
+			WebElement ele1 = driver.findElement(By.xpath(GetElementIdentifier.getProperty("myAccountLogoutClick", curApp)));
+			act.click(ele1).build().perform();
+			addComment("Clicked on My Account");
+		} catch (Exception e) {
+			throw new POMMethodExecException("Could not click on my account ", e);
 		}
 		// To verify personal information header is displayed
 
 		boolean personalInfoHeader = eo.verifyElementIsDisplayed(driver, "Xpath", "personalInfoTitleCss");
-			if (personalInfoHeader) {
-				addComment("Personal information header is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Personal information header ");
-			}
-
+		assertTrue(personalInfoHeader, "Personal information header is displayed", "Not able to verify the Personal information header ");
+	
 		// To verify 'Please be sure' title
 		// eo.verifyElementIsDisplayed(driver, "cssSelector", "beSuretitleCss");
 		// boolean pleaseBeSureTitle = eo.verifyElementIsDisplayed(driver,
@@ -522,127 +498,83 @@ public class LoginPage extends TrendInTestSuite {
 		// To verify 'Radio title' text is displayed
 
 		boolean radioTitle = eo.verifyElementIsDisplayed(driver, "Xpath", "radioTitleXpath");
-			if (radioTitle) {
-				addComment("Radio title text is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Radio title text");
-			}
+		assertTrue(radioTitle, "Radio title text is displayed", "Not able to verify the Radio title text");
+		
 
 		// To verify 'Radio button' is displayed
 
 		boolean radioButton = eo.verifyElementIsDisplayed(driver, "Xpath", "radioButtonXpath");
-			if (radioButton) {
-				addComment("Radio button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Radio button");
-			}
+		assertTrue(radioButton, "Radio button is displayed", "Not able to verify the Radio button");
 
 		// To verify 'FirstName' text box is displayed
 
 		boolean firstNameTextBox = eo.verifyElementIsDisplayed(driver, "Xpath", "firstNameXpath");
-			if (firstNameTextBox) {
-				addComment("First name is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the First name");
-			}
+		assertTrue(firstNameTextBox, "First name is displayed", "Not able to verify the First name");
+		
 
 		// To verify 'Email' text box is displayed
 
 		boolean emailTextBox = eo.verifyElementIsDisplayed(driver, "Xpath", "emailAccontXpath");
-			if (emailTextBox) {
-				addComment("Email text box is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Email text box");
-			}
+		assertTrue(emailTextBox, "Email text box is displayed", "Not able to verify the Email text box");
+		
 
 		// To verify 'Mobile Number' text box is displayed
 
 		boolean mobileNumberTextbox = eo.verifyElementIsDisplayed(driver, "Xpath", "mobileNumberAccountXpath");
-			if (mobileNumberTextbox) {
-				addComment("Mobile number text box is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the mobile number text");
-			}
+		assertTrue(mobileNumberTextbox, "Mobile number text box is displayed", "Not able to verify the mobile number text");
+		
 
 		// To verify 'Date of Birth' text box is displayed
 
 		boolean dateOfBirthTextBox = eo.verifyElementIsDisplayed(driver, "Xpath", "dateOfBirthXpath");
-			if (dateOfBirthTextBox) {
-				addComment("Date of birth text box is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Date of birth text");
-			}
+		assertTrue(dateOfBirthTextBox, "Date of birth text box is displayed", "Not able to verify the Date of birth text");
+		
 
 		// To verify 'Save' button is displayed
 
 		boolean saveButton = eo.verifyElementIsDisplayed(driver, "Xpath", "dateOfBirthXpath");
-			if (saveButton) {
-				addComment("Save button is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the Date of Save button");
-			}
+		assertTrue(saveButton, "Save button is displayed", "Not able to verify the Date of Save button");
+		
 
 		// To verify 'Order history link' is displayed
 		boolean orderHistoryLink = eo.verifyElementIsDisplayed(driver, "Xpath", "orderHistoryXpath");
-			if (orderHistoryLink) {
-				addComment("Order history link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the order history link");
-			}
+		assertTrue(orderHistoryLink, "Order history link is displayed", "Not able to verify the order history link");
+		
 
 		// To verify 'TrendIn credits' link is displayed
 
 		boolean creditLink = eo.verifyElementIsDisplayed(driver, "Xpath", "orderHistoryXpath");
-			if (creditLink) {
-				addComment("TrendIn credits link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the trendIn credits link");
-			}
+		assertTrue(creditLink, "TrendIn credits link is displayed", "Not able to verify the trendIn credits link");
+		
 
 		// To verify 'Coupon' link is displayed
 
 		boolean couponLink = eo.verifyElementIsDisplayed(driver, "Xpath", "couponsXpath");
-			if (couponLink) {
-				addComment("Coupon link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the coupon link");
-			}
+		assertTrue(couponLink, "Coupon link is displayed", "Not able to verify the coupon link");
 
 		// To verify 'Account Information' link is displayed
 
 		boolean informationLink = eo.verifyElementIsDisplayed(driver, "Xpath", "accountInfoXpath");
-			if (informationLink) {
-				addComment("Account Information link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the account Information link");
-			}
+		assertTrue(informationLink, "Account Information link is displayed", "Not able to verify the account Information link");
+		
 
 		// To verify 'My Addresses' link is displayed
 
 		boolean addressLink = eo.verifyElementIsDisplayed(driver, "Xpath", "myAddressXpath");
-			if (addressLink) {
-				addComment("My Address link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the My Address link");
-			}
+		assertTrue(addressLink, "My Address link is displayed", "Not able to verify the My Address link");
+		
 
 		// To verify 'Change Password' link is displayed
 
 		boolean changePasswordLink = eo.verifyElementIsDisplayed(driver, "Xpath", "changePasswordButtonXpath");
-			if (changePasswordLink) {
-				addComment("Change Password link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the change Password link");
-			}
+		assertTrue(changePasswordLink, "Change Password link is displayed", "Not able to verify the change Password link");
+		
 
 		// To verify 'Logout' link is displayed
 
 		boolean logoutLink = eo.verifyElementIsDisplayed(driver, "Xpath", "logoutButtonXpath");
-			if (logoutLink) {
-				addComment("Logout link is displayed");
-			} else {
-				throw new POMMethodExecException("Not able to verify the logout link");
-			}
+		assertTrue(logoutLink, "Logout link is displayed", "Not able to verify the logout link");
+		
 	}
 
 	/**
@@ -695,9 +627,9 @@ public class LoginPage extends TrendInTestSuite {
 		String captureText = "";
 		// verify for empty email id
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			eo.enterText(driver, "XPath", "captureTextXpath", captureText);
-			addComment("Successfully entered the captcha text ");
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		eo.enterText(driver, "XPath", "captureTextXpath", captureText);
+		addComment("Successfully entered the captcha text ");
 		// To click on 'Forgot your password' link
 		try {
 			eo.clickElement(driver, "XPath", "forgotPasswordButton");
@@ -708,977 +640,939 @@ public class LoginPage extends TrendInTestSuite {
 		// To verify success message
 
 		boolean successMessageStatus1 = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus1, "'Enter email id' is not displayed");
-		addComment("Successfully verified for empty email id field and valid captcha field");
+		assertTrue(successMessageStatus1, "Successfully verified for empty email id field and valid captcha field", "'Enter email id' is not displayed");
 
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 
 		// verify for empty email id and captcha
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 
 		boolean successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for empty email id and empty captcha field");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for empty email id and empty captcha field", "'Enter email id' is not displayed");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and blank spaces in captcha field
 		// To enter 'captured text'
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			captureText = ExcelReader.getValue("CaptureText");
-			eo.enterText(driver, "XPath", "captureTextXpath", captureText);
-			addComment("Successfully entered the captured text :");
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		captureText = ExcelReader.getValue("CaptureText");
+		eo.enterText(driver, "XPath", "captureTextXpath", captureText);
+		addComment("Successfully entered the captured text :");
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for empty email id and blank spaces in captcha field");
+		assertTrue(successMessageStatus, "Successfully verified for empty email id and blank spaces in captcha field", "'Enter email id' is not displayed");
 
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCapchaErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter captcha code' is not displayed");
-		addComment("Successfully verified for empty email id and blank spaces in captcha field");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for empty email id and blank spaces in captcha field", "'Enter captcha code' is not displayed");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and special characters in captcha field
 		// To enter 'captured text'
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and numbers in captcha field
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue1");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue1");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and alphanumerics in captcha field
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue2");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue2");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and all combinations in captcha field
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for empty email id and less than 5 values in captcha field
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue4");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue4");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for blank space email id and valid captcha in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			 captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = captureText;
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = captureText;
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for blank space email id and empty in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for blank space email id and empty in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified for blank space email id and empty in captcha field", "'Enter email' id is not displayed");
+		
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify blank spaces in email id and captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
 		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
 		addComment("Successfully verified blank spaces in email id and captcha field");
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCapchaErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter captcha code' is not displayed");
-		addComment("Successfully verified blank spaces in email id and captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified blank spaces in email id and captcha field", "'Enter captcha code' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify blank in email id field and special characters in captcha
 		// field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified blank in email id field and special characters in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified blank in email id field and special characters in captcha field", "'Enter email id' is not displayed");
+		
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// Verify for blank in email id field and numbers in captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for blank in email id field and numbers in captcha field.");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified for blank in email id field and numbers in captcha field.", "'Enter email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for blank email id and alpha numeric in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for blank email id and alpha numeric in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified for blank email id and alpha numeric in captcha field", "'Enter email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify blank spaces in email id and alpha numeric in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified blank spaces in email id and alpha numeric in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified blank spaces in email id and alpha numeric in captcha field", "'Enter email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for blank spaces in email id and less than 5 value in captcha
 		// field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue6");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue6");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterEmailIdErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Enter email id' is not displayed");
-		addComment("Successfully verified for blank spaces in email id and less than 5 value in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
+		assertTrue(successMessageStatus, "Successfully verified for blank spaces in email id and less than 5 value in captcha field", "'Enter email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and valid captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = captureText;
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = captureText;
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment(" Successfully verified for special character in email id and valid captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, " Successfully verified for special character in email id and valid captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and empty in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and empty in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed", "Successfully verified for special character in email id and empty in captcha");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and blank spaces in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment(" Successfully verified for special character in email id and blank spaces in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, " Successfully verified for special character in email id and blank spaces in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and special character in
 		// captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and special character in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for special character in email id and special character in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and numbers in captcha
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and numbers in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for special character in email id and numbers in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and alpha numerics in
 		// captcha
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and alpha numerics in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for special character in email id and alpha numerics in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and all combinations in
 		// captcha
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and all combinations in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for special character in email id and all combinations in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for special character in email id and less than 5 value in
 		// captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue1");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue1");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for special character in email id and less than 5 value in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for special character in email id and less than 5 value in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and valid captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = captureText;
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = captureText;
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and valid captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and valid captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and empty in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and empty in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and empty in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and blank spaces in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			 captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and blank spaces in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and blank spaces in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and specials characters in captcha
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and specials characters in captcha ");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and specials characters in captcha ", "'Please Enter valid email id' is not displayed");
 
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and numbers in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and numbers in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and numbers in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and alpha numerics in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and alpha numerics in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and alpha numerics in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and alpha numerics in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and alpha numerics in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and alpha numerics in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for numbers in email id and less than 5 values in captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue2");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue2");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for numbers in email id and less than 5 values in captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for numbers in email id and less than 5 values in captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and valid captcha
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = captureText;
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = captureText;
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and valid captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and valid captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and empty captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and empty captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and empty captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and blank spaces in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and blank spaces in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and blank spaces in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and special character in
 		// captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and special character in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and special character in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and numbers in captcha
 		// field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and numbers in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and numbers in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and alpha numerics in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified  for alpha numeric in email id field and alpha numerics in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified  for alpha numeric in email id field and alpha numerics in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and all combinations in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue3");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and all combinations in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and all combinations in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for alpha numeric in email id field and less than 5 value in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue4");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue4");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for alpha numeric in email id field and less than 5 value in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for alpha numeric in email id field and less than 5 value in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and valid captcha
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = captureText;
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = captureText;
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and valid captcha");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and valid captcha", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and empty in captcha
 		// field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and empty in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and empty in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and blank spaces in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment(" Successfully verified for all combinations in email id field and blank spaces in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus," Successfully verified for all combinations in email id field and blank spaces in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and special characters
 		// in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and special characters in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and special characters in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and numbers in captcha
 		// field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue7");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and numbers in captcha field.");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and numbers in captcha field.", "'Please Enter valid email id' is not displayed");
 
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and alpha numerics in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and alpha numerics in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and alpha numerics in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and all combinations in
 		// captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = "ABC!@# 123";
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = "ABC!@# 123";
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and all combinations in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and all combinations in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for all combinations in email id field and less than 5 value
 		// in captcha field
-			inputEmailValue = ExcelReader.getValue("InputEmailValue3");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue3");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterCorrectEmailErrorXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid email id' is not displayed");
-		addComment("Successfully verified for all combinations in email id field and less than 5 value in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for all combinations in email id field and less than 5 value in captcha field", "'Please Enter valid email id' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 
 		// verify valid email id and empty captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter  captcha' is not displayed");
-		addComment("Successfully verified valid email id and empty captcha field ");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified valid email id and empty captcha field ", "'Please Enter  captcha' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and blank spaces in captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter captcha' is not displayed");
-		addComment("Successfully verified for valid email id and blank spaces in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and blank spaces in captcha field", "'Please Enter captcha' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and special characters in captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailValue");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailValue");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid captcha' is not displayed");
-		addComment("Successfully verified for valid email id and special characters in captcha field ");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and special characters in captcha field ", "'Please Enter valid captcha' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and numbers in captcha field
 
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = "12345657";
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = "12345657";
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid captcha' is not displayed");
-		addComment("Successfully verified for valid email id and numbers in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and numbers in captcha field", "'Please Enter valid captcha' is not displayed");
+
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and alpha numerics in captcha field
-		eo.wait(5000);
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+	    Utility.waitUntilExists(driver, "Id", "forgotPasswordEmailText", curApp,"300");
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue8");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid captcha' is not displayed");
-		addComment("Successfully verified for valid email id and alpha numerics in captcha field");
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and alpha numerics in captcha field", "'Please Enter valid captcha' is not displayed");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and all combinations in captcha field
-		eo.wait(5000);
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = "ABC!@# 123";
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		 Utility.waitUntilExists(driver, "Id", "forgotPasswordEmailText", curApp,"300");
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = "ABC!@# 123";
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid captcha' is not displayed");
-		addComment("Successfully verified for valid email id and all combinations in captcha field");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and all combinations in captcha field", "'Please Enter valid captcha' is not displayed");
 
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify valid email id and less than 5 value in captcha field
-		eo.wait(5000);
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		 Utility.waitUntilExists(driver, "Id", "forgotPasswordEmailText", curApp,"300");
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 
-			 captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
-			eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
-			addComment("Successfully entered the captured text :" + inputCaptchaValue);
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		inputCaptchaValue = ExcelReader.getValue("InputCaptchaValue5");
+		eo.enterText(driver, "XPath", "captureTextXpath", inputCaptchaValue);
+		addComment("Successfully entered the captured text :" + inputCaptchaValue);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
 		// To verify success message
-		eo.wait(4000);
+		 Utility.waitUntilExists(driver, "Xpath", "enterValidCaptchXpath", curApp,"300");
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "XPath", "enterValidCaptchXpath");
-		Assert.assertTrue(successMessageStatus, "'Please Enter valid captcha' is not displayed");
-		addComment("Successfully verified for valid email id and less than 5 value in captcha field");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and less than 5 value in captcha field", "'Please Enter valid captcha' is not displayed");
 
-		eo.cleardata(driver, "Id", "forgotPasswordEmailText");
-		eo.cleardata(driver, "XPath", "captureTextXpath");
+		eo.clearData(driver, "Id", "forgotPasswordEmailText");
+		eo.clearData(driver, "XPath", "captureTextXpath");
 		// verify for valid email id and valid capcha
 		// To enter email in 'Forgot Password' pop up
-		eo.wait(6000);
-		eo.clickElement(driver, "xpath", "refreshcaptchaXpath");
-			inputEmailValue = ExcelReader.getValue("InputEmailVal");
-			eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
-			addComment("Successfully entered the email :" + inputEmailValue);
+		Utility.waitUntilExists(driver, "Xpath", "refreshcaptchaXpath", curApp,"300");
+            
+		
+		eo.clickElement(driver, "Xpath", "refreshcaptchaXpath");
+		inputEmailValue = ExcelReader.getValue("InputEmailVal");
+		Utility.waitUntilExists(driver, "Id", "forgotPasswordEmailText", curApp,"300");
+		
+		eo.enterText(driver, "Id", "forgotPasswordEmailText", inputEmailValue);
+		addComment("Successfully entered the email :" + inputEmailValue);
 		// To enter 'captured text'
-			captureText = eo.getText(driver, "XPath", "captureNumberXpath");
-			eo.enterText(driver, "xpath", "captureTextXpath", captureText);
-			addComment("Successfully entered the captured text :" + captureText);
+		Utility.waitUntilExists(driver, "Xpath", "captureNumberXpath", curApp,"300");
+		 
+		captureText = eo.getText(driver, "XPath", "captureNumberXpath");
+		eo.enterText(driver, "xpath", "captureTextXpath", captureText);
+		addComment("Successfully entered the captured text :" + captureText);
 
 		// To click on 'Forgot your password' link
-			eo.clickElement(driver, "XPath", "forgotPasswordButton");
-			addComment("successfully clicked on 'Forgot your Password' link");
-			eo.wait(6000);
+		eo.clickElement(driver, "XPath", "forgotPasswordButton");
+		addComment("successfully clicked on 'Forgot your Password' link");
+//		WebElement element = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("forgotPasswordSuccessMessageCss", curApp)));
+//		Utility.waitUntilVisible(element, "300");
+//		Utility.waitUntilClickable(driver, "CssSelector", "forgotPasswordSuccessMessageCss", curApp, "300");
+		
+		Utility.waitUntilExists(driver, "CssSelector", "forgotPasswordSuccessMessageCss", curApp,"300");
 		// To verify success message
 
 		successMessageStatus = eo.verifyElementIsDisplayed(driver, "CssSelector", "forgotPasswordSuccessMessageCss");
-		Assert.assertTrue(successMessageStatus, "'Link to reset your password has been sent to your Mail ID !!' is not displayed");
-		addComment("Successfully verified for valid email id and valid captcha");
+		assertTrue(successMessageStatus, "Successfully verified for valid email id and valid captcha", "'Link to reset your password has been sent to your Mail ID !!' is not displayed");
 	}
 
 	/**
@@ -2113,7 +2007,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for alphabets mobile number ", e);
 		}
 		// To clear the mobile number text field
-		eo.cleardata(driver, "id", "mobileNumberXpath");
+		eo.clearData(driver, "id", "mobileNumberXpath");
 		try {
 			mobileNumberInputValue = ExcelReader.getValue("MobileNumber1");
 			eo.enterText(driver, "Id", "mobileNumberXpath", mobileNumberInputValue);
@@ -2143,7 +2037,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception();
 		}
 		// To clear the mobile number text field
-		eo.cleardata(driver, "id", "mobileNumberXpath");
+		eo.clearData(driver, "id", "mobileNumberXpath");
 		// To enter the mobile number
 		try {
 			mobileNumberInputValue = ExcelReader.getValue("MobileNumber2");
@@ -2173,7 +2067,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception();
 		}
 		// To clear the mobile number text field
-		eo.cleardata(driver, "id", "mobileNumberXpath");
+		eo.clearData(driver, "id", "mobileNumberXpath");
 		// To enter the mobile number
 		try {
 			mobileNumberInputValue = ExcelReader.getValue("MobileNumber3");
@@ -2204,7 +2098,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception();
 		}
 		// To clear the mobile number text field
-		eo.cleardata(driver, "id", "mobileNumberXpath");
+		eo.clearData(driver, "id", "mobileNumberXpath");
 		// To enter the mobile number
 		try {
 			mobileNumberInputValue = ExcelReader.getValue("MobileNumber4");
@@ -2234,7 +2128,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception();
 		}
 		// To clear the mobile number text field
-		eo.cleardata(driver, "id", "mobileNumberXpath");
+		eo.clearData(driver, "id", "mobileNumberXpath");
 		// To enter the mobile number
 		try {
 			mobileNumberInputValue = ExcelReader.getValue("MobileNumber5");
@@ -2693,7 +2587,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2725,7 +2619,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception("Unable to verify the error message", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2759,7 +2653,7 @@ public class LoginPage extends TrendInTestSuite {
 		// To clear the password textfield
 		eo.clickElement(driver, "Xpath", "passwordAlertCloseButtonXpath");
 		Thread.sleep(500);
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2793,7 +2687,7 @@ public class LoginPage extends TrendInTestSuite {
 		// To clear the password textfield
 		eo.clickElement(driver, "Xpath", "passwordAlertCloseButtonXpath");
 		Thread.sleep(500);
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2827,7 +2721,7 @@ public class LoginPage extends TrendInTestSuite {
 		// To clear the password textfield
 		eo.clickElement(driver, "Xpath", "passwordAlertCloseButtonXpath");
 		Thread.sleep(500);
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2859,7 +2753,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new Exception("Unable to verify the error message", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -2893,8 +2787,8 @@ public class LoginPage extends TrendInTestSuite {
 		eo.clickElement(driver, "Xpath", "passwordAlertCloseButtonXpath");
 		Thread.sleep(500);
 		// To clear both password and email textfield
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// ##########################TD-2
 		// To enter data in the existing email textfield
@@ -2967,7 +2861,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3000,7 +2894,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3032,7 +2926,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for EMPTY FIELD in the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3064,7 +2958,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for EMPTY FIELD in the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3096,7 +2990,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for EMPTY FIELD in the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3129,7 +3023,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3161,8 +3055,8 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for EMPTY FIELD in the empty textfield", e);
 		}
 
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// #####################TD-3
 		// To enter data in the existing email textfield
@@ -3234,7 +3128,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3266,7 +3160,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for BLANK SPACESin the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3298,7 +3192,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for BLANK SPACES in the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3330,7 +3224,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for BLANK SPACES in the empty textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3361,9 +3255,9 @@ public class LoginPage extends TrendInTestSuite {
 		} catch (Exception e) {
 			throw new POMMethodExecException("Couldn't verify the error message for BLANK SPACES in the empty textfield", e);
 		}
-		// To clear the password textfieldeo.cleardata(driver, "Xpath",
+		// To clear the password textfieldeo.clearData(driver, "Xpath",
 		// "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3396,7 +3290,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3427,8 +3321,8 @@ public class LoginPage extends TrendInTestSuite {
 		} catch (Exception e) {
 			throw new POMMethodExecException("Couldn't verify the error message for BLANK SPACES in the empty textfield", e);
 		}
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// ################TD-4
 		// To enter data in the existing email textfield
@@ -3505,7 +3399,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3539,7 +3433,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for SPL CHARACTERS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3573,7 +3467,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for SPL CHARACTERS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3607,7 +3501,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for SPL CHARACTERS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3641,7 +3535,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for SPL CHARACTERS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3676,7 +3570,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3710,8 +3604,8 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for SPL CHARACTERS in the email textfield", e);
 		}
 
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// ###############TD-5
 		// To enter data in the existing email textfield
@@ -3783,7 +3677,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3815,7 +3709,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3847,7 +3741,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3879,7 +3773,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3911,7 +3805,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3944,7 +3838,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -3975,8 +3869,8 @@ public class LoginPage extends TrendInTestSuite {
 		} catch (Exception e) {
 			throw new POMMethodExecException("Couldn't verify the error message for NUMERICS in the email textfield", e);
 		}
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// ###########TD-6
 		// To enter data in the existing email textfield
@@ -4048,7 +3942,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4080,7 +3974,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALPHA NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4112,7 +4006,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALPHA NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4144,7 +4038,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALPHA NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4176,7 +4070,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALPHA NUMERICS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4209,7 +4103,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4240,8 +4134,8 @@ public class LoginPage extends TrendInTestSuite {
 		} catch (Exception e) {
 			throw new POMMethodExecException("Couldn't verify the error message for ALPHA NUMERICS in the email textfield", e);
 		}
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 		// ################TD-7
 		// To enter data in the existing email textfield
 		try {
@@ -4316,7 +4210,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4350,7 +4244,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4384,7 +4278,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4418,7 +4312,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4451,7 +4345,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4484,7 +4378,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4516,8 +4410,8 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// ###########TD-6
 		// To enter data in the existing email textfield
@@ -4589,7 +4483,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4621,7 +4515,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4653,7 +4547,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4685,7 +4579,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4717,7 +4611,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
 		// To clear the password textfield
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4750,7 +4644,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the password textfield
 
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 
 		// To enter data in the existing password textfield
 		try {
@@ -4781,8 +4675,8 @@ public class LoginPage extends TrendInTestSuite {
 		} catch (Exception e) {
 			throw new POMMethodExecException("Couldn't verify the error message for ALL COMBINATIONS in the email textfield", e);
 		}
-		eo.cleardata(driver, "Xpath", "existingEmailXpath");
-		eo.cleardata(driver, "Xpath", "existingPasswordXpath");
+		eo.clearData(driver, "Xpath", "existingEmailXpath");
+		eo.clearData(driver, "Xpath", "existingPasswordXpath");
 	}
 
 	/**
@@ -5014,7 +4908,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for invalid name in the your name textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "yourNameXpath");
+		eo.clearData(driver, "Id", "yourNameXpath");
 		try {
 			String yourNameinputValue = ExcelReader.getValue("YourNameinputValue1");
 			eo.enterText(driver, "Id", "yourNameXpath", yourNameinputValue);
@@ -5044,7 +4938,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for 'combination of special characters and numbers' in the your name textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "yourNameXpath");
+		eo.clearData(driver, "Id", "yourNameXpath");
 		// To enter the data in the your name textfield
 		try {
 			String yourNameinputValue = ExcelReader.getValue("YourNameinputValue2");
@@ -5075,7 +4969,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for 'Alphanumeric characters' in the your name textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "yourNameXpath");
+		eo.clearData(driver, "Id", "yourNameXpath");
 		// To enter the data in the your name textfield
 		try {
 			String yourNameinputValue = ExcelReader.getValue("YourNameinputValue3");
@@ -5105,7 +4999,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for 'Spaces' in the your name textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "yourNameXpath");
+		eo.clearData(driver, "Id", "yourNameXpath");
 		// To enter the data in the name textfield
 		try {
 			String yourNameinputValue = ExcelReader.getValue("YourNameinputValue4");
@@ -5136,7 +5030,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for invalid name in the your name textfield", e);
 		}
 		// To clear the data in the your name textfield
-		eo.cleardata(driver, "Id", "yourNameXpath");
+		eo.clearData(driver, "Id", "yourNameXpath");
 		// To enter the data in the your name textfield
 		try {
 			String yourNameinputValue = ExcelReader.getValue("YourNameinputValue5");
@@ -5252,7 +5146,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for 'already registered mail-id' in the Email address textfield", e);
 		}
 		// To clear the email textfield
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue1");
@@ -5289,7 +5183,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for'already registered mail-id' in the Email address textfield", e);
 		}
 		// To clear the data in the email textfield
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue2");
@@ -5411,7 +5305,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for invalid email-id in the Email address textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue4");
@@ -5442,7 +5336,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for special character email-id in the Email address textfield", e);
 		}
 		// To clear the data in the name textfield
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue5");
@@ -5473,7 +5367,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the data in the name textfield
 
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue6");
@@ -5505,7 +5399,7 @@ public class LoginPage extends TrendInTestSuite {
 		}
 		// To clear the data in the name textfield
 
-		eo.cleardata(driver, "Id", "emailXpath");
+		eo.clearData(driver, "Id", "emailXpath");
 		// To enter data in email textfield
 		try {
 			emailIdInputValue = ExcelReader.getValue("EmailIdInputValue7");
@@ -5618,7 +5512,7 @@ public class LoginPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Unable to verify the error message for 'invalid password' in the passwors textfield", e);
 		}
 		// To clear the data in the password textfield
-		eo.cleardata(driver, "Id", "passwordFieldXpath");
+		eo.clearData(driver, "Id", "passwordFieldXpath");
 		// To enter the password
 		try {
 			passwordInputValue = ExcelReader.getValue("PasswordInputValue1");
@@ -6167,9 +6061,8 @@ public class LoginPage extends TrendInTestSuite {
 	 *
 	 */
 	public void clickOnDenyButton(WebDriver driver) throws Exception {
-		eo.wait(5000);
 		// To click on deny
-		eo.clickElement(driver, "Xpath", "denyButtonXpath");
+		Utility.waitUntilClickable(driver, "Xpath", "denyButtonXpath", curApp, "180");
 		addComment("Successfully clicked on the deny button");
 	}
 
@@ -6456,7 +6349,7 @@ public class LoginPage extends TrendInTestSuite {
 				throw new POMMethodExecException("Error message is not displayed");
 			}
 
-			eo.cleardata(driver, "Xpath", "facebookPasswordTextBox");
+			eo.clearData(driver, "Xpath", "facebookPasswordTextBox");
 
 			eo.enterText(driver, "Xpath", "facebookEmailOrPhoneTextBox", emailOrPhone);
 			addComment("Successfully Enetered in Email Or Phone text field :" + emailOrPhone);
@@ -6476,7 +6369,7 @@ public class LoginPage extends TrendInTestSuite {
 				throw new POMMethodExecException("Error message is not displayed");
 			}
 
-			eo.cleardata(driver, "Xpath", "facebookEmailOrPhoneTextBox");
+			eo.clearData(driver, "Xpath", "facebookEmailOrPhoneTextBox");
 
 		}
 
@@ -7143,13 +7036,13 @@ public class LoginPage extends TrendInTestSuite {
 	}
 
 	public void clickOnTheHomeBanner(WebDriver driver) throws Exception {
-		
+
 		String homeBannerLabelXpath = GetElementIdentifier.getProperty("homeBannerLabelXpath", curApp);
 		WebElement option = driver.findElement(By.xpath(homeBannerLabelXpath));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", option);
 		addComment("Successfully clicked on the homwbanner");
-		
+
 	}
 
 	public void selectColorAndVerify(WebDriver driver) throws Exception {
@@ -7256,7 +7149,7 @@ public class LoginPage extends TrendInTestSuite {
 		eo.clickElement(driver, "Xpath", "topButtonXpath");
 		addComment("Top button is clicked");
 		eo.wait(5000);
-//		eo.clickElement(driver, "Xpath", "searchKeywordTextfieldXpath");
+		// eo.clickElement(driver, "Xpath", "searchKeywordTextfieldXpath");
 	}
 
 	/**

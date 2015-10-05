@@ -160,7 +160,7 @@ public class PaymentPage extends TrendInTestSuite {
 			
 			//To select value from combobox
 			String sizeValue1 = ExcelReader.getValue("SizeValue1");
-			eo.SelectComboBoxByVisibleText(driver, "Xpath", "sizeComboBoxXpath", sizeValue1);
+			eo.selectComboBoxByVisibleText(driver, "Xpath", "sizeComboBoxXpath", sizeValue1);
 			
 			//To click on the save buttom
 			eo.clickElement(driver, "Xpath", "saveButtonXpath");

@@ -3,6 +3,7 @@ package com.trendin.tests;
 import org.testng.annotations.Test;
 
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.pages.ContactUsPage;
 import com.trendin.pages.HomePage;
 
 public class TestPages extends TrendInTestSuite {
@@ -34,6 +35,9 @@ public class TestPages extends TrendInTestSuite {
 	@Test 
 	public void verifyContactUsTiny()  throws Exception {
 		HomePage homePage = new HomePage();
-		homePage.verifyTinyContactUsLink(driver);
+		ContactUsPage contactUsPage = new ContactUsPage();
+		homePage.clickHeaderContactIcon(driver);
+		String expectedIconsToVerify = "Be sure to check;Check Delivery time & COD availability;Email us;Current Promotions;Call us";
+		contactUsPage.verifyContactUsPage(driver, expectedIconsToVerify);
 	}
 }

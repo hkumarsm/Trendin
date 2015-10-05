@@ -768,7 +768,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 		}
 
 		// ///////////
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword1 = ExcelReader.getValue("SearchKeywordName1");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword1);
@@ -790,7 +790,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 		}
 
 		// //
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword2 = ExcelReader.getValue("SearchKeywordName2");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword2);
@@ -812,7 +812,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 		}
 
 		// //
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword3 = ExcelReader.getValue("SearchKeywordName3");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword3);
@@ -834,7 +834,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 		}
 
 		// ///
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword4 = ExcelReader.getValue("SearchKeywordName4");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword4);
@@ -855,7 +855,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 			}
 		}
 		// /////
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword5 = ExcelReader.getValue("SearchKeywordName5");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword5);
@@ -875,7 +875,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 				count5++;
 			}
 		}
-		eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+		eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 		addComment("Successfully cleared the search textfield");
 		String searchKeyword6 = ExcelReader.getValue("SearchKeywordName6");
 		eo.enterText(driver, "Xpath", "searchKeywordTextfieldXpath", searchKeyword6);
@@ -960,7 +960,7 @@ public class LouisPhilippePage extends TrendInTestSuite {
 			String getActualErrorMesssage = eo.getText(driver, "Xpath", "searchInvalidErrorMessageXpath");
 			if (allErrorMessageText[count].equalsIgnoreCase(getActualErrorMesssage)) {
 				addComment("Successfully verified the error message for invalid value in the search textfield ::" + getActualErrorMesssage);
-				eo.cleardata(driver, "Xpath", "searchKeywordTextfieldXpath");
+				eo.clearData(driver, "Xpath", "searchKeywordTextfieldXpath");
 				count++;
 			}
 		}

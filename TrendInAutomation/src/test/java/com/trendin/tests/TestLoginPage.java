@@ -52,12 +52,12 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module1", priority = 1)
 	public void testExistingUserTextFields() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.existingUserEmailAndPasswordTextfield(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 
 	}
 
@@ -114,7 +114,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module1", priority = 11)
 	public void testVerifySignUpGoogle() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.signInWithGoogle(driver);
 	}
 
@@ -145,11 +145,11 @@ public class TestLoginPage extends TrendInTestSuite {
 	public void testMyAccountClick() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		loginPage.verifyTinyLoginIcon(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.verifyMyAccount(driver);
 	}
 
@@ -158,11 +158,11 @@ public class TestLoginPage extends TrendInTestSuite {
 	public void testMyOrder() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		loginPage.verifyTinyLoginIcon(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.verifyMyOrder(driver);
 		loginPage.verifyOrderReturn(driver);
 	}
@@ -172,11 +172,11 @@ public class TestLoginPage extends TrendInTestSuite {
 	public void testReturn() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		loginPage.verifyTinyLoginIcon(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.verifyReturn(driver);
 		loginPage.verifyOrderReturn(driver);
 	}
@@ -188,9 +188,9 @@ public class TestLoginPage extends TrendInTestSuite {
 		String passWord = ExcelReader.getValue("Password");
 		LoginPage loginPage = new LoginPage();
 		loginPage.verifyTinyLoginIcon(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.userNameClick(driver);
 		loginPage.verifyOrderReturn(driver);
 
@@ -201,11 +201,11 @@ public class TestLoginPage extends TrendInTestSuite {
 	public void testVerifyLogoutFunctionality() throws Exception {
 		LoginPage loginPage = new LoginPage();
 		loginPage.verifyTinyLoginIcon(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.clickLogoutTrendIn(driver);
 	}
 
@@ -218,7 +218,7 @@ public class TestLoginPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String userName = ExcelReader.getValue("UserName");
 		String passWord = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, userName, passWord);
+		loginPage.loginToTrendInAccount(driver, userName, passWord);
 		loginPage.verifyDropDownUserName(driver);
 	}
 
@@ -234,7 +234,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 1)
 	public void testValidationMobileNumber() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.validateMobileNumberField(driver);
 	}
 
@@ -300,7 +300,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 9)
 	public void testValidationTermsOfUse() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.validateTermsAndConditionsLink(driver);
 	}
 
@@ -308,7 +308,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 10)
 	public void testValidationPrivacyPolicy() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.validatePrivacyPolicyLink(driver);
 	}
 
@@ -316,7 +316,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 11)
 	public void testValidationBlankFieldsInLoginPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.validateEmptyFieldsInLoginPage(driver);
 	}
 
@@ -324,7 +324,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 12)
 	public void testValidationIAgreeTermsCheckB() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.validateIAgreeCheckBox(driver);
 	}
 
@@ -332,7 +332,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 13)
 	public void testValidationExistingUserLoginPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.validateExistingUserLink(driver);
 	}
@@ -341,7 +341,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 14)
 	public void testValidateSignInWithGoogleButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.validateSignInWithGoogleButton(driver);
 	}
@@ -350,7 +350,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 15)
 	public void testValidateSignInWithFacebookButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.validateSignInWithFacebookButton(driver);
 	}
@@ -359,7 +359,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 16)
 	public void testVerifyForSignInWithGoogleInLoginPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyForSignInWithGoogleInLoginPage(driver);
 	}
 
@@ -367,7 +367,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 17)
 	public void testVerifyForSignInWithFacebookInLoginPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyForSignInWithFacebookInLoginPage(driver);
 	}
 
@@ -375,7 +375,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module2", priority = 18)
 	public void testVerifyNewToTrendinLink() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.verifyNewToTrendinLink(driver);
 	}
@@ -385,7 +385,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyLoginPagePopUp() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.verifyBrandLogosOnTheLoginPage(driver);
 	}
@@ -394,7 +394,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testNewToTrendInPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -406,7 +406,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testNewToTrendInSignUpPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -418,7 +418,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyMouseOverActionOnGoogleButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -429,7 +429,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyClickOnGoogleButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -442,7 +442,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyColorChangeOnMouseOverGoogleButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -454,7 +454,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testverifyErorMessageOnEmptyEmailTextField() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -467,7 +467,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testErrorPasswordEmptyTextfield() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -481,7 +481,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testEmailAndPasswordTextfield() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -495,7 +495,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testGmailUsernameInHomePage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -510,8 +510,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testLoginOrRegisterPageAgain() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.verifyBrandLogosOnTheLoginPage(driver);
 
@@ -521,8 +521,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyNewToTrendInButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.verifyBrandLogosOnTheLoginPage(driver);
 
@@ -532,8 +532,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyNewToTrendInSignUpPage() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -545,8 +545,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyMouseOverActionOnSignInWithGoogle() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -557,8 +557,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyClickOnSignInWithGoogleButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -571,8 +571,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyClickOnSignInFacebookButton() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -586,8 +586,8 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyFacebookEmailAndPasswordTextFields() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);
@@ -602,7 +602,7 @@ public class TestLoginPage extends TrendInTestSuite {
 	@Test(groups = "Module7")
 	public void testVerifyLoginToTrendInWithFaceBookAccount() throws Exception {
 		LoginPage loginPage = new LoginPage();
-		loginPage.loginOrRegister(driver);
+		loginPage.gotoLoginOrRegisterMenu(driver);
 		loginPage.verifyLoginPageDetails(driver);
 		loginPage.clickAlreadyRegisteredLink(driver);
 		loginPage.newToTrendInButton(driver);

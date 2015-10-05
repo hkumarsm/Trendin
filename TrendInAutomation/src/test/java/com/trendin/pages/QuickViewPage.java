@@ -486,7 +486,6 @@ public class QuickViewPage extends TrendInTestSuite {
 	public void selectSizeAndVerifyNumOfPiecesAvailableMsg(WebDriver driver) throws Exception {
 
 		List<WebElement> allElements1 = driver.findElements(By.xpath(GetElementIdentifier.getProperty("sizesXpath", curApp)));
-
 		String allElementsInUI1[] = new String[allElements1.size()];
 		int count3 = 0;
 		for (WebElement element : allElements1) {

@@ -20,7 +20,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		addressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -42,7 +42,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		addressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -66,7 +66,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		addressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -93,7 +93,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -132,7 +132,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -170,7 +170,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -218,7 +218,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -246,7 +246,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -276,7 +276,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -326,7 +326,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -374,7 +374,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -412,7 +412,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -461,7 +461,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -538,7 +538,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -571,7 +571,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -593,7 +593,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");
@@ -616,7 +616,7 @@ public class TestMyAddressPage extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		Thread.sleep(2000);
 		myAddressPage.mouseHoverOnUserName(driver);
 		String userDropDownName = ExcelReader.getValue("UserDropDownName");

@@ -256,7 +256,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 	public void verifyEmailIdTextBoxValue(WebDriver driver, String emailId) throws Exception {
 		//Verifies the email-id.
 		String textBoxValue = driver.findElement(By.xpath(GetElementIdentifier.getProperty("emailTextXpath", curApp))).getAttribute("value");
-		assertEquals(emailId.equalsIgnoreCase(textBoxValue), "Email-id is verified."+textBoxValue, "Email-id is not verified.");
+		assertEqualsIgnoreCase(emailId, textBoxValue, "Email-id is verified."+textBoxValue, "Email-id is not verified.");
 	}
 	
 	/**
@@ -282,7 +282,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Order no and email id is not matching.";
 				String actualErrorMsg = eo.getText(driver, "xpath","errorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("false") && orderNoStatus.equalsIgnoreCase("false")) {
@@ -290,7 +290,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Order no and email id is not matching.";
 				String actualErrorMsg = eo.getText(driver, "xpath","errorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("true") && orderNoStatus.equalsIgnoreCase("Character")) {
@@ -298,13 +298,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Please enter valid order no.";
 				String actualErrorMsg = eo.getText(driver, "xpath","orderErrorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
-				/*String actualErrorMsg = driver.findElement(By.xpath(GetElementIdentifier.getProperty("orderErrorMsgXpath", curApp))).getText().trim();
-				if(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg)) {
-					addComment("Verified Actual error message is same as Expected Error message "+actualErrorMsg);
-				} else {
-					throw new POMMethodExecException("Verified Actual error message is not same as Expected Error message ");
-				}*/
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("false") && orderNoStatus.equalsIgnoreCase("true")) {
@@ -312,13 +306,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Order no and email id is not matching.";
 				String actualErrorMsg = eo.getText(driver, "xpath","errorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
-				/*String actualErrorMsg = driver.findElement(By.xpath(GetElementIdentifier.getProperty("errorMsgXpath", curApp))).getText().trim();
-				if(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg)) {
-					addComment("Verified Actual error message is same as Expected Error message "+actualErrorMsg);
-				} else {
-					throw new POMMethodExecException("Verified Actual error message is not same as Expected Error message ");
-				}*/
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("Character") && orderNoStatus.equalsIgnoreCase("true")) {
@@ -326,13 +314,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Please enter valid Email.";
 				String actualErrorMsg = eo.getText(driver, "xpath","emailErrorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
-				/*String actualErrorMsg = driver.findElement(By.xpath(GetElementIdentifier.getProperty("emailErrorMsgXpath", "TrackOrderPage"))).getText().trim();
-				if(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg)) {
-					addComment("Verified Actual error message is same as Expected Error message "+actualErrorMsg);
-				} else {
-					throw new POMMethodExecException("Verified Actual error message is not same as Expected Error message ");
-				}*/
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("empty") && orderNoStatus.equalsIgnoreCase("empty")) {
@@ -355,13 +337,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsgEmail = "Please enter valid Email.";
 				String actualErrorMsgEmail = eo.getText(driver, "xpath","emailErrorMsgXpath"); 
-				assertEquals(expectedErrorMsgEmail.equalsIgnoreCase(actualErrorMsgEmail), "Verified Actual error message is same as Expected Error message "+actualErrorMsgEmail, "Verified Actual error message is not same as Expected Error message ");
-				/*String actualErrorMsgEmail = driver.findElement(By.xpath(GetElementIdentifier.getProperty("emailErrorMsgXpath", "TrackOrderPage"))).getText().trim();
-				if(expectedErrorMsgEmail.equalsIgnoreCase(actualErrorMsgEmail)) {
-					addComment("Verified Actual error message is same as Expected Error message "+actualErrorMsgEmail);
-				} else {
-					throw new POMMethodExecException("Verified Actual error message is not same as Expected Error message ");
-				}*/
+				assertEqualsIgnoreCase(expectedErrorMsgEmail, actualErrorMsgEmail, "Verified Actual error message is same as Expected Error message "+actualErrorMsgEmail, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 			if(emailStatus.equalsIgnoreCase("true") && orderNoStatus.equalsIgnoreCase("empty")) {
@@ -369,13 +345,7 @@ public class TrackOrderPage extends TrendInTestSuite {
 				eo.wait(val);
 				String expectedErrorMsg = "Please enter valid order no.";
 				String actualErrorMsg = eo.getText(driver, "xpath","orderErrorMsgXpath"); 
-				assertEquals(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg), "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
-				/*String actualErrorMsg = driver.findElement(By.xpath(GetElementIdentifier.getProperty("orderErrorMsgXpath", "TrackOrderPage"))).getText().trim();
-				if(expectedErrorMsg.equalsIgnoreCase(actualErrorMsg)) {
-					addComment("Verified Actual error message is same as Expected Error message "+actualErrorMsg);
-				} else {
-					throw new POMMethodExecException("Verified Actual error message is not same as Expected Error message ");
-				}*/
+				assertEqualsIgnoreCase(expectedErrorMsg, actualErrorMsg, "Verified Actual error message is same as Expected Error message "+actualErrorMsg, "Verified Actual error message is not same as Expected Error message ");
 			}
 			
 		} catch(Exception e) {

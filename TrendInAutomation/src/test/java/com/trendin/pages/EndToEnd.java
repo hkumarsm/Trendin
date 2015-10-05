@@ -60,45 +60,8 @@ public class EndToEnd extends TrendInTestSuite {
 			throw new POMMethodExecException("Unable to select mega menu category type: ", e);
 		}
 	}
-	/**
-	 * <p>
-	 * <b>Method Name:</b> clickOnProductCategory
-	 * </p>
-	 * 
-	 * <p>
-	 * <b>Description:</b> To click on particular product category randomly.
-	 * </p>
-	 * 
-	 * <p>
-	 * <b>Dependencies:</b> Browser.Launch - > Home page.
-	 * </p>
-	 * 
-	 * @author :Ravichandra Gudda.
-	 *
-	 */
-	public void clickOnProductCategory(WebDriver driver) throws Exception {
-		try {
-			Thread.sleep(3000);
-			//To generate random number. 
-			Random random = new Random();
-			int randomNumber = random.nextInt(1);
-			randomNumber = randomNumber + 1;
-			addComment("Generated random number is : "+randomNumber);
-			List<WebElement> allProductItems = driver.findElements(By.xpath(GetElementIdentifier.getProperty("allProductCategoryXpath", curApp)));
-			addComment("List of all product elements size is : "+allProductItems.size());
-			String tempProductCategoryXpath = GetElementIdentifier.getProperty("productCategoryXpath", curApp);
-			for(int i =0 ; i < allProductItems.size(); i++) {
-				if(randomNumber <= allProductItems.size()) {
-					tempProductCategoryXpath = tempProductCategoryXpath.replace("{i}", String.valueOf(randomNumber));
-					driver.findElement(By.xpath(tempProductCategoryXpath)).click();
-					addComment("clicked on Particular product category.");
-					break;
-				} 
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("Unable to select random product category.",e);
-		}
-	}
+	
+	
 	
 	/**
 	 * <p>

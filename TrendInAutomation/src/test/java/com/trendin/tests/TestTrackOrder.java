@@ -151,7 +151,7 @@ public class TestTrackOrder extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		trackOrderPage.verifyTrackOrderIconDisplayStatus(driver);
 		trackOrderPage.clickOnTrackOrderIcon(driver);
 		String wait = ExcelReader.getValue("Wait");
@@ -174,7 +174,7 @@ public class TestTrackOrder extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		trackOrderPage.verifyTrackOrderIconDisplayStatus(driver);
 		trackOrderPage.clickOnTrackOrderIcon(driver);
 		String wait = ExcelReader.getValue("Wait");
@@ -201,7 +201,7 @@ public class TestTrackOrder extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		trackOrderPage.verifyTrackOrderIconDisplayStatus(driver);
 		trackOrderPage.clickOnTrackOrderIcon(driver);
 		String wait = ExcelReader.getValue("Wait");
@@ -224,7 +224,7 @@ public class TestTrackOrder extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		trackOrderPage.verifyTrackOrderIconDisplayStatus(driver);
 		trackOrderPage.clickOnTrackOrderIcon(driver);
 		String wait = ExcelReader.getValue("Wait");
@@ -244,7 +244,7 @@ public class TestTrackOrder extends TrendInTestSuite {
 		loginPage.clickAlreadyRegisteredLink(driver);
 		String emailId = ExcelReader.getValue("EmailId");
 		String password = ExcelReader.getValue("Password");
-		loginPage.verifyExistingUserLogin(driver, emailId, password);
+		loginPage.loginToTrendInAccount(driver, emailId, password);
 		trackOrderPage.verifyTrackOrderIconDisplayStatus(driver);
 		trackOrderPage.clickOnTrackOrderIcon(driver);
 		String wait = ExcelReader.getValue("Wait");

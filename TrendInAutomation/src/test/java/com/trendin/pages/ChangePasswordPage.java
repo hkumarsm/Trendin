@@ -9,142 +9,121 @@ import com.trendin.core.ElementOperation;
 import com.trendin.core.ExcelReader;
 import com.trendin.core.GetElementIdentifier;
 import com.trendin.core.TrendInTestSuite;
+import com.trendin.core.Utility;
 import com.trendin.core.util.exceptions.POMMethodExecException;
 
 public class ChangePasswordPage extends TrendInTestSuite {
 	final String curApp = "ChangePasswordPage";
 	ElementOperation eo = new ElementOperation(curApp);
 	
+	
 	/**
-	 * <p>
-	 * <b>Method Name:</b> changePasswordAccountPage
-	 * </p>
 	 * 
 	 * <p>
-	 * <b>Description:</b> To verify the password account page textfield labels
-
+	 * <b>Method Name:</b> validateChangePasswordPage
 	 * </p>
-	 * 
 	 * <p>
-	 * <b>Dependencies:</b> Browser.Launch
+	 * <b>Description:</b> Used to validate all the Web elements of the 'Change Password' page
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b> Launch >> Login >> My Accounts >> gotoChangePasswordPage
+	 * </p>
+	 * <p>
+	 * <b>Arguments:</b>
+	 * <ul>
+	 * <li><b>driver: </b> Webdriver object</li>
+	 * <li><b>mailIdToVerify: </b> Expected mail id to verify with UI displayed User mail id  </li>
+	 * </ul>
 	 * </p>
 	 * 
-	 * @author:: Manasa M G
+	 * @author Manasa M G
 	 * 
 	 */
-
-	public void changePasswordAccountPage(WebDriver driver) throws Exception {
-		
-		Actions act = new Actions(driver);
-		WebElement ele = driver.findElement(By.cssSelector(GetElementIdentifier.getProperty("logoutClickCss", "ChangePasswordPage")));
-		act.moveToElement(ele).build().perform();
-		WebElement ele1 = driver.findElement(By.xpath(GetElementIdentifier.getProperty("myAccountxpath", "ChangePasswordPage")));
-		act.click(ele1).build().perform();
-		System.out.println("Successfully clicked on 'My Account'");
-
-		// To click on change password on left side of 'Account & Information'
-		// page
-		eo.clickElement(driver, "Xpath", "changePasswordButtonXpath");
+	public void gotoChangePasswordPageAndValidate(WebDriver driver, String mailIdToVerify) throws Exception {
+		// To click on change password on left side of 'Account & Information' page
+		eo.clickElement(driver, "XPath", "changePasswordButtonXpath");
 		addComment("Successfully clicked on 'Change Password' option");
-
-		// To verify 'Email Address' label is displayed
-		boolean emailAddressLabel = eo.verifyElementIsDisplayed(driver, "CssSelector", "changePasswordEmailLabelCss");
-		try {
-			if (emailAddressLabel) {
-				addComment("'Email Address' label is displayed:: "+ emailAddressLabel);
-			} else {
-				throw new POMMethodExecException("'Email Address' label is not displayed");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("'Email Address' label is not displayed");
+		
+		Utility.waitUntilClickable(driver, "XPath", "submitButtonXpath", curApp, "60");
+		// Verify the H1 header label - 'Change Password'
+		boolean h1HeaderLabelStatus = eo.verifyElementIsDisplayed(driver, "XPath", "changePasswordH1LabelXpath");
+		assertTrue(h1HeaderLabelStatus, "'Change Password' header label is displayed.", "'Change Password' header label is not displayed.");
+		
+		// Verify the 'E-mail Address:' label
+		boolean emailAddressLabel = eo.verifyElementIsDisplayed(driver, "XPath", "changePasswordEmailLabelXpath");
+		assertTrue(emailAddressLabel, "'E-mail Address:' label is displayed.", "'E-mail Address:' label is not displayed.");
+		
+		// verify the 'E-mail address' of the user is as expected
+		String uiEmailIdText = eo.getText(driver, "cssSelector", "changePasswordEmailCss");
+		addComment("User E-mail id displayed in UI: "+ uiEmailIdText);
+		assertEquals(uiEmailIdText, mailIdToVerify, "User E-mail id is as expected.", "User E-mail id is not as expected.");
+		
+		// Verify the change password Labels  and text box are present.
+		String changePasswordExpLabels [] = {"Old Password:","New Password:","Confirm Password:"};
+		String changePasswordLabelsXpath = GetElementIdentifier.getProperty("changePasswordLabelsXpath", curApp);
+		String tempXpath = "";
+		boolean labelDisplayed = false;
+		for(int labels=0; labels<changePasswordExpLabels.length; labels++) {
+			tempXpath = changePasswordLabelsXpath.replace("{labelName}", changePasswordExpLabels[labels]);
+			labelDisplayed = driver.findElement(By.xpath(tempXpath)).isDisplayed();
+			assertTrue(labelDisplayed, "Label and text box for: "+ changePasswordExpLabels[labels] + ", is displayed successfully.", "Label and text box for: "+ changePasswordExpLabels[labels] + ", is not displayed in UI.");
 		}
-
-		// To verify 'Email Address' text is displayed
-		boolean emailAddressText = eo.verifyElementIsDisplayed(driver, "CssSelector", "changePasswordEmailCss");
-		try {
-			if (emailAddressText) {
-				addComment("'Email Address' text is displayed:: "+ emailAddressText);
-			} else {
-				throw new POMMethodExecException("'Email Address' text is not displayed");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("'Email Address' text is not displayed", e);
-		}
-
-		// To verify 'Old Password' text box is displayed
-		boolean oldPasswordText = eo.verifyElementIsDisplayed(driver, "CssSelector", "oldPasswordCss");
-		try {
-			if (oldPasswordText) {
-				addComment("'Old Password' text box is displayed:: "+ oldPasswordText);
-			} else {
-				throw new POMMethodExecException("'Old Password' text box is not displayed");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("'Old Password' text box is not displayed", e);
-		}
-
-		// To verify 'New Password' text box is displayed
-		boolean newPasswordText = eo.verifyElementIsDisplayed(driver, "CssSelector", "newPasswordCss");
-		try {
-			if (newPasswordText) {
-				addComment("'New Password' text box is displayed:: "+ newPasswordText);
-			} else {
-				throw new POMMethodExecException("'New Password' text box is not displayed");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("'New Password' text box is not displayed", e);
-		}
-
-		// To verify 'Submit' button is displayed
-		boolean submitButton = eo.verifyElementIsDisplayed(driver, "Xpath", "submitButtonXpath");
-		try {
-			if (submitButton) {
-				addComment("'Submit' button is displayed:: "+ submitButton);
-			} else {
-				throw new POMMethodExecException("'Submit' button is not displayed");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("'Submit' button is not displayed", e);
-		}
+		
+		// Verify the 'Submit' button is displayed
+		boolean submitButtonStatus = eo.verifyElementIsDisplayed(driver, "XPath", "submitButtonXpath");
+		assertTrue(submitButtonStatus, "'Submit' button is displayed in UI.", "'Submit' button is not displayed in UI.");
 	}
 
 	/**
-	 * <p>
-	 * <b>Method Name:</b> validateChangePasswordMyAccountPage
-	 * </p>
 	 * 
 	 * <p>
-	 * <b>Description:</b> To verify the change password  functionality.
+	 * <b>Method Name:</b> verifyChangePasswordFunctionality
 	 * </p>
-	 * 
 	 * <p>
-	 * <b>Dependencies:</b> Browser.Launch
+	 * <b>Description:</b> This method is used to verify the functionality of 'Change Password' (changing password)
+	 * </p>
+	 * <p>
+	 * <b>Dependencies:</b> Lanuch >> Login >> My Account >> Change Password
+	 * </p>
+	 * <p>
+	 * <b>Arguments:</b>
+	 * <ul>
+	 * <li><b>driver: </b> Webdriver object  </li>
+	 * <li><b>oldPassword: </b> Old password value  </li>
+	 * <li><b>newPassword: </b>  New Password value to be changed </li>
+	 * <li><b>confirmPassword: </b> Confirm the new password to be changed  </li>
+	 * </ul>
 	 * </p>
 	 * 
-	 * @author:: Manasa M G
+	 * @author Manasa M G
 	 * 
-	 */
-	public void validateChangePasswordMyAccountPage(WebDriver driver) throws Exception {
+*/
+	public void verifyChangePasswordFunctionality(WebDriver driver, String oldPassword, String newPassword, String confirmPassword, String expSuccessMess) throws Exception {
 
 		// To enter the data in old password textfield
-		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
-		addComment("Successfully entered the old password:: "+ oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
+		addComment("Successfully entered the old password: "+ oldPassword);
 
 		// To enter the data in the new password textfield
-		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
-		addComment("Successfully entered the new password:: "+ newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
+		addComment("Successfully entered the new password: "+ newPassword);
 
 		// To enter the data in the confirm password textfield
-		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
-		addComment("Successfully enterd the confirm password:: "+ confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmPassword);
+		addComment("Successfully enterd the confirm password: "+ confirmPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
-
+		
+		// wait and verify the Change Password success message
+		Utility.waitUntilExists(driver, "XPath", "changePasswordSuccessLabelXpath", curApp);
+		boolean successMessageInUI = eo.verifyElementIsDisplayed(driver, "XPath", "changePasswordSuccessLabelXpath");
+		assertTrue(successMessageInUI, "Password Changed success message displayed in UI.", "Password Changed success message is not displayed in UI.");
+		
+		// close the succcess message label
+		eo.clickElement(driver, "XPath", "closePasswordSuccessMessXpath");
+		addComment("Successfully clicked on the 'Close' option of the Password changed success message");
 	}
 	/**
 	 * <p>
@@ -162,48 +141,43 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	 * @author:: Manasa M G
 	 * 
 	 */
-	public void validateErrorMessageForPasswordTextfields(WebDriver driver) throws Exception {
-
-		String oldPassword = ExcelReader.getValue("OldPasswordValue1");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+	public void validateErrorMessageForChangePassword(WebDriver driver, String oldPassword, String newPassword, String confirmPassword, String ... messages) throws Exception {
+		// To enter the data in the Old password textfield
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: "+ oldPassword);
 
 		// To enter the data in the new password textfield
-		String newPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: "+ newPassword);
 
 		// To enter the data in the confirm password textfield
-		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
-		addComment("Successfully enterd the confirm password:: "+ confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmPassword);
+		addComment("Successfully enterd the confirm password:: "+ confirmPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clicked on the submit button");
 
-		// To verify the error message for empty value in password textfield
-		String errorMesssageForNewPassword = eo.getText(driver, "Xpath", "newPasswordErrorMessageXpath");
-		try {
-			if (errorMesssageForNewPassword.equalsIgnoreCase("Please enter New Password")) {
-				addComment("Successfully verified the error message:: "+ errorMesssageForNewPassword);
-			} else {
-				throw new POMMethodExecException("Not able to verify the error message for empty value in the new password textfield");
+		// Split the Error messages..
+		String errorMessagesXpath = GetElementIdentifier.getProperty("errorMessagesXpath", curApp);
+		String tempXpath = "";
+		for(int i=0; i<messages.length; i++) {
+			tempXpath = errorMessagesXpath.replace("{errorMessage}", messages[i]);
+			try {
+				if(driver.findElement(By.xpath(tempXpath)).isDisplayed()){
+					addComment("Successfully verified the Error message: "+ messages[i]);
+				}
+			} catch(Exception e1) {
+				String oldPassMismatchErrorMessXpath = GetElementIdentifier.getProperty("oldPassMismatchErrorMessXpath", curApp);
+				oldPassMismatchErrorMessXpath = oldPassMismatchErrorMessXpath.replace("{errorMessage}", messages[i]);
+				try {
+					if(driver.findElement(By.xpath(oldPassMismatchErrorMessXpath)).isDisplayed()){
+						addComment("Successfully verified the Error message: "+ messages[i]);
+					}
+				} catch(Exception e2){
+					throw new POMMethodExecException("Not able to verify the Password Error message: "+ messages[i], e2);
+				}
 			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to verify the error message for empty value in the new password textfield", e);
-		}
-
-		// To verify the error message for empty value in password textfield
-		String errorMesssageForConfirmNewPassword = eo.getText(driver, "Xpath", "confirmNewPasswordMessageXpath");
-		try {
-			if (errorMesssageForConfirmNewPassword.equalsIgnoreCase("Please enter Confirm Password")) {
-				addComment("Successfully verified the error message:: "+ errorMesssageForConfirmNewPassword);
-			} else {
-				throw new POMMethodExecException("Not able to verify the error message for empty value in the confirm new password textfield");
-			}
-		} catch (Exception e) {
-			throw new POMMethodExecException("Not able to verify the error message for empty value in the confirm  new password textfield", e);
 		}
 	}
 	/**
@@ -227,25 +201,25 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateErrorMessageForPassword(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue1");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: "+ oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: "+ newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue2");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: "+ confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 
 		// To verify the error message for empty value in password textfield
-		String errorMesssageForConfirmNewPassword = eo.getText(driver, "Xpath", "confirmNewPasswordErrorMessageXpath");
+		String errorMesssageForConfirmNewPassword = eo.getText(driver, "XPath", "confirmNewPasswordErrorMessageXpath");
 		try {
 			if (errorMesssageForConfirmNewPassword.equalsIgnoreCase("New Password and Confirm Password mismatch.")) {
 				addComment("Successfully verified the error message:: "+ errorMesssageForConfirmNewPassword);
@@ -276,25 +250,25 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateChangePasswordPageFields(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: "+ oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: "+ newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: "+ confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 
 		// To verify the error message for empty password textfield
-		String errorMesssageOldPassword = eo.getText(driver, "Xpath", "oldPasswordErrorMessageXpath");
+		String errorMesssageOldPassword = eo.getText(driver, "XPath", "oldPasswordErrorMessageXpath");
 		try {
 			if (errorMesssageOldPassword.equalsIgnoreCase("Please enter your Old Password.")) {
 				addComment("Successfully verified the error message:: "+ errorMesssageOldPassword);
@@ -305,7 +279,7 @@ public class ChangePasswordPage extends TrendInTestSuite {
 			throw new POMMethodExecException("Not able to verify the error message for empty value in the old password textfield", e);
 		}
 		// To verify the error message for empty value in password textfield
-		String errorMesssageForNewPassword = eo.getText(driver, "Xpath", "newPasswordMessageXpath");
+		String errorMesssageForNewPassword = eo.getText(driver, "XPath", "newPasswordMessageXpath");
 		try {
 			if (errorMesssageForNewPassword.equalsIgnoreCase("Password should be minimum 6 characters.")) {
 				addComment("Successfully verified the error message:: "+ errorMesssageForNewPassword);
@@ -317,7 +291,7 @@ public class ChangePasswordPage extends TrendInTestSuite {
 		}
 
 		// To verify the error message for empty value in password textfield
-		String errorMesssageForConfirmNewPassword = eo.getText(driver, "Xpath", "confirmNewPasswordErrorMessageXpath");
+		String errorMesssageForConfirmNewPassword = eo.getText(driver, "XPath", "confirmNewPasswordErrorMessageXpath");
 		try {
 			if (errorMesssageForConfirmNewPassword.equalsIgnoreCase("New Password and Confirm Password mismatch.")) {
 				addComment("Successfully verified the error message:: "+ errorMesssageForConfirmNewPassword);
@@ -347,25 +321,25 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateInvalidOldPassword(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: "+ oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: "+ newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: "+ confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 
 		// To verify the error message for empty password textfield
-		String errorMesssageOldPassword = eo.getText(driver, "Xpath", "oldPasswordAlertErrorMessageXpath");
+		String errorMesssageOldPassword = eo.getText(driver, "XPath", "oldPasswordAlertErrorMessageXpath");
 		try {
 			if (errorMesssageOldPassword.contains("Old Password Mismatch !!")) {
 				addComment("Successfully verified the error message:: "+ errorMesssageOldPassword);
@@ -396,26 +370,26 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateInvalidMismatchNewAndCofirmPassword(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: " + oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: " + newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: " + confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 		
 		
 		// To verify the error message for empty value in password textfield
-		String errorMesssageForConfirmNewPassword = eo.getText(driver, "Xpath", "confirmNewPasswordErrorMessageXpath");
+		String errorMesssageForConfirmNewPassword = eo.getText(driver, "XPath", "confirmNewPasswordErrorMessageXpath");
 		try {
 			if (errorMesssageForConfirmNewPassword.equalsIgnoreCase("New Password and Confirm Password mismatch.")) {
 				addComment("Successfully verified the error message:: " + errorMesssageForConfirmNewPassword);
@@ -445,26 +419,26 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateInvalidCofirmPassword(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: " + oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: " + newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: " + confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 		
 		
 		// To verify the error message for empty value in password textfield
-		String errorMesssageForConfirmNewPassword = eo.getText(driver, "Xpath", "confirmNewPasswordErrorMessageXpath");
+		String errorMesssageForConfirmNewPassword = eo.getText(driver, "XPath", "confirmNewPasswordErrorMessageXpath");
 		try {
 			if (errorMesssageForConfirmNewPassword.equalsIgnoreCase("New Password and Confirm Password mismatch.")) {
 				addComment("Successfully verified the error message:: " + errorMesssageForConfirmNewPassword);
@@ -494,26 +468,26 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateInvalidNewPasswordTextField(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: " + oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: " + newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: " + confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 		
 		
 		// To verify the error message for empty value in password textfield
-				String errorMesssageForNewPassword = eo.getText(driver, "Xpath", "newPasswordMessageXpath");
+				String errorMesssageForNewPassword = eo.getText(driver, "XPath", "newPasswordMessageXpath");
 				try {
 					if (errorMesssageForNewPassword.equalsIgnoreCase("Password should be minimum 6 characters.")) {
 						addComment("Successfully verified the error message:: "+ errorMesssageForNewPassword);
@@ -544,21 +518,21 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateNewPasswordTextField(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: " + oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: " + newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: " + confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 	
 }
@@ -581,21 +555,21 @@ public class ChangePasswordPage extends TrendInTestSuite {
 	public void validateNewPasswordField(WebDriver driver) throws Exception {
 
 		String oldPassword = ExcelReader.getValue("OldPasswordValue");
-		eo.enterText(driver, "Xpath", "oldPasswordTextFieldXpath", oldPassword);
+		eo.enterText(driver, "XPath", "oldPasswordTextFieldXpath", oldPassword);
 		addComment("Successfully entered the old password:: " + oldPassword);
 
 		// To enter the data in the new password textfield
 		String newPassword = ExcelReader.getValue("NewPasswordValue");
-		eo.enterText(driver, "Xpath", "newPasswordTextfieldXpath", newPassword);
+		eo.enterText(driver, "XPath", "newPasswordTextfieldXpath", newPassword);
 		addComment("Successfully entered the new password:: " + newPassword);
 
 		// To enter the data in the confirm password textfield
 		String confirmNewPassword = ExcelReader.getValue("NewPasswordValue1");
-		eo.enterText(driver, "Xpath", "confirmNewPasswordTextfield", confirmNewPassword);
+		eo.enterText(driver, "XPath", "confirmNewPasswordTextfield", confirmNewPassword);
 		addComment("Successfully enterd the confirm password:: " + confirmNewPassword);
 
 		// To click on the submit button
-		eo.clickElement(driver, "Xpath", "submitButtonXpath");
+		eo.clickElement(driver, "XPath", "submitButtonXpath");
 		addComment("Successfully clickd on the submit button");
 	
 }
